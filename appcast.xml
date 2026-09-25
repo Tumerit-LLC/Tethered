@@ -9,6 +9,50 @@
       <pubDate>Fri, 25 Sep 2026 18:01:43 +0000</pubDate>
       <sparkle:version>9007</sparkle:version>
       <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <ul dir="auto">
+        <li><strong>Post-install script changes.</strong></li>
+        <li><strong>Scoped Dismissal Monitors.</strong></li>
+        <li><strong>Reset and Uninstall function revisions.</strong></li>
+        <li><strong>Additional accessibility permission handling.</strong></li>
+        <li><strong>Application assertion block schedule overrides.</strong></li>
+        <li><strong>Application schedule override dialogs.</strong></li>
+        <li><strong>Application assertion block tooltip.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"><strong>تغييرات البرنامج النصي بعد التثبيت.</strong></li><li style=";text-align:right;direction:rtl"> <strong>مراقبو الفصل ذوو النطاق المحدد.</strong></li><li style=";text-align:right;direction:rtl"> <strong>إعادة ضبط وإلغاء تثبيت مراجعات الوظائف.</strong></li><li style=";text-align:right;direction:rtl"> <strong>معالجة إضافية لأذونات الوصول.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تجاوزات جدول كتلة تأكيد التطبيق.</strong></li><li style=";text-align:right;direction:rtl"> <strong>مربعات حوار تجاوز جدول التطبيقات.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تلميح أداة كتلة تأكيد التطبيق.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <ul dir="auto"><li><strong>Änderungen im Post-Install-Skript.</strong></li><li> <strong>Überwachung von Entlassungen mit eingeschränktem Geltungsbereich.</strong></li><li> <strong>Revisionen der Funktionen „Zurücksetzen“ und „Deinstallieren“.</strong></li><li> <strong>Zusätzliche Verwaltung von Zugriffsberechtigungen.</strong></li><li> <strong>Überschreibungen des Anwendungs-Assertionsblocks.</strong></li><li> <strong>Dialogfelder zum Überschreiben des Anwendungszeitplans.</strong></li><li> <strong>Tooltip für den Anwendungs-Assertionsblock.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <ul dir="auto"><li><strong>Cambios en el script posterior a la instalación.</strong></li><li> <strong>Supervisores de despidos con alcance definido.</strong></li><li> <strong>Revisiones de la función de restablecimiento y desinstalación.</strong></li><li> <strong>Gestión adicional de permisos de accesibilidad.</strong></li><li> <strong>Anulaciones de programación de bloques de aserción de la aplicación.</strong></li><li> <strong>Cuadros de diálogo para anular la programación de la aplicación.</strong></li><li> <strong>Información sobre herramientas del bloque de aserción de la aplicación.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <ul dir="auto"><li><strong>Modifications apportées au script après l&#39;installation.</strong></li><li> <strong>Observateurs des licenciements ciblés.</strong></li><li> <strong>Réinitialiser et désinstaller les révisions de la fonction.</strong></li><li> <strong>Gestion supplémentaire des autorisations d&#39;accessibilité.</strong></li><li> <strong>Remplacements de la planification des blocs d&#39;assertion d&#39;application.</strong></li><li> <strong>Boîtes de dialogue de remplacement du calendrier de l&#39;application.</strong></li><li> <strong>Info-bulle du bloc d&#39;assertion de l&#39;application.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <ul dir="auto"><li><strong>Modifiche allo script post-installazione.</strong></li><li> <strong>Monitoraggio mirato del licenziamento.</strong></li><li> <strong>Revisioni delle funzioni di ripristino e disinstallazione.</strong></li><li> <strong>Gestione aggiuntiva delle autorizzazioni di accessibilità.</strong></li><li> <strong>Sovrascritture della pianificazione dei blocchi di asserzione dell&#39;applicazione.</strong></li><li> <strong>Finestre di dialogo per la sovrascrittura della pianificazione dell&#39;applicazione.</strong></li><li> <strong>Descrizione comando del blocco di asserzione dell&#39;applicazione.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <ul dir="auto"><li><strong>インストール後のスクリプトの変更点。</strong></li><li><strong>範囲限定型退学監視員。</strong></li><li><strong>リセットおよびアンインストール機能の改訂版。</strong></li><li><strong>追加のアクセシビリティ権限処理。</strong></li><li><strong>アプリケーションアサーションブロックのスケジュールオーバーライド。</strong></li><li><strong>アプリケーションのスケジュール変更ダイアログ。</strong></li><li><strong>アプリケーションアサーションブロックのツールチップ。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <ul dir="auto"><li><strong>설치 후 스크립트 변경 사항.</strong></li><li> <strong>범위가 제한된 해고 모니터링 시스템.</strong></li><li> <strong>재설정 및 제거 기능 개정판.</strong></li><li> <strong>추가적인 접근성 권한 처리.</strong></li><li> <strong>애플리케이션 어설션 블록 스케줄 재정의.</strong></li><li> <strong>애플리케이션 일정 재정의 대화 상자.</strong></li><li> <strong>애플리케이션 어설션 블록 툴팁.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <ul dir="auto"><li><strong>Alterações no script pós-instalação.</strong></li><li> <strong>Monitores de demissão com escopo definido.</strong></li><li> <strong>Revisões das funções de redefinição e desinstalação.</strong></li><li> <strong>Gerenciamento adicional de permissões de acessibilidade.</strong></li><li> <strong>Substituições de agendamento de blocos de asserção de aplicativos.</strong></li><li> <strong>Diálogos de substituição de agendamento de aplicativos.</strong></li><li> <strong>Dica de ferramenta do bloco de asserção do aplicativo.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <ul dir="auto"><li><strong>Изменения в скрипте после установки.</strong></li><li> <strong>Контролеры по вопросам увольнения с ограниченным доступом.</strong></li><li> <strong>Изменения в функциях сброса и удаления.</strong></li><li> <strong>Дополнительная обработка разрешений для обеспечения доступности.</strong></li><li> <strong>Переопределение расписания блоков утверждений приложения.</strong></li><li> <strong>Диалоговые окна переопределения расписания приложения.</strong></li><li> <strong>Всплывающая подсказка блока утверждения приложения.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <ul dir="auto"><li><strong>Зміни скриптів після встановлення.</strong></li><li> <strong>Монітори звільнення з обмеженою сферою застосування.</strong></li><li> <strong>Скидання та видалення функцій версій.</strong></li><li> <strong>Додаткова обробка дозволів на доступність.</strong></li><li> <strong>Перевизначення розкладу блоків тверджень застосунку.</strong></li><li> <strong>Діалогові вікна перевизначення розкладу застосунку.</strong></li><li> <strong>Підказка блоку твердження застосунку.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <ul dir="auto"><li><strong>安装后脚本更改。</strong></li><li><strong>有范围的解雇监控。</strong></li><li><strong>重置和卸载功能修订。</strong></li><li><strong>额外的辅助功能权限处理。</strong></li><li><strong>应用程序断言块计划覆盖。</strong></li><li><strong>应用程序计划覆盖对话框。</strong></li><li><strong>应用程序断言块工具提示。</strong></li></ul>
+      ]]></description>
       <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.1/Tethered-0.9.1.Sparkle.zip" length="21359677" type="application/octet-stream" sparkle:edSignature="8/32oppvr8Upd1LOve06t6ZYfuvYEJ5riQSt4a6i9IXQB1MUUU4wTUFpmdOHfa70YxfG6u3UaQ/5KgNS5rjdCw==" />
     </item>
     <item>
