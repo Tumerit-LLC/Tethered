@@ -10,9 +10,10 @@
       <sparkle:version>9005</sparkle:version>
       <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
       <description><![CDATA[
-        <h2>Tethered 0.9.0</h2>
-        <p>A new prerelease version of Tethered is available.</p>
-        <p>For release details, visit the <a href="https://github.com/Tumerit/Tethered/releases/tag/v0.9.0">Tethered 0.9.0 release page</a>.</p>
+        <h2 dir="auto">Tethered 0.9.0</h2>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8f1d6008-bf39-48b7-bd7e-6d28decc73aa"><img width="256" height="256" alt="AppIcon-256x256@1x" src="https://github.com/user-attachments/assets/8f1d6008-bf39-48b7-bd7e-6d28decc73aa" style="max-width: 100%; height: auto; max-height: 256px;; aspect-ratio: 256 / 256; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
+        <p dir="auto">Download <strong>Tethered-0.9.0.pkg</strong> package to install Tethered.</p>
+        <p dir="auto">ZIP files are used by Tethered’s built-in updater; they are not needed for a manual installation.</p>
       ]]></description>
       <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.0/Tethered-0.9.0.Sparkle.zip" length="21262937" type="application/octet-stream" sparkle:edSignature="D1qcpeMm2wPI4u2hqvwOIG6gfiXIx59xF76zhpme2cURPnl0z84FwJSO8OI72BHGgI13a6v3kYdh/260GdMYCg==" />
     </item>
