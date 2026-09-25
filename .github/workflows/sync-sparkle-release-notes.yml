@@ -27,6 +27,7 @@ jobs:
       - name: Sync release body to appcast
         env:
           GH_TOKEN: ${{ github.token }}
+          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
           RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
         run: python3 .github/scripts/sync_sparkle_release_notes.py "$RELEASE_TAG"
       - name: Commit updated appcast
