@@ -17,6 +17,20 @@ Tethered is a macOS app for managing your Mac's battery, power modes, and sleep 
 - **See battery history:** Check battery health and cycle count, and explore charge level and temperature over time.
 - **Make it yours:** Adjust display brightness behavior across power modes and customize battery alerts.
 
+## Screenshots
+
+| Battery and charging | Battery history |
+| --- | --- |
+| ![Tethered battery charging and heat protection settings](Screenshots/battery.png) | ![Tethered battery statistics and charge history](Screenshots/stats.png) |
+
+| Power controls | App automation |
+| --- | --- |
+| ![Tethered power mode and wake controls](Screenshots/controls.png) | ![Tethered per-app power mode and Caffeinate actions](Screenshots/apps.png) |
+
+| Display settings | Alerts and appearance |
+| --- | --- |
+| ![Tethered display brightness settings](Screenshots/display.png) | ![Tethered battery alert appearance settings](Screenshots/appearance.png) |
+
 ## Get Tethered
 
 Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). The `.pkg` file is for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
