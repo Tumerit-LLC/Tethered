@@ -97,7 +97,7 @@ def translate_html(rendered_html, target, api_key):
     translated = result["data"]["translations"][0]["translatedText"].strip()
     if not translated:
         raise ValueError(f"Empty Cloud Translation result for {target}")
-    return html.unescape(translated)
+    return translated
 
 
 def update_appcast(source, tag, rendered_html, api_key=None, translator=translate_html):
@@ -123,7 +123,7 @@ def update_appcast(source, tag, rendered_html, api_key=None, translator=translat
     existing = {}
     for element in parsed_items[matching_indexes[0]].findall("description"):
         language = element.get(XML_LANG, "en")
-        existing[language] = textwrap.dedent((element.text or "").strip())
+        existing[language] = textwrap.dedent(element.text or "").strip()
 
     rendered_html = rendered_html.strip()
     notes = {}
