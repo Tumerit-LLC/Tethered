@@ -29,6 +29,29 @@ def github_request(path, token, payload=None, accept="application/vnd.github+jso
         return response.read().decode("utf-8")
 
 
+def restore_attachment_urls(rendered_html, body):
+    attachment_urls = re.findall(
+        r"https://github\.com/user-attachments/assets/[0-9a-fA-F-]+", body
+    )
+    attachments_by_id = {url.rsplit("/", 1)[-1]: url for url in attachment_urls}
+
+    def replace_temporary_url(match):
+        temporary_url = match.group()
+        attachment_id = re.search(
+            r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
+            temporary_url,
+        )
+        if attachment_id is None or attachment_id.group() not in attachments_by_id:
+            raise ValueError("Cannot restore a stable URL for a release image")
+        return attachments_by_id[attachment_id.group()]
+
+    return re.sub(
+        r'https://private-user-images\.githubusercontent\.com/[^"\s<>]+',
+        replace_temporary_url,
+        rendered_html,
+    )
+
+
 def update_appcast(source, tag, rendered_html):
     root = ET.fromstring(source)
     parsed_items = root.findall("./channel/item")
@@ -92,7 +115,7 @@ def main():
         raise ValueError("GitHub returned empty release notes HTML")
 
     source = APPCAST.read_text(encoding="utf-8")
-    updated = update_appcast(source, tag, rendered_html)
+    updated = update_appcast(source, tag, restore_attachment_urls(rendered_html, release["body"]))
     if updated != source:
         APPCAST.write_text(updated, encoding="utf-8")
 
