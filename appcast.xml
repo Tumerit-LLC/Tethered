@@ -5,6 +5,13 @@
     <link>https://github.com/Tumerit/Tethered/releases</link>
     <description>Official updates for Tethered.</description>
     <item>
+      <title>Tethered 0.9.1</title>
+      <pubDate>Fri, 25 Sep 2026 18:01:43 +0000</pubDate>
+      <sparkle:version>9007</sparkle:version>
+      <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+      <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.1/Tethered-0.9.1.Sparkle.zip" length="21359677" type="application/octet-stream" sparkle:edSignature="8/32oppvr8Upd1LOve06t6ZYfuvYEJ5riQSt4a6i9IXQB1MUUU4wTUFpmdOHfa70YxfG6u3UaQ/5KgNS5rjdCw==" />
+    </item>
+    <item>
       <title>Tethered 0.9.0</title>
       <pubDate>Thu, 24 Sep 2026 12:44:01 +0000</pubDate>
       <sparkle:version>9005</sparkle:version>
