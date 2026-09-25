@@ -12,7 +12,7 @@ Tethered is a macOS app for managing your Mac's battery, power modes, and sleep 
 
 <table>
   <tr>
-    <td><img src="Screenshots/menu-bar.png" alt="Tethered menu bar panel with charging limit, power mode, and low battery controls" width="280"></td>
+    <td><img src="Screenshots/menu-bar.png" alt="Tethered menu bar panel with charging limit, power mode, and low battery controls" width="400"></td>
     <td>
       <ul>
         <li><strong>Manage charging:</strong> Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.</li>
