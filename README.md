@@ -10,13 +10,22 @@ Tethered is a macOS app for managing your Mac's battery, power modes, and sleep 
 
 ## What you can do
 
-- **Manage charging:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.
-- **Control power and sleep:** Choose High or Low Power behavior, configure wake and sleep settings, and use Caffeinate when you need your Mac to stay awake.
-- **Automate routines:** Apply power mode and Caffeinate actions when selected apps launch, activate, deactivate, or quit. Use keyboard shortcuts and Apple Shortcuts for frequent actions.
-- **Save your setup:** Create profiles for different settings and configure battery calibration schedules.
-- **Calibrate your battery:** Start a calibration cycle when you choose, or let Tethered schedule one according to your calibration policy.
-- **See battery history:** Check battery health and cycle count, and explore charge level and temperature over time.
-- **Make it yours:** Adjust display brightness behavior across power modes, customize battery alerts, and manually or automatically dismiss the persistent macOS low battery banner.
+<table>
+  <tr>
+    <td><img src="Screenshots/menu-bar.png" alt="Tethered menu bar panel with charging limit, power mode, and low battery controls" width="280"></td>
+    <td>
+      <ul>
+        <li><strong>Manage charging:</strong> Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.</li>
+        <li><strong>Control power and sleep:</strong> Choose High or Low Power behavior, configure wake and sleep settings, and use Caffeinate when you need your Mac to stay awake.</li>
+        <li><strong>Automate routines:</strong> Apply power mode and Caffeinate actions when selected apps launch, activate, deactivate, or quit. Use keyboard shortcuts and Apple Shortcuts for frequent actions.</li>
+        <li><strong>Save your setup:</strong> Create profiles for different settings and configure battery calibration schedules.</li>
+        <li><strong>Calibrate your battery:</strong> Start a calibration cycle when you choose, or let Tethered schedule one according to your calibration policy.</li>
+        <li><strong>See battery history:</strong> Check battery health and cycle count, and explore charge level and temperature over time.</li>
+        <li><strong>Make it yours:</strong> Adjust display brightness behavior across power modes, customize battery alerts, and manually or automatically dismiss the persistent macOS low battery banner.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## Pro Access
 
@@ -29,10 +38,6 @@ Tethered keeps your settings and battery history locally on your Mac. With Pro A
 You can manage settings in the app, view battery health and charge history in **Stats**, and export battery health history as **CSV or JSON**. Tethered also lets you export its logs. Open **Account → iCloud** to find the local data location and iCloud backup controls.
 
 ## Screenshots
-
-### Menu bar controls
-
-<img src="Screenshots/menu-bar.png" alt="Tethered menu bar panel with charging limit, power mode, and low battery controls" width="280">
 
 | Battery and charging | Battery history |
 | --- | --- |
