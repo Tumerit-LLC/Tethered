@@ -32,7 +32,7 @@ You can manage settings in the app, view battery health and charge history in **
 
 ### Menu bar controls
 
-![Tethered menu bar panel with charging limit, power mode, and low battery controls](Screenshots/menu-bar.png)
+<img src="Screenshots/menu-bar.png" alt="Tethered menu bar panel with charging limit, power mode, and low battery controls" width="280">
 
 | Battery and charging | Battery history |
 | --- | --- |
