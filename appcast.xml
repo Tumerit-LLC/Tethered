@@ -9,6 +9,46 @@
       <pubDate>Fri, 25 Sep 2026 19:27:10 +0000</pubDate>
       <sparkle:version>9008</sparkle:version>
       <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <h3 dir="auto">Release Change Log:</h3>
+        <ul dir="auto">
+        <li><strong>Energy impact Activity Monitor Script Delay.</strong></li>
+        <li><strong>Fanless Mac High Power Availability Correction.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <h3 style=";text-align:right;direction:rtl">سجل تغييرات الإصدار:</h3><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>تأثير الطاقة على تأخير برنامج مراقبة النشاط.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تصحيح توافر الطاقة العالية لأجهزة ماك بدون مروحة.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <h3 dir="auto">Änderungsprotokoll:</h3><ul dir="auto"><li> <strong>Verzögerung des Skripts zur Überwachung der Energieauswirkungen.</strong></li><li> <strong>Korrektur der hohen Stromverfügbarkeit bei lüfterlosen Macs.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <h3 dir="auto">Registro de cambios de la versión:</h3><ul dir="auto"><li> <strong>Retraso en el script del monitor de actividad de impacto energético.</strong></li><li> <strong>Corrección de disponibilidad de alta potencia para Mac sin ventilador.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <h3 dir="auto">Journal des modifications de la version :</h3><ul dir="auto"><li> <strong>Délai du script de surveillance de l&#39;impact énergétique.</strong></li><li> <strong>Correction de la haute disponibilité des Mac sans ventilateur.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <h3 dir="auto">Registro delle modifiche della release:</h3><ul dir="auto"><li> <strong>Ritardo dello script di monitoraggio dell&#39;attività di impatto energetico.</strong></li><li> <strong>Correzione della disponibilità ad alta potenza per Mac senza ventola.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <h3 dir="auto">リリース変更履歴：</h3><ul dir="auto"><li><strong>エネルギー影響アクティビティモニタースクリプトの遅延。</strong></li><li><strong>ファンレスMacの高電力可用性に関する修正。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <h3 dir="auto">릴리스 변경 로그:</h3><ul dir="auto"><li> <strong>에너지 영향 활동 모니터 스크립트 지연.</strong></li><li> <strong>팬리스 Mac 고전력 가용성 오류 수정.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <h3 dir="auto">Registro de alterações da versão:</h3><ul dir="auto"><li> <strong>Atraso no script do monitor de atividades de impacto energético.</strong></li><li> <strong>Correção de alta disponibilidade de energia para Macs sem ventoinha.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <h3 dir="auto">Журнал изменений релиза:</h3><ul dir="auto"><li> <strong>Задержка выполнения скрипта монитора активности, влияющая на энергопотребление.</strong></li><li> <strong>Коррекция проблемы высокой мощности безвентиляторных Mac.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <h3 dir="auto">Журнал змін релізу:</h3><ul dir="auto"><li> <strong>Затримка сценарію моніторингу активності під час впливу енергії.</strong></li><li> <strong>Корекція високої доступності живлення безвентиляторних Mac.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <h3 dir="auto">发布变更日志：</h3><ul dir="auto"><li><strong>能源影响活动监控脚本延迟。</strong></li><li><strong>无风扇Mac高功率可用性校正。</strong></li></ul>
+      ]]></description>
       <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.2/Tethered-0.9.2.Sparkle.zip" length="21361596" type="application/octet-stream" sparkle:edSignature="hwkPsbIxLYov92yHU/9H4k73PqlI6WRp2QLkPk7wNbPwEHuhxe8TvHfMr8DdWtIS7q9QfPorri8OMBMUtYsVBA==" />
     </item>
     <item>
