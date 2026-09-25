@@ -1,10 +1,12 @@
 import json
+import html
 import os
 import re
 import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from pathlib import Path
 
 
@@ -29,27 +31,44 @@ def github_request(path, token, payload=None, accept="application/vnd.github+jso
         return response.read().decode("utf-8")
 
 
-def restore_attachment_urls(rendered_html, body):
-    attachment_urls = re.findall(
-        r"https://github\.com/user-attachments/assets/[0-9a-fA-F-]+", body
-    )
-    attachments_by_id = {url.rsplit("/", 1)[-1]: url for url in attachment_urls}
+class TextExtractor(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts = []
 
-    def replace_temporary_url(match):
-        temporary_url = match.group()
-        attachment_id = re.search(
-            r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
-            temporary_url,
-        )
-        if attachment_id is None or attachment_id.group() not in attachments_by_id:
-            raise ValueError("Cannot restore a stable URL for a release image")
-        return attachments_by_id[attachment_id.group()]
+    def handle_data(self, data):
+        self.parts.append(data)
 
-    return re.sub(
-        r'https://private-user-images\.githubusercontent\.com/[^"\s<>]+',
-        replace_temporary_url,
-        rendered_html,
+
+def element_text(fragment):
+    extractor = TextExtractor()
+    extractor.feed(fragment)
+    return " ".join(html.unescape("".join(extractor.parts)).split())
+
+
+def filter_release_html(rendered_html, title):
+    filtered = re.sub(r"(?is)<picture\b[^>]*>.*?</picture>", "", rendered_html)
+    filtered = re.sub(r"(?is)<a\b[^>]*>\s*<img\b[^>]*>\s*</a>", "", filtered)
+    filtered = re.sub(r"(?is)<img\b[^>]*>", "", filtered)
+
+    def keep_paragraph(match):
+        text = element_text(match.group())
+        if re.fullmatch(r"Download Tethered-[^\s]+\.pkg package to install Tethered\.", text):
+            return ""
+        if re.fullmatch(
+            r"ZIP files are used by Tethered['’]s built-in updater; they are not needed for a manual installation\.",
+            text,
+        ):
+            return ""
+        return match.group() if text else ""
+
+    filtered = re.sub(r"(?is)<p\b[^>]*>.*?</p>", keep_paragraph, filtered)
+    filtered = re.sub(
+        r"(?is)<h[1-6]\b[^>]*>.*?</h[1-6]>",
+        lambda match: "" if element_text(match.group()) == title else match.group(),
+        filtered,
     )
+    return "\n".join(line for line in filtered.splitlines() if line.strip()).strip()
 
 
 def update_appcast(source, tag, rendered_html):
@@ -72,7 +91,10 @@ def update_appcast(source, tag, rendered_html):
 
     escaped_html = rendered_html.strip().replace("]]>", "]]]]><![CDATA[>")
     indented_html = "\n".join("        " + line for line in escaped_html.splitlines())
-    description = f"      <description><![CDATA[\n{indented_html}\n      ]]></description>\n"
+    description = (
+        f"      <description><![CDATA[\n{indented_html}\n      ]]></description>\n"
+        if escaped_html else ""
+    )
     match = item_matches[matching_indexes[0]]
     old_item = match.group()
     new_item, count = re.subn(
@@ -81,7 +103,7 @@ def update_appcast(source, tag, rendered_html):
         old_item,
         count=1,
     )
-    if count == 0:
+    if count == 0 and description:
         new_item, count = re.subn(
             r"(?m)^      <enclosure ",
             lambda _: description + "      <enclosure ",
@@ -115,7 +137,7 @@ def main():
         raise ValueError("GitHub returned empty release notes HTML")
 
     source = APPCAST.read_text(encoding="utf-8")
-    updated = update_appcast(source, tag, restore_attachment_urls(rendered_html, release["body"]))
+    updated = update_appcast(source, tag, filter_release_html(rendered_html, release["name"]))
     if updated != source:
         APPCAST.write_text(updated, encoding="utf-8")
 

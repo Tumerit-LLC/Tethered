@@ -7,6 +7,6 @@ Tethered App, macOS and IOS Support.
 
 ## Sparkle update overviews
 
-The release notes shown in Sparkle's update dialog come from the `<description>` inside each release's `<item>` in `appcast.xml`. Write the release body in GitHub's Release editor. When a release is published or edited, the Sync Sparkle release notes workflow renders that body as HTML and copies it into the matching appcast item. The workflow can also be run manually with the release tag.
+The release notes shown in Sparkle's update dialog come from the `<description>` inside each release's `<item>` in `appcast.xml`. Write the release body in GitHub's Release editor. When a release is published or edited, the Sync Sparkle release notes workflow renders that body as HTML and copies it into the matching appcast item. It removes images, the repeated release title, and the standard manual installer and ZIP instructions. If no other notes remain, it removes the item's description. The workflow can also be run manually with the release tag.
 
 Create the appcast item and its signed update archive before publishing the release. The workflow matches the release tag in the enclosure URL and fails if no matching item exists. It does not change the archive URL, length, version, or EdDSA signature. The channel's `<description>` is feed metadata, not the update overview.
