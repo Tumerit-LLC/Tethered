@@ -77,6 +77,11 @@ def prepare(tag, repository, token):
         download(archive_asset, token, archive)
         download(signature_asset, token, sidecar)
         signature = sidecar.read_text(encoding="ascii").strip()
+        attributes = re.fullmatch(r'sparkle:edSignature="([A-Za-z0-9+/]{86}==)"\s+length="([0-9]+)"', signature)
+        if attributes:
+            signature = attributes.group(1)
+            if int(attributes.group(2)) != archive_asset["size"]:
+                raise ValueError("The Sparkle signature asset has the wrong archive length")
         if len(base64.b64decode(signature, validate=True)) != 64:
             raise ValueError("The Sparkle signature asset is not a valid Ed25519 signature")
         info = bundle_info(archive)

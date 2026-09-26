@@ -22,6 +22,10 @@ fi
 
 umask 077
 signature="$("$sign_update" -p "$archive")"
+if [[ "$signature" =~ ^sparkle:edSignature=\"([A-Za-z0-9+/]{86}==)\"[[:space:]]length=\"([0-9]+)\"$ ]]; then
+  [[ "${BASH_REMATCH[2]}" == "$(stat -f %z "$archive")" ]] || { echo "Sparkle returned the wrong archive length" >&2; exit 1; }
+  signature="${BASH_REMATCH[1]}"
+fi
 if [[ ! "$signature" =~ ^[A-Za-z0-9+/]{86}==$ ]]; then
   echo "Sparkle returned an invalid signature" >&2
   exit 1
