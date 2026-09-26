@@ -19,11 +19,16 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Verify signed update and add appcast item
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: python3 .github/scripts/prepare_sparkle_appcast.py "$RELEASE_TAG"
       - name: Sync release body to appcast
         env:
           GH_TOKEN: ${{ github.token }}
