@@ -5,6 +5,53 @@
     <link>https://github.com/Tumerit/Tethered/releases</link>
     <description>Official updates for Tethered.</description>
     <item>
+      <title>Tethered 0.9.4</title>
+      <pubDate>Sat, 26 Sep 2026 01:10:47 +0000</pubDate>
+      <sparkle:version>9012</sparkle:version>
+      <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <h3 dir="auto">Release Change Log:</h3>
+        <ul dir="auto">
+        <li><strong>Sparkle pre-installation helper daemon process termination.</strong></li>
+        <li><strong>Update awareness for alert helper launch checks.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <h3 style=";text-align:right;direction:rtl">سجل تغييرات الإصدار:</h3><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>إنهاء عملية برنامج المساعدة قبل تثبيت Sparkle.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تحديث الوعي بعمليات فحص إطلاق مساعد التنبيه.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <h3 dir="auto">Änderungsprotokoll:</h3><ul dir="auto"><li> <strong>Beendigung des Sparkle-Vorinstallations-Hilfsprozesses.</strong></li><li> <strong>Aktualisierung der Sensibilisierung für die Startprüfungen des Alarmhelfers.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <h3 dir="auto">Registro de cambios de la versión:</h3><ul dir="auto"><li> <strong>Finalización del proceso demonio auxiliar de preinstalación de Sparkle.</strong></li><li> <strong>Actualizar el nivel de conocimiento para las comprobaciones de lanzamiento del asistente de alertas.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <h3 dir="auto">Journal des modifications de la version :</h3><ul dir="auto"><li> <strong>Arrêt du processus démon d&#39;assistance à la pré-installation de Sparkle.</strong></li><li> <strong>Mise à jour de la sensibilisation aux vérifications de lancement de l&#39;assistant d&#39;alerte.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <h3 dir="auto">Registro delle modifiche della release:</h3><ul dir="auto"><li> <strong>Terminazione del processo del demone di supporto alla preinstallazione di Sparkle.</strong></li><li> <strong>Aggiornare la consapevolezza per i controlli di avvio dell&#39;assistente di allerta.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <h3 dir="auto">リリース変更履歴：</h3><ul dir="auto"><li> <strong>Sparkleのプリインストールヘルパーデーモンプロセスの終了。</strong></li><li><strong>アラートヘルパーの起動チェックに関する認識を更新してください。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <h3 dir="auto">릴리스 변경 로그:</h3><ul dir="auto"><li> <strong>Sparkle 사전 설치 도우미 데몬 프로세스가 종료되었습니다.</strong></li><li> <strong>알림 도우미 실행 확인에 대한 최신 정보를 확인하세요.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <h3 dir="auto">Registro de alterações da versão:</h3><ul dir="auto"><li> <strong>Encerramento do processo daemon auxiliar de pré-instalação do Sparkle.</strong></li><li> <strong>Atualizar informações sobre as verificações de inicialização do auxiliar de alertas.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <h3 dir="auto">Журнал изменений релиза:</h3><ul dir="auto"><li> <strong>Завершение процесса вспомогательного демона предварительной установки Sparkle.</strong></li><li> <strong>Обновите информацию о проверках запуска вспомогательной функции оповещения.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <h3 dir="auto">Журнал змін релізу:</h3><ul dir="auto"><li> <strong>Завершення процесу демона допоміжної програми передвстановлення Sparkle.</strong></li><li> <strong>Оновлення інформації про перевірки запуску помічника сповіщень.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <h3 dir="auto">发布变更日志：</h3><ul dir="auto"><li> <strong>Sparkle 预安装辅助守护进程终止。</strong></li><li><strong>更新有关警报辅助程序启动检查的注意事项。</strong></li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.4/Tethered-0.9.4.Sparkle.zip" length="21373110" type="application/octet-stream" sparkle:edSignature="lK3uJrWqZeMhRH2qK873AXoJSspZbJb7jQbX9Rjeo0OXJstFE2q64DPaSCkI4lnptYwEK3dsu//gtWPoFFaQCw==" />
+    </item>
+    <item>
       <title>Tethered 0.9.3</title>
       <pubDate>Fri, 25 Sep 2026 19:27:10 +0000</pubDate>
       <sparkle:version>9011</sparkle:version>
