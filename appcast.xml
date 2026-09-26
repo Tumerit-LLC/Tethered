@@ -5,6 +5,58 @@
     <link>https://github.com/Tumerit/Tethered/releases</link>
     <description>Official updates for Tethered.</description>
     <item>
+      <title>Tethered 0.9.6</title>
+      <pubDate>Sat, 26 Sep 2026 19:06:59 +0000</pubDate>
+      <sparkle:version>9016</sparkle:version>
+      <sparkle:shortVersionString>0.9.6</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <h3 dir="auto">Release Change Log:</h3>
+        <ul dir="auto">
+        <li><strong>Corrected orthography.</strong></li>
+        <li><strong>Localization Completed.</strong></li>
+        <li><strong>Toolbar Full Disk Access permissions indicator check fallback.</strong></li>
+        <li><strong>iCloud Sync for remaining unsupported keyboard shortcuts.</strong></li>
+        <li><strong>Top-up alert settings profile and iCloud sync corrections.</strong></li>
+        <li><strong>Remaining coverage for profile and iCloud synced settings.</strong></li>
+        <li><strong>macOS 26 Menu window focus correction.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <h3 style=";text-align:right;direction:rtl">سجل تغييرات الإصدار:</h3><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>تهجئة مصححة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>اكتملت عملية الترجمة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>التحقق الاحتياطي من أذونات الوصول الكامل إلى القرص في شريط الأدوات.</strong></li><li style=";text-align:right;direction:rtl"> <strong>مزامنة iCloud لاختصارات لوحة المفاتيح المتبقية غير المدعومة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تصحيحات إعدادات تنبيهات الشحن وملف تعريف المزامنة مع iCloud.</strong></li><li style=";text-align:right;direction:rtl"> <strong>التغطية المتبقية للملف الشخصي والإعدادات المتزامنة مع iCloud.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تصحيح تركيز نافذة القائمة في نظام macOS 26.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <h3 dir="auto">Änderungsprotokoll:</h3><ul dir="auto"><li> <strong>Korrigierte Rechtschreibung.</strong></li><li> <strong>Lokalisierung abgeschlossen.</strong></li><li> <strong>Ausweichlösung für die Überprüfung der Berechtigungen für den vollständigen Festplattenzugriff in der Symbolleiste.</strong></li><li> <strong>iCloud-Synchronisierung für die verbleibenden, nicht unterstützten Tastenkombinationen.</strong></li><li> <strong>Profileinstellungen für Aufladebenachrichtigungen und Korrekturen der iCloud-Synchronisierung.</strong></li><li> <strong>Restliche Abdeckung für Profil- und iCloud-synchronisierte Einstellungen.</strong></li><li> <strong>macOS 26 Fokuskorrektur für Menüfenster.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <h3 dir="auto">Registro de cambios de la versión:</h3><ul dir="auto"><li> <strong>Ortografía corregida.</strong></li><li> <strong>Localización completada.</strong></li><li> <strong>Indicador de permisos de acceso total al disco en la barra de herramientas (comprobación de reserva).</strong></li><li> <strong>Sincronización de iCloud para los atajos de teclado que aún no son compatibles.</strong></li><li> <strong>Correcciones en el perfil de configuración de alertas de recarga y sincronización de iCloud.</strong></li><li> <strong>Cobertura restante para el perfil y la configuración sincronizada con iCloud.</strong></li><li> <strong>Corrección del enfoque de la ventana del menú de macOS 26.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <h3 dir="auto">Journal des modifications de la version :</h3><ul dir="auto"><li> <strong>Orthographe corrigée.</strong></li><li> <strong>Localisation terminée.</strong></li><li> <strong>Indicateur d&#39;accès complet au disque de la barre d&#39;outils : solution de repli.</strong></li><li> <strong>Synchronisation iCloud pour les raccourcis clavier non pris en charge restants.</strong></li><li> <strong>Corrections des paramètres d&#39;alerte de recharge et de la synchronisation iCloud.</strong></li><li> <strong>Couverture restante pour les paramètres de profil et de synchronisation iCloud.</strong></li><li> <strong>Correction du focus de la fenêtre de menu sous macOS 26.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <h3 dir="auto">Registro delle modifiche della release:</h3><ul dir="auto"><li> <strong>Ortografia corretta.</strong></li><li> <strong>Localizzazione completata.</strong></li><li> <strong>Indicatore di fallback per il controllo delle autorizzazioni di accesso completo al disco nella barra degli strumenti.</strong></li><li> <strong>Sincronizzazione iCloud per le scorciatoie da tastiera non ancora supportate.</strong></li><li> <strong>Correzioni al profilo delle impostazioni di avviso di ricarica e alla sincronizzazione iCloud.</strong></li><li> <strong>Copertura rimanente per il profilo e le impostazioni sincronizzate con iCloud.</strong></li><li> <strong>Correzione del focus della finestra del menu di macOS 26.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <h3 dir="auto">リリース変更履歴：</h3><ul dir="auto"><li><strong>スペルを修正しました。</strong></li><li><strong>ローカライズが完了しました。</strong></li><li><strong>ツールバーのフルディスクアクセス権限インジケーターのチェックフォールバック。</strong></li><li><strong>残りのサポートされていないキーボードショートカットについては、iCloud同期をご利用ください。</strong></li><li><strong>チャージアラート設定プロファイルとiCloud同期の修正。</strong></li><li><strong>プロフィールおよびiCloud同期設定の残りの保証期間。</strong></li><li> <strong>macOS 26 メニューウィンドウのフォーカス補正。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <h3 dir="auto">릴리스 변경 로그:</h3><ul dir="auto"><li> <strong>철자법을 수정했습니다.</strong></li><li> <strong>현지화가 완료되었습니다.</strong></li><li> <strong>툴바 전체 디스크 액세스 권한 표시기 확인 대체 기능.</strong></li><li> <strong>지원되지 않는 나머지 키보드 단축키에 대해서는 iCloud 동기화를 사용하세요.</strong></li><li> <strong>알림 설정 프로필 및 iCloud 동기화 오류를 수정했습니다.</strong></li><li> <strong>프로필 및 iCloud 동기화 설정에 대한 잔여 지원 기간이 남아 있습니다.</strong></li><li> <strong>macOS 26 메뉴 창 포커스 수정.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <h3 dir="auto">Registro de alterações da versão:</h3><ul dir="auto"><li> <strong>Ortografia corrigida.</strong></li><li> <strong>Localização concluída.</strong></li><li> <strong>Indicador de permissões de acesso total ao disco na barra de ferramentas: verificação de fallback.</strong></li><li> <strong>Sincronização do iCloud para os atalhos de teclado restantes que não são suportados.</strong></li><li> <strong>Correções no perfil de configurações de alerta de recarga e sincronização com o iCloud.</strong></li><li> <strong>Cobertura restante para perfil e configurações sincronizadas do iCloud.</strong></li><li> <strong>Correção de foco da janela de menu do macOS 26.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <h3 dir="auto">Журнал изменений релиза:</h3><ul dir="auto"><li> <strong>Исправленная орфография.</strong></li><li> <strong>Локализация завершена.</strong></li><li> <strong>Индикатор разрешений полного доступа к диску на панели инструментов (резервный вариант).</strong></li><li> <strong>Синхронизация iCloud для оставшихся неподдерживаемых сочетаний клавиш.</strong></li><li> <strong>Исправления в настройках профиля оповещений о пополнении счета и синхронизации iCloud.</strong></li><li> <strong>Осталось покрытие для настроек профиля и синхронизированных с iCloud настроек.</strong></li><li> <strong>macOS 26 Коррекция фокуса окна меню.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <h3 dir="auto">Журнал змін релізу:</h3><ul dir="auto"><li> <strong>Виправлена орфографія.</strong></li><li> <strong>Локалізація завершена.</strong></li><li> <strong>Індикатор перевірки дозволів на повний доступ до диска на панелі інструментів.</strong></li><li> <strong>Синхронізація iCloud для решти непідтримуваних комбінацій клавіш.</strong></li><li> <strong>Виправлення профілю налаштувань сповіщень про поповнення та синхронізації iCloud.</strong></li><li> <strong>Залишок покриття для профілю та синхронізованих налаштувань iCloud.</strong></li><li> <strong>Корекція фокуса вікна меню macOS 26.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <h3 dir="auto">发布变更日志：</h3><ul dir="auto"><li><strong>修正后的拼写。</strong></li><li><strong>本地化完成。</strong></li><li><strong>工具栏全磁盘访问权限指示器检查回退。</strong></li><li><strong>使用 iCloud 同步来恢复剩余不支持的键盘快捷键。</strong></li><li><strong>充值提醒设置配置文件和 iCloud 同步更正。</strong></li><li><strong>剩余的配置文件和 iCloud 同步设置保障。</strong></li><li> <strong>macOS 26 菜单窗口焦点校正。</strong></li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.6/Tethered-0.9.6.Sparkle.zip" length="21465956" type="application/octet-stream" sparkle:edSignature="h3JGMrwojcYY6tZFNLOvg8CioT+Y+EvdleG3WZJvyuOnM2AMQ1PrGPI1SHUXZgPMj2FcAZ0HvBG7LO2nQABeAA==" />
+    </item>
+    <item>
       <title>Tethered 0.9.5</title>
       <pubDate>Sat, 26 Sep 2026 01:57:24 +0000</pubDate>
       <sparkle:version>9013</sparkle:version>
