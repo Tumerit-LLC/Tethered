@@ -5,6 +5,57 @@
     <link>https://github.com/Tumerit/Tethered/releases</link>
     <description>Official updates for Tethered.</description>
     <item>
+      <title>Tethered 0.9.8</title>
+      <pubDate>Sun, 27 Sep 2026 21:16:41 +0000</pubDate>
+      <sparkle:version>9018</sparkle:version>
+      <sparkle:shortVersionString>0.9.8</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <h3 dir="auto">Release Change Log:</h3>
+        <ul dir="auto">
+        <li><strong>Migration from deprecated launchctl bootout/remove to SMAppService.unregister().</strong></li>
+        <li><strong>System icon style redraw for caffeinate process color loss.</strong></li>
+        <li><strong>PMset manual request direct linking.</strong></li>
+        <li><strong>Feed system banner dismissal event into low battery level polling band.</strong></li>
+        <li><strong>Full battery polling band power-source state fallback.</strong></li>
+        <li><strong>User diagnostic report logs expanded.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <h3 style=";text-align:right;direction:rtl">سجل تغييرات الإصدار:</h3><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>الانتقال من الأمر launchctl bootout/remove المهمل إلى SMAppService.unregister().</strong></li><li style=";text-align:right;direction:rtl"> <strong>إعادة رسم نمط أيقونة النظام لمعالجة فقدان لون عملية الكافيين.</strong></li><li style=";text-align:right;direction:rtl"> <strong>طلب PMset يدوياً الربط المباشر.</strong></li><li style=";text-align:right;direction:rtl"> <strong>يتم إدخال حدث إغلاق لافتة نظام التغذية في نطاق استطلاع مستوى البطارية المنخفض.</strong></li><li style=";text-align:right;direction:rtl"> <strong>حالة احتياطية لمصدر الطاقة في نطاق استطلاع البطارية الكاملة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تم توسيع سجلات تقارير تشخيص المستخدم.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <h3 dir="auto">Änderungsprotokoll:</h3><ul dir="auto"><li> <strong>Migration von der veralteten Funktion launchctl bootout/remove zu SMAppService.unregister().</strong></li><li> <strong>Neuzeichnung des System-Icon-Stils aufgrund von Farbverlusten durch Koffeinprozesse.</strong></li><li> <strong>PMset-Handbuchanfrage Direktverlinkung.</strong></li><li> <strong>Ereignis „Feed-Systembanner wird bei niedrigem Batteriestand abgewiesen“ im Umfrageband.</strong></li><li> <strong>Ausweichlösung für den Status der vollständigen Batterieabfrage im Frequenzband.</strong></li><li> <strong>Erweiterte Benutzerdiagnoseberichtsprotokolle.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <h3 dir="auto">Registro de cambios de la versión:</h3><ul dir="auto"><li> <strong>Migración de launchctl bootout/remove (obsoleto) a SMAppService.unregister().</strong></li><li> <strong>Rediseño del estilo de los iconos del sistema debido a la pérdida de color durante el proceso de cafeína.</strong></li><li> <strong>Solicitud manual de enlace directo de PMset.</strong></li><li> <strong>Evento de eliminación del banner del sistema de alimentación en la banda de sondeo de nivel bajo de batería.</strong></li><li> <strong>Reversión al estado de la fuente de alimentación de la banda de sondeo de batería completa.</strong></li><li> <strong>Registros de informes de diagnóstico de usuario ampliados.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <h3 dir="auto">Journal des modifications de la version :</h3><ul dir="auto"><li> <strong>Migration de la méthode dépréciée launchctl bootout/remove vers SMAppService.unregister().</strong></li><li> <strong>Redessin du style des icônes système suite à la perte de couleur liée au processus de caféine.</strong></li><li> <strong>Demande de liaison directe du manuel PMset.</strong></li><li> <strong>Événement de suppression de bannière du système d&#39;alimentation dans la bande d&#39;interrogation du niveau de batterie faible.</strong></li><li> <strong>repli sur l&#39;état de la source d&#39;alimentation avec bande d&#39;interrogation complète de la batterie.</strong></li><li> <strong>Journaux de rapports de diagnostic utilisateur étendus.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <h3 dir="auto">Registro delle modifiche della release:</h3><ul dir="auto"><li> <strong>Migrazione dal metodo obsoleto launchctl bootout/remove a SMAppService.unregister().</strong></li><li> <strong>Ridisegno dello stile delle icone di sistema per la perdita di colore del processo caffeinato.</strong></li><li> <strong>Richiesta manuale PMset per collegamento diretto.</strong></li><li> <strong>L&#39;evento di chiusura del banner del sistema di alimentazione viene inserito nella banda di polling del livello di batteria basso.</strong></li><li> <strong>Stato di alimentazione di riserva con polling della batteria completa.</strong></li><li> <strong>Registri dei report diagnostici utente espansi.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <h3 dir="auto">リリース変更履歴：</h3><ul dir="auto"><li><strong>非推奨となった launchctl bootout/remove から SMAppService.unregister() への移行。</strong></li><li><strong>カフェイン処理による色落ちのため、システムアイコンのスタイルを再描画します。</strong></li><li> <strong>PMsetの手動リクエストによる直接リンク。</strong></li><li><strong>システムバナーの非表示イベントを、バッテリー残量低下ポーリング帯域にフィードします。</strong></li><li><strong>フルバッテリーポーリング帯域電源状態のフォールバック。</strong></li><li><strong>ユーザー診断レポートのログが拡張されました。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <h3 dir="auto">릴리스 변경 로그:</h3><ul dir="auto"><li> <strong>더 이상 사용되지 않는 launchctl bootout/remove에서 SMAppService.unregister()로 마이그레이션되었습니다.</strong></li><li> <strong>카페인 처리 과정에서 발생하는 색상 손실로 인해 시스템 아이콘 스타일이 다시 그려집니다.</strong></li><li> <strong>PMset 수동 요청 직접 연결.</strong></li><li> <strong>시스템 배너 해제 이벤트를 배터리 부족 알림 대역에 추가합니다.</strong></li><li> <strong>배터리 전체 폴링 대역 전원 상태 대체 기능.</strong></li><li> <strong>사용자 진단 보고서 로그가 확장되었습니다.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <h3 dir="auto">Registro de alterações da versão:</h3><ul dir="auto"><li> <strong>Migração do método obsoleto launchctl bootout/remove para SMAppService.unregister().</strong></li><li> <strong>Redesenho do estilo do ícone do sistema devido à perda de cor no processo de cafeína.</strong></li><li> <strong>Solicitação manual do PMset com vinculação direta.</strong></li><li> <strong>Evento de descarte do banner do sistema de alimentação na faixa de pesquisa de nível baixo de bateria.</strong></li><li> <strong>Recurso de fallback para o estado da fonte de alimentação da banda de sondagem da bateria completa.</strong></li><li> <strong>Registros de relatórios de diagnóstico do usuário expandidos.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <h3 dir="auto">Журнал изменений релиза:</h3><ul dir="auto"><li> <strong>Переход от устаревшей функции launchctl bootout/remove к SMAppService.unregister().</strong></li><li> <strong>Перерисовка стиля системных значков для компенсации потери цвета в процессе обработки кофеина.</strong></li><li> <strong>Запрос на прямую привязку PMset вручную.</strong></li><li> <strong>Передайте событие закрытия системного баннера в полосу опроса при низком уровне заряда батареи.</strong></li><li> <strong>Резервное состояние источника питания при полном опросе батареи.</strong></li><li> <strong>Журналы диагностических отчетов пользователей расширены.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <h3 dir="auto">Журнал змін релізу:</h3><ul dir="auto"><li> <strong>Міграція з застарілого завантаження/видалення launchctl до SMAppService.unregister().</strong></li><li> <strong>Перемальовування стилю системної піктограми для втрати кольору процесу кофеїнату.</strong></li><li> <strong>Пряме зв&#39;язування запиту на ручне налаштування PMset.</strong></li><li> <strong>Передавати подію закриття системного банера в діапазон опитування низького рівня батареї.</strong></li><li> <strong>Повне резервне перемикання на резервний стан джерела живлення з повним опитуванням батареї.</strong></li><li> <strong>Журнали звітів діагностики користувачів розширено.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <h3 dir="auto">发布变更日志：</h3><ul dir="auto"><li><strong>从已弃用的 launchctl bootout/remove 迁移到 SMAppService.unregister()。</strong></li><li><strong>系统图标样式重绘，以解决咖啡因处理过程中的颜色丢失问题。</strong></li><li> <strong>PMset手动请求直接链接。</strong></li><li><strong>将系统横幅关闭事件馈送到低电量轮询频段。</strong></li><li><strong>电池满电轮询频段电源状态回退。</strong></li><li><strong>用户诊断报告日志已展开。</strong></li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.8/Tethered-0.9.8.Sparkle.zip" length="21537120" type="application/octet-stream" sparkle:edSignature="VEq3JnwmyzIHuuB79OhA9M4u5EqUjgVN4wahtRBlMvWlB6iPa4nwud68UBVooFA48F/ECRyfxNFIzyjBKVirAw==" />
+    </item>
+    <item>
       <title>Tethered 0.9.6</title>
       <pubDate>Sat, 26 Sep 2026 19:06:59 +0000</pubDate>
       <sparkle:version>9016</sparkle:version>
