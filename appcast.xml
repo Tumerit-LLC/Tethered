@@ -5,6 +5,59 @@
     <link>https://github.com/Tumerit/Tethered/releases</link>
     <description>Official updates for Tethered.</description>
     <item>
+      <title>Tethered 0.9.9</title>
+      <pubDate>Mon, 28 Sep 2026 06:54:19 +0000</pubDate>
+      <sparkle:version>9019</sparkle:version>
+      <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <h3 dir="auto">Release Change Log:</h3>
+        <ul dir="auto">
+        <li><strong>Helper daemon self-healling recovery path.</strong></li>
+        <li><strong>Accessibility permission requests on launch for alert helper applications.</strong></li>
+        <li><strong>System Profiler battery health value.</strong></li>
+        <li><strong>Rolling daemon label ID and Plist file name.</strong></li>
+        <li><strong>Additional “Check for Updates” button.</strong></li>
+        <li><strong>Update toolbar indicator for automatic updates.</strong></li>
+        <li><strong>Additional Apple Events and System Events keys.</strong></li>
+        <li><strong>Explicit menu window close path for energy impact and settings buttons.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <h3 style=";text-align:right;direction:rtl">سجل تغييرات الإصدار:</h3><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>مسار التعافي الذاتي للشيطان المساعد.</strong></li><li style=";text-align:right;direction:rtl"> <strong>طلبات أذونات الوصول عند بدء تشغيل تطبيقات المساعدة في التنبيهات.</strong></li><li style=";text-align:right;direction:rtl"> <strong>قيمة صحة البطارية في برنامج System Profiler.</strong></li><li style=";text-align:right;direction:rtl"> <strong>معرف تسمية برنامج التشغيل المتداول واسم ملف Plist.</strong></li><li style=";text-align:right;direction:rtl"> <strong>زر إضافي بعنوان &quot;التحقق من وجود تحديثات&quot;.</strong></li><li style=";text-align:right;direction:rtl"> <strong>قم بتحديث مؤشر شريط الأدوات للتحديثات التلقائية.</strong></li><li style=";text-align:right;direction:rtl"> <strong>مفاتيح إضافية لأحداث Apple وأحداث النظام.</strong></li><li style=";text-align:right;direction:rtl"> <strong>مسار إغلاق نافذة القائمة الصريح لأزرار تأثير الطاقة والإعدادات.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <h3 dir="auto">Änderungsprotokoll:</h3><ul dir="auto"><li> <strong>Selbstheilungspfad des Hilfs-Daemons.</strong></li><li> <strong>Berechtigungsanfragen für Benachrichtigungs-Hilfsanwendungen beim Start.</strong></li><li> <strong>System Profiler-Batteriezustandswert.</strong></li><li> <strong>Rolling-Daemon-Label-ID und Plist-Dateiname.</strong></li><li> <strong>Zusätzlicher Button „Nach Updates suchen“.</strong></li><li> <strong>Symbolleiste aktualisieren für automatische Aktualisierungen.</strong></li><li> <strong>Zusätzliche Schlüssel für Apple-Ereignisse und Systemereignisse.</strong></li><li> <strong>Expliziter Pfad zum Schließen des Menüfensters für die Schaltflächen „Energieauswirkung“ und „Einstellungen“.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <h3 dir="auto">Registro de cambios de la versión:</h3><ul dir="auto"><li> <strong>Camino de recuperación y autocuración del demonio ayudante.</strong></li><li> <strong>Solicitudes de permisos de accesibilidad al iniciar las aplicaciones de ayuda para alertas.</strong></li><li> <strong>Valor de salud de la batería del Perfil del sistema.</strong></li><li> <strong>ID de etiqueta del demonio rotativo y nombre del archivo Plist.</strong></li><li> <strong>Botón adicional &quot;Buscar actualizaciones&quot;.</strong></li><li> <strong>Actualizar el indicador de la barra de herramientas para actualizaciones automáticas.</strong></li><li> <strong>Claves adicionales para eventos de Apple y eventos del sistema.</strong></li><li> <strong>Ruta de cierre explícita de la ventana de menú para los botones de impacto energético y configuración.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <h3 dir="auto">Journal des modifications de la version :</h3><ul dir="auto"><li> <strong>Chemin de récupération auto-réparateur du démon d&#39;assistance.</strong></li><li> <strong>Demandes d&#39;autorisation d&#39;accessibilité au lancement des applications d&#39;assistance aux alertes.</strong></li><li> <strong>Valeur de santé de la batterie du profileur système.</strong></li><li> <strong>ID de l&#39;étiquette du démon Rolling et nom du fichier Plist.</strong></li><li> <strong>Bouton supplémentaire « Rechercher les mises à jour ».</strong></li><li> <strong>Indicateur de mise à jour de la barre d&#39;outils pour les mises à jour automatiques.</strong></li><li> <strong>Clés supplémentaires pour les événements Apple et les événements système.</strong></li><li> <strong>Chemin de fermeture explicite de la fenêtre de menu pour les boutons d&#39;impact énergétique et de paramètres.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <h3 dir="auto">Registro delle modifiche della versione:</h3><ul dir="auto"><li> <strong>Percorso di recupero dell&#39;autoguarigione del demone helper.</strong></li><li> <strong>Richieste di autorizzazione all&#39;accessibilità all&#39;avvio per le applicazioni di assistenza agli avvisi.</strong></li><li> <strong>Valore di salute della batteria nel System Profiler.</strong></li><li> <strong>ID dell&#39;etichetta del demone rotante e nome del file Plist.</strong></li><li> <strong>Pulsante aggiuntivo &quot;Verifica aggiornamenti&quot;.</strong></li><li> <strong>Aggiorna l&#39;indicatore della barra degli strumenti per gli aggiornamenti automatici.</strong></li><li> <strong>Tasti aggiuntivi per Eventi Apple ed Eventi di sistema.</strong></li><li> <strong>Percorso esplicito per la chiusura della finestra del menu per i pulsanti di impatto energetico e impostazioni.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <h3 dir="auto">リリース変更履歴：</h3><ul dir="auto"><li><strong>ヘルパーデーモンの自己修復回復パス。</strong></li><li><strong>アラートヘルパーアプリケーションの起動時に、アクセシビリティ権限を要求する。</strong></li><li><strong>システムプロファイラのバッテリー状態値。</strong></li><li><strong>ローリングデーモンのラベルIDとPlistファイル名。</strong></li><li> <strong>「アップデートを確認」ボタンを追加。</strong></li><li><strong>自動更新のためのツールバーインジケーターを更新してください。</strong></li><li><strong>追加のAppleイベントおよびシステムイベントキー。</strong></li><li><strong>エネルギー影響度ボタンと設定ボタンのメニューウィンドウを閉じるための明確なパス。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <h3 dir="auto">릴리스 변경 로그:</h3><ul dir="auto"><li> <strong>헬퍼 데몬 자체 복구 경로.</strong></li><li> <strong>알림 도우미 애플리케이션 실행 시 접근성 권한 요청.</strong></li><li> <strong>시스템 프로파일러 배터리 상태 값.</strong></li><li> <strong>롤링 데몬 레이블 ID 및 Plist 파일 이름.</strong></li><li> <strong>&quot;업데이트 확인&quot; 버튼이 추가되었습니다.</strong></li><li> <strong>자동 업데이트를 위한 툴바 표시기를 업데이트하세요.</strong></li><li> <strong>추가적인 Apple 이벤트 및 시스템 이벤트 키입니다.</strong></li><li> <strong>에너지 영향 및 설정 버튼에 대한 명확한 메뉴 창 닫기 경로.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <h3 dir="auto">Registro de alterações da versão:</h3><ul dir="auto"><li> <strong>Caminho de recuperação com autorreparação do daemon auxiliar.</strong></li><li> <strong>Solicitações de permissão de acessibilidade na inicialização para aplicativos auxiliares de alerta.</strong></li><li> <strong>Valor de saúde da bateria do Perfil do Sistema.</strong></li><li> <strong>ID do rótulo do daemon rotativo e nome do arquivo Plist.</strong></li><li> <strong>Botão adicional “Verificar atualizações”.</strong></li><li> <strong>Atualize o indicador da barra de ferramentas para atualizações automáticas.</strong></li><li> <strong>Teclas adicionais para eventos da Apple e eventos do sistema.</strong></li><li> <strong>Caminho explícito para fechar a janela do menu, exibindo os botões de impacto energético e configurações.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <h3 dir="auto">Журнал изменений релиза:</h3><ul dir="auto"><li> <strong>Путь восстановления вспомогательного демона путем самовосстановления.</strong></li><li> <strong>Запросы на предоставление разрешений для обеспечения доступности при запуске вспомогательных приложений для оповещений.</strong></li><li> <strong>Значение состояния батареи в системном профилировщике.</strong></li><li> <strong>Идентификатор метки демона Rolling и имя файла Plist.</strong></li><li> <strong>Дополнительная кнопка «Проверить наличие обновлений».</strong></li><li> <strong>Обновите индикатор на панели инструментов для автоматического обновления.</strong></li><li> <strong>Дополнительные клавиши для событий Apple и системных событий.</strong></li><li> <strong>Явный путь закрытия окна меню для кнопок управления энергопотреблением и настройками.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <h3 dir="auto">Журнал змін релізу:</h3><ul dir="auto"><li> <strong>Шлях самовідновлення допоміжного демона.</strong></li><li> <strong>Запити на доступність під час запуску для програм-помічників сповіщень.</strong></li><li> <strong>Значення стану батареї System Profiler.</strong></li><li> <strong>Ідентифікатор мітки демона, що змінюється, та ім&#39;я Plist-файлу.</strong></li><li> <strong>Додаткова кнопка «Перевірити наявність оновлень».</strong></li><li> <strong>Індикатор панелі інструментів оновлення для автоматичних оновлень.</strong></li><li> <strong>Додаткові ключі подій Apple та системних подій.</strong></li><li> <strong>Явний шлях закриття вікна меню для кнопок енергетичного впливу та налаштувань.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <h3 dir="auto">发布变更日志：</h3><ul dir="auto"><li><strong>辅助守护进程的自我修复恢复路径。</strong></li><li><strong>启动警报辅助应用程序时请求辅助功能权限。</strong></li><li><strong>系统概览图电池健康状况值。</strong></li><li><strong>滚动守护进程标签 ID 和 Plist 文件名。</strong></li><li><strong>新增“检查更新”按钮。</strong></li><li><strong>更新工具栏指示器，启用自动更新。</strong></li><li><strong>附加 Apple Events 和 System Events 键。</strong></li><li><strong>明确关闭能源影响和设置按钮的菜单窗口路径。</strong></li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v0.9.9/Tethered-0.9.9.Sparkle.zip" length="21619362" type="application/octet-stream" sparkle:edSignature="gk5kEbQyukCzH+7Cx5KYrafd+ECHnZMwb+jfEfDj3jB7P88kO1ukygeT2RHbcAG8ndYZzb97omjjSpwZaD8oAA==" />
+    </item>
+    <item>
       <title>Tethered 0.9.8</title>
       <pubDate>Sun, 27 Sep 2026 21:16:41 +0000</pubDate>
       <sparkle:version>9018</sparkle:version>
