@@ -8,6 +8,12 @@
 
 Tethered is a macOS app for managing your Mac's battery, power modes, and sleep behavior. It brings charging controls, power settings, and battery history into one place, with quick access from the menu bar.
 
+<a href="https://github.com/Tumerit/homebrew-tap"><img src="https://brew.sh/assets/img/homebrew.svg" alt="Homebrew logo" width="24" height="24"> Install with Homebrew</a>
+
+```sh
+brew install --cask Tumerit/tap/tethered
+```
+
 ## What you can do
 
 <table>
