@@ -14,6 +14,8 @@ Tethered is a macOS app for managing your Mac's battery, power modes, and sleep 
 brew install --cask Tumerit/tap/tethered
 ```
 
+[Download the Alfred workflow](https://github.com/Tumerit/Tethered/releases/download/v1.0.0/Tethered.alfredworkflow) — Currently testing. Requires Alfred 5 with Powerpack and Tethered installed and running.
+
 ## What you can do
 
 <table>
