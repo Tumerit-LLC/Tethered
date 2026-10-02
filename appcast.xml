@@ -5,6 +5,65 @@
     <link>https://github.com/Tumerit/Tethered/releases</link>
     <description>Official updates for Tethered.</description>
     <item>
+      <title>Tethered 1.0.1</title>
+      <pubDate>Fri, 02 Oct 2026 17:19:39 +0000</pubDate>
+      <sparkle:version>10001</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <description xml:lang="en"><![CDATA[
+        <h3 dir="auto">Release Change Log:</h3>
+        <ul dir="auto">
+        <li><strong>Normalization of AppleSmartBattery and other readings.</strong></li>
+        <li><strong>Optimistic icon redrawing.</strong></li>
+        <li><strong>Secondary sources for icon redrawing.</strong></li>
+        <li><strong>Normalizing macOS Tahoe slider threshold values.</strong></li>
+        </ul>
+        <h2 dir="auto">From v1.0.0</h2>
+        <ul dir="auto">
+        <li><strong>Raycast Support. Pending.</strong></li>
+        <li><strong>Semantic improvements.</strong></li>
+        <li><strong>Full battery polling band timeout removal.</strong></li>
+        <li><strong>Defer polling band for Topup.</strong></li>
+        <li><strong>Defer polling band for Calibration.</strong></li>
+        <li><strong>Stats chart header offset.</strong></li>
+        <li><strong>Calibration deference and renewal daily notification caps.</strong></li>
+        </ul>
+      ]]></description>
+      <description xml:lang="ar"><![CDATA[
+        <h3 style=";text-align:right;direction:rtl">سجل تغييرات الإصدار:</h3><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>توحيد قراءات AppleSmartBattery وغيرها من القراءات.</strong></li><li style=";text-align:right;direction:rtl"> <strong>إعادة رسم أيقونة متفائلة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>مصادر ثانوية لإعادة رسم الأيقونات.</strong></li><li style=";text-align:right;direction:rtl"> <strong>توحيد قيم عتبة شريط التمرير في نظام macOS Tahoe.</strong></li></ul><h2 style=";text-align:right;direction:rtl"> ابتداءً من الإصدار 1.0.0</h2><ul style=";text-align:right;direction:rtl"><li style=";text-align:right;direction:rtl"> <strong>دعم تقنية Raycast. قيد الانتظار.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تحسينات دلالية.</strong></li><li style=";text-align:right;direction:rtl"> <strong>إزالة مهلة نطاق استطلاع البطارية الكاملة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تأجيل نطاق الاستطلاع لشحن الرصيد.</strong></li><li style=";text-align:right;direction:rtl"> <strong>تأجيل نطاق الاستطلاع للمعايرة.</strong></li><li style=";text-align:right;direction:rtl"> <strong>إزاحة رأس مخطط الإحصائيات.</strong></li><li style=";text-align:right;direction:rtl"> <strong>حدود إشعارات المعايرة والتجديد اليومية.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <h3 dir="auto">Änderungsprotokoll:</h3><ul dir="auto"><li> <strong>Normalisierung von AppleSmartBattery und anderen Messwerten.</strong></li><li> <strong>Optimistisches Symbol neu gezeichnet.</strong></li><li> <strong>Sekundärquellen für die Neuzeichnung von Symbolen.</strong></li><li> <strong>Normalisierung der Schwellenwerte des macOS Tahoe-Schiebereglers.</strong></li></ul><h2 dir="auto"> Ab Version 1.0.0</h2><ul dir="auto"><li> <strong>Raycast-Unterstützung. Ausstehend.</strong></li><li> <strong>Semantische Verbesserungen.</strong></li><li> <strong>Vollständige Aufhebung des Timeouts für das Abfrageband mit vollem Akku.</strong></li><li> <strong>Verschiebung des Abstimmungszeitraums für Topup.</strong></li><li> <strong>Abfrageintervall für Kalibrierung verschieben.</strong></li><li> <strong>Versatz der Überschrift des Statistikdiagramms.</strong></li><li> <strong>Kalibrierungsabweichung und tägliche Benachrichtigungsobergrenzen für Erneuerungen.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="es"><![CDATA[
+        <h3 dir="auto">Registro de cambios de la versión:</h3><ul dir="auto"><li> <strong>Normalización de AppleSmartBattery y otras lecturas.</strong></li><li> <strong>Rediseño de un icono optimista.</strong></li><li> <strong>Fuentes secundarias para el rediseño de iconos.</strong></li><li> <strong>Normalización de los valores umbral del control deslizante de macOS Tahoe.</strong></li></ul><h2 dir="auto"> Desde la versión 1.0.0</h2><ul dir="auto"><li> <strong>Compatibilidad con Raycast. Pendiente.</strong></li><li> <strong>Mejoras semánticas.</strong></li><li> <strong>Eliminación del tiempo de espera de la banda de sondeo de la batería completa.</strong></li><li> <strong>Aplazar la votación para recargar.</strong></li><li> <strong>Posponer la banda de sondeo para la calibración.</strong></li><li> <strong>Desplazamiento del encabezado del gráfico estadístico.</strong></li><li> <strong>Límites de notificación diaria para la desviación de calibración y renovación.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="fr"><![CDATA[
+        <h3 dir="auto">Journal des modifications de la version :</h3><ul dir="auto"><li> <strong>Normalisation des données AppleSmartBattery et autres mesures.</strong></li><li> <strong>Redessin optimiste de l&#39;icône.</strong></li><li> <strong>Sources secondaires pour le redessin des icônes.</strong></li><li> <strong>Normalisation des valeurs de seuil du curseur macOS Tahoe.</strong></li></ul><h2 dir="auto"> À partir de la version 1.0.0</h2><ul dir="auto"><li> <strong>Prise en charge de Raycast. En attente.</strong></li><li> <strong>Améliorations sémantiques.</strong></li><li> <strong>Suppression complète du délai d&#39;expiration de la bande d&#39;interrogation de la batterie.</strong></li><li> <strong>Reportez la bande de sondage pour le rechargement.</strong></li><li> <strong>Reporter la bande de sondage pour l&#39;étalonnage.</strong></li><li> <strong>Décalage de l&#39;en-tête du graphique statistique.</strong></li><li> <strong>Limites de notification quotidienne de dérogation à l&#39;étalonnage et de renouvellement.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="it"><![CDATA[
+        <h3 dir="auto">Registro delle modifiche della versione:</h3><ul dir="auto"><li> <strong>Normalizzazione dei valori rilevati da AppleSmartBattery e da altri dispositivi.</strong></li><li> <strong>Ridisegno ottimistico dell&#39;icona.</strong></li><li> <strong>Fonti secondarie per il ridisegno delle icone.</strong></li><li> <strong>Normalizzazione dei valori di soglia del cursore di macOS Tahoe.</strong></li></ul><h2 dir="auto"> Dalla versione 1.0.0</h2><ul dir="auto"><li> <strong>Supporto Raycast. In sospeso.</strong></li><li> <strong>Miglioramenti semantici.</strong></li><li> <strong>Rimozione del timeout della banda di polling a batteria piena.</strong></li><li> <strong>Rimandare la banda di polling per Topup.</strong></li><li> <strong>Rimandare la banda di polling per la calibrazione.</strong></li><li> <strong>Offset dell&#39;intestazione del grafico delle statistiche.</strong></li><li> <strong>Limiti massimi giornalieri per la differenza di calibrazione e la notifica di rinnovo.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ja"><![CDATA[
+        <h3 dir="auto">リリース変更履歴：</h3><ul dir="auto"><li> <strong>AppleSmartBatteryなどの測定値の正規化。</strong></li><li><strong>楽観的なアイコンの再描画。</strong></li><li><strong>アイコンの再描画に関する二次資料。</strong></li><li> <strong>macOS Tahoeのスライダーしきい値を正規化する。</strong></li></ul><h2 dir="auto">バージョン1.0.0以降</h2><ul dir="auto"><li><strong>レイキャスト対応。保留中。</strong></li><li><strong>意味論的な改善。</strong></li><li><strong>バッテリーのフルポーリング帯域タイムアウトの削除。</strong></li><li><strong>トップアップのための投票期間を延期します。</strong></li><li><strong>キャリブレーションのため、ポーリング帯域を延期します。</strong></li><li><strong>統計チャートのヘッダーオフセット。</strong></li><li><strong>校正の差異と更新に関する日々の通知上限。</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ko"><![CDATA[
+        <h3 dir="auto">릴리스 변경 로그:</h3><ul dir="auto"><li> <strong>AppleSmartBattery 및 기타 측정값의 정규화.</strong></li><li> <strong>낙관적인 아이콘을 다시 그렸습니다.</strong></li><li> <strong>아이콘 재작업을 위한 보조 자료.</strong></li><li> <strong>macOS Tahoe 슬라이더 임계값 정규화.</strong></li></ul><h2 dir="auto"> 버전 1.0.0부터</h2><ul dir="auto"><li> <strong>Raycast 지원. 준비 중.</strong></li><li> <strong>의미론적 개선.</strong></li><li> <strong>배터리 폴링 밴드 타임아웃 기능이 완전히 제거되었습니다.</strong></li><li> <strong>Topup에 대한 폴링 밴드를 연기합니다.</strong></li><li> <strong>보정을 위해 폴링 대역을 연기합니다.</strong></li><li> <strong>통계 차트 헤더 오프셋.</strong></li><li> <strong>교정 예외 및 갱신 일일 알림 한도.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="pt-BR"><![CDATA[
+        <h3 dir="auto">Registro de alterações da versão:</h3><ul dir="auto"><li> <strong>Normalização do AppleSmartBattery e outras leituras.</strong></li><li> <strong>Redesenho otimista de um ícone.</strong></li><li> <strong>Fontes secundárias para redesenho de ícones.</strong></li><li> <strong>Normalizando os valores de limite do controle deslizante do macOS Tahoe.</strong></li></ul><h2 dir="auto"> A partir da versão 1.0.0</h2><ul dir="auto"><li> <strong>Suporte a Raycast. Pendente.</strong></li><li> <strong>Melhorias semânticas.</strong></li><li> <strong>Remoção do tempo limite de amostragem da bateria completa.</strong></li><li> <strong>Adiar a faixa de votação para recarga.</strong></li><li> <strong>Adiar a coleta de dados para calibração.</strong></li><li> <strong>Deslocamento do cabeçalho do gráfico de estatísticas.</strong></li><li> <strong>Limites diários de notificação para calibração e renovação.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="ru"><![CDATA[
+        <h3 dir="auto">Журнал изменений релиза:</h3><ul dir="auto"><li> <strong>Нормализация показаний AppleSmartBattery и других параметров.</strong></li><li> <strong>Оптимистичная перерисовка иконки.</strong></li><li> <strong>Вторичные источники для перерисовки иконок.</strong></li><li> <strong>Нормализация пороговых значений ползунка в macOS Tahoe.</strong></li></ul><h2 dir="auto"> Начиная с версии 1.0.0</h2><ul dir="auto"><li> <strong>Поддержка трассировки лучей. В процессе разработки.</strong></li><li> <strong>Семантические улучшения.</strong></li><li> <strong>Снятие таймаута при полном опросе батареи.</strong></li><li> <strong>Отложить опрос для пополнения счета.</strong></li><li> <strong>Отложите опрос диапазона для калибровки.</strong></li><li> <strong>Смещение заголовка диаграммы статистики.</strong></li><li> <strong>Ограничения на ежедневное уведомление о калибровке и обновлении.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="uk"><![CDATA[
+        <h3 dir="auto">Журнал змін релізу:</h3><ul dir="auto"><li> <strong>Нормалізація показників AppleSmartBattery та інших.</strong></li><li> <strong>Оптимістичне перемальовування іконки.</strong></li><li> <strong>Додаткові джерела для перемальовування іконок.</strong></li><li> <strong>Нормалізація порогових значень повзунка Tahoe для macOS.</strong></li></ul><h2 dir="auto"> Від версії 1.0.0</h2><ul dir="auto"><li> <strong>Підтримка Raycast. Очікується.</strong></li><li> <strong>Семантичні покращення.</strong></li><li> <strong>Повне видалення тайм-ауту діапазону опитування батареї.</strong></li><li> <strong>Відкласти діапазон опитування для Topup.</strong></li><li> <strong>Відкласти діапазон опитування для калібрування.</strong></li><li> <strong>Зміщення заголовка діаграми статистики.</strong></li><li> <strong>Обмеження щодо щоденних сповіщень про відстрочку калібрування та поновлення.</strong></li></ul>
+      ]]></description>
+      <description xml:lang="zh-Hans"><![CDATA[
+        <h3 dir="auto">发布变更日志：</h3><ul dir="auto"><li> <strong>AppleSmartBattery 和其他读数的标准化。</strong></li><li><strong>乐观主义图标重绘。</strong></li><li><strong>图标重绘的辅助资料。</strong></li><li><strong>对 macOS Tahoe 滑块阈值进行标准化。</strong></li></ul><h2 dir="auto">从 v1.0.0 开始</h2><ul dir="auto"><li><strong>Raycast 支持。待定。</strong></li><li><strong>语义改进。</strong></li><li><strong>完全电池轮询频段超时消除。</strong></li><li><strong>延迟充值轮询频段。</strong></li><li><strong>延迟轮询频段进行校准。</strong></li><li><strong>统计图表标题偏移量。</strong></li><li><strong>校准延迟和续期每日通知上限。</strong></li></ul>
+      ]]></description>
+      <enclosure url="https://github.com/Tumerit/Tethered/releases/download/v1.0.1/Tethered-1.0.1.Sparkle.zip" length="21680076" type="application/octet-stream" sparkle:edSignature="PfOHcxcSUDUU5+umsiaxqQK6CiPT8DMkJGqKT6W2nXarMOJZ/qkYi1QiCwGDWeU0c4BZhNxPQkBL/Ink7ojEAA==" />
+    </item>
+    <item>
       <title>Tethered 1.0.0</title>
       <pubDate>Thu, 01 Oct 2026 15:05:43 +0000</pubDate>
       <sparkle:version>10000</sparkle:version>
