@@ -2,7 +2,7 @@
 
 These integrations are a preview for local macOS testing. Installation in each AI app is still pending verification. Task sessions require **Tethered 1.2.0 or later**, which includes General → AI → Task sessions and the bundled MCP adapter.
 
-Enable Task sessions in Tethered, create a task profile, and allow AI activation. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
+Enable Task sessions in Tethered, create a task profile. All saved task profiles are available while Task sessions is enabled. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
 
 A profile can temporarily request a power mode, keep your Mac awake, and suspend approved charging pauses. Sessions expire automatically and can be ended in Tethered. Heat monitoring, alerts, and configured fan protection remain active. Charging exceptions may allow charging above your usual limit.
 
@@ -25,11 +25,11 @@ These packages run tools on your Mac. Browser-only chats and tool processes in a
 
 Ask your AI app:
 
-> Use Tethered to list approved task profiles and report session status. Do not start a session yet.
+> Use Tethered to list saved task profiles and report session status. Do not start a session yet.
 
-Then ask it to start an approved test profile for one minute, report status, and end that exact session. You can watch the session in Tethered or end it there. If the tools are unavailable, check that the plugin is enabled, the AI session is new, and the installed Tethered build contains its MCP adapter.
+Then ask it to start an saved test profile for one minute, report status, and end that exact session. You can watch the session in Tethered or end it there. If the tools are unavailable, check that the plugin is enabled, the AI session is new, and the installed Tethered build contains its MCP adapter.
 
-Cloud inference alone does not call for a performance session. The integrations guide models to use approved profiles for substantial local work or when explicitly requested. Model instructions do not guarantee a tool call at the start or end of every prompt.
+Cloud inference alone does not call for a performance session. The integrations guide models to use saved profiles for substantial local work or when explicitly requested. Model instructions do not guarantee a tool call at the start or end of every prompt.
 
 ## Availability
 
