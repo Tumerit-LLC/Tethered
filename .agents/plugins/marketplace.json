@@ -1,0 +1,20 @@
+{
+  "name": "tumerit-tethered",
+  "interface": {
+    "displayName": "Tethered"
+  },
+  "plugins": [
+    {
+      "name": "tethered",
+      "source": {
+        "source": "local",
+        "path": "./Integrations/codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
