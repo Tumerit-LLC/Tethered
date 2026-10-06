@@ -1,6 +1,6 @@
 # AI task sessions
 
-These integrations are a preview for local macOS testing. Installation in each AI app is still pending verification. They require a Tethered build that includes General → AI → Task sessions and its bundled MCP adapter; an older public release may not include this feature.
+These integrations are a preview for local macOS testing. Installation in each AI app is still pending verification. Task sessions require **Tethered 1.2.0 or later**, which includes General → AI → Task sessions and the bundled MCP adapter.
 
 Enable Task sessions in Tethered, create a task profile, and allow AI activation. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
 

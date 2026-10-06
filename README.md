@@ -18,7 +18,7 @@ brew install --cask Tumerit/tap/tethered
 
 ## AI integrations preview
 
-[Install an AI integration](Integrations/README.md) to use approved temporary task profiles during local work. Preview packages are available for Codex, Claude Code, Cursor, and Gemini CLI. They require a Tethered build with Task sessions; client installation verification is pending.
+[Install an AI integration](Integrations/README.md) to use approved temporary task profiles during local work. Preview packages are available for Codex, Claude Code, Cursor, and Gemini CLI. Task sessions require **Tethered 1.2.0 or later**; client installation verification is pending.
 
 ## What you can do
 
