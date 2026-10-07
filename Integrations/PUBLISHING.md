@@ -2,7 +2,7 @@
 
 Only integration manifests, workflow instructions, documentation, and approved release packages belong here. Tethered app and helper source remain in the private development repository. These packages contain no bridge credentials or user profiles.
 
-The preview package version is 0.1.0. The macOS launcher and task workflow originate from the private repository’s MCP integration implementation. Keep the platform copies aligned when preparing updates.
+The preview package version is 0.2.0. The macOS launcher and task workflow originate from the private repository’s MCP integration implementation. Keep the platform copies aligned when preparing updates.
 
 Before advertising a release, verify installation and tool discovery in each supported client; then verify begin, status, end, expiration, disabled bridge, unknown profile IDs, and restoration of the normal policy. Task sessions require Tethered 1.2.0 or later. See [the verification record](VALIDATION.md) for completed checks and remaining client and hardware checks.
 
@@ -25,3 +25,5 @@ From the repository root, run `python3 Integrations/package.py /absolute/path/to
 Do not register duplicate manual and plugin servers. GitHub supports translated documentation, but English-only documentation is sufficient for this preview. App UI translations are maintained in the private app repository; no user must localize files on GitHub.
 
 [Reviewer listing copy and test cases](REVIEWER.md) are prepared as a draft. Publisher-owned policy URLs, listing assets, and reviewer access must be supplied before submission.
+
+Cursor: the user submitted the initial application on October 7, 2026. Version 0.2.0 adds conversation-scoped profile, activation, and ending preferences. Review the existing application before updating it; do not submit a duplicate. The preferred publisher logo is https://www.tumerit.com/favicon.svg. The plugin manifest now references that logo. Changes to the publisher application require confirmation in the portal.
