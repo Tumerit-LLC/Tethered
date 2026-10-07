@@ -16,7 +16,7 @@ Download or clone this repository. Replace `/path/to/Tethered` below with its lo
 | Claude Code | Run `claude plugin marketplace add /path/to/Tethered`, then `claude plugin install tethered@tumerit-tethered`. Open a new session. |
 | Cursor | Copy `Integrations/cursor` to `~/.cursor/plugins/local/tethered`, then reopen Cursor and review its plugin and tool permissions. |
 | VS Code / Copilot | Install the preview `.vsix` through Extensions: Install from VSIX, then review MCP tool permissions in the local agent. |
-| Google Antigravity | Install `Integrations/antigravity` using its plugin installer; client verification is pending. |
+| Google Antigravity | Copy `Integrations/antigravity` to `~/.gemini/config/plugins/tethered`, then refresh MCP servers in Settings → Customizations. |
 | Gemini CLI | Run `gemini extensions install /path/to/Tethered/Integrations/gemini-cli`, then open a new session. |
 
 No Tethered configuration export, token entry, adapter compilation, or language runtime installation is required. Each package finds the installed Tethered app through macOS and launches its bundled adapter. The adapter connects to the active bridge. Moving or updating Tethered does not require regenerating these packages.
@@ -64,7 +64,7 @@ Copied configurations use the current app location. Copy again if you move Tethe
 
 ## Availability
 
-These are directly distributed preview packages, not approved public-marketplace listings. Configuration-only clients use the Manual Setup fallback above. Claude Desktop bundles are exported by Tethered for the exporting Mac. VS Code and Antigravity package definitions are included; interactive tool discovery remains pending for these clients.
+These are directly distributed preview packages, not approved public-marketplace listings. Configuration-only clients use the Manual Setup fallback above. Claude Desktop bundles are exported by Tethered for the exporting Mac. VS Code/Copilot and Antigravity installation and session lifecycle checks passed; see the verification record for remaining checks.
 
 - [Codex plugin packaging](https://developers.openai.com/plugins/build/plugins)
 - [Claude Code plugin distribution](https://code.claude.com/docs/en/plugins/publish)

@@ -56,3 +56,9 @@ VS Code installed the preview VSIX in the normal client, started its extension-p
 Claude Code 2.0.55 was checked again and still returned insufficient credit. Cursor and Antigravity remain absent from Applications.
 
 Gemini CLI 0.63.0 was retried with an isolated settings directory, avoiding the incompatible preferred-editor setting and unrelated extensions. Native installation displayed and accepted the launcher/context permissions and enabled Tethered. Model authentication still failed with `UNSUPPORTED_CLIENT` for Gemini Code Assist for individuals, directing the account to Antigravity. Temporary authentication links were removed. Existing Gemini settings and the installed CLI were left unchanged.
+
+## Antigravity follow-up — October 6, 2026
+
+Antigravity 2.19.1 for Apple Silicon was downloaded from Google’s official download page and installed. macOS accepted its Google LLC notarized Developer ID signature. Sign-in completed using the existing Google session. The Tethered package was copied to `~/.gemini/config/plugins/tethered`, the documented global plugin location; refreshing MCP servers showed the plugin-provided server and four enabled tools.
+
+The client returned the saved profile and inactive status through real MCP calls. A one-minute task then returned an active session, status confirmed that same ID, end returned `{"ended": true}`, and the final status returned `{"active": false}`. An independent bridge check also confirmed inactive state. This validates Antigravity’s plugin installation and session lifecycle; it does not resolve Gemini CLI account eligibility or establish charging-current behavior. Antigravity and the plugin remain installed.
