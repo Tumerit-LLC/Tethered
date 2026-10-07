@@ -1,9 +1,10 @@
 {
   "name": "tethered",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Use saved temporary Tethered task profiles during local work on your Mac.",
   "author": {
-    "name": "Tumerit"
+    "name": "Tumerit",
+    "email": "support@tumerit.com"
   },
   "homepage": "https://github.com/Tumerit/Tethered",
   "repository": "https://github.com/Tumerit/Tethered",
@@ -11,8 +12,25 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Tethered Task Sessions",
-    "shortDescription": "Saved power profiles for your AI tasks",
+    "shortDescription": "Temporary Mac power profiles",
     "composerIcon": "./assets/icon.png",
-    "logo": "./assets/icon.png"
+    "logo": "./assets/icon.png",
+    "longDescription": "Use saved Tethered task profiles during work on your Mac. Choose a profile, an activation rule, and whether sessions end after each task or expire on their configured timer. List available profiles, check session status, start and end a task session, or clear all active task sessions. Profiles can temporarily request power modes and keep awake, and suspend Sailing or heat-protection charging pauses when configured in Tethered. Requires Tethered 1.2.0 or later running locally on macOS with its MCP bridge enabled. Uses a local stdio adapter; it does not provide a hosted MCP endpoint. Activation follows model instructions and is not guaranteed for every prompt.",
+    "developerName": "Tumerit",
+    "category": "Developer Tools",
+    "capabilities": [
+      "List saved task profiles",
+      "Check task session status",
+      "Start a temporary task session",
+      "End a task session",
+      "Clear active task sessions"
+    ],
+    "websiteURL": "https://www.tetheredmac.com/",
+    "supportURL": "https://github.com/Tumerit/Tethered/issues",
+    "defaultPrompt": [
+      "Help me choose a task profile for this chat.",
+      "Show my Tethered task session status.",
+      "Clear all active Tethered task sessions."
+    ]
   }
 }
