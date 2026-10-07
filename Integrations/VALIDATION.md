@@ -70,3 +70,11 @@ Cursor 3.22 for Apple Silicon was installed from its official download source; m
 The client returned the saved Heavy Work profile and inactive status. Its subsequent one-minute lifecycle invoked all four start/status/end/status operations, using session `1265C8C0-AD3C-478D-A376-0820BDF7629B`, and reported successful end and inactive final status. Independent bridge status confirmed inactive state. Cursor and its plugin remain installed.
 
 External power is now connected and the battery reports charging. Charging-pause exception and restoration tests are still pending; this lifecycle does not establish supplemental current behavior.
+
+## Charging and desktop approval follow-up — October 6, 2026
+
+External power was connected. A controlled heat-protection test temporarily reduced the original 97°F threshold to 85°F, below the measured battery temperature, then restored it to 97°F. Runtime logs showed heat protection active and successful `disableCharging` requests. A one-minute task session (`CF9B6ED7-79CB-4EA2-8ADA-43D36492CBBA`) began and ended successfully; ending requested `disableCharging` again. Fan boost remained active during the session: both fan targets were 4,559 RPM and measured speeds approximately 4,561 and 4,558 RPM. Final independent session status was inactive.
+
+Physical charging validation did not pass: IOKit continued reporting `IsCharging = Yes` and positive current while pause requests were reported successful. This discrepancy requires investigation; command success alone does not establish that charging paused or resumed. Sailing restoration and supplemental current under load remain unverified. The original heat threshold was restored, with fan/alert settings preserved.
+
+The computer-use controller explicitly refused access to the Codex desktop app. Its desktop plugin installation/approval surface could not be automated. The separately verified interactive CLI approval and lifecycle results still stand. The PR remains a draft pending the outstanding hardware and desktop checks.
