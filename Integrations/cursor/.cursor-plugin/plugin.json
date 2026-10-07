@@ -1,7 +1,7 @@
 {
   "name": "tethered",
   "version": "0.1.0",
-  "description": "Use approved temporary Tethered task profiles during local work on your Mac.",
+  "description": "Use saved temporary Tethered task profiles during local work on your Mac.",
   "author": {
     "name": "Tumerit"
   },
