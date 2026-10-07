@@ -1,6 +1,6 @@
 {
   "name": "tethered",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Use saved temporary Tethered task profiles during local work on your Mac.",
   "author": {
     "name": "Tumerit",
@@ -26,11 +26,13 @@
       "Clear active task sessions"
     ],
     "websiteURL": "https://www.tetheredmac.com/",
-    "supportURL": "https://github.com/Tumerit/Tethered/issues",
+    "supportURL": "https://www.tetheredmac.com/support",
     "defaultPrompt": [
       "Help me choose a task profile for this chat.",
       "Show my Tethered task session status.",
       "Clear all active Tethered task sessions."
-    ]
+    ],
+    "privacyPolicyURL": "https://www.tetheredmac.com/privacy",
+    "termsOfServiceURL": "https://www.tetheredmac.com/terms"
   }
 }
