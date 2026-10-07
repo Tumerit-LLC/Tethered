@@ -1,3 +1,5 @@
+![Tethered](assets/icon.png)
+
 # Tethered for VS Code / Copilot
 
 Requires macOS and Tethered 1.2.0 or later. Enable Task sessions in Tethered and keep it running under the same macOS account. Install the preview VSIX through Extensions: Install from VSIX, then review the Tethered MCP server and tool permissions in Copilot’s local agent.
