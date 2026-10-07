@@ -12,7 +12,7 @@ args.destination.mkdir(parents=True, exist_ok=True)
 outputs = []
 for platform in ("codex", "claude-code", "cursor", "gemini-cli", "antigravity"):
     folder = root / platform
-    output = args.destination / f"tethered-{platform}-0.1.0.zip"
+    output = args.destination / f"tethered-{platform}-0.2.0.zip"
     with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(folder.rglob("*")):
             if path.is_file():
