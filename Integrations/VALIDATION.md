@@ -62,3 +62,11 @@ Gemini CLI 0.63.0 was retried with an isolated settings directory, avoiding the 
 Antigravity 2.19.1 for Apple Silicon was downloaded from Google’s official download page and installed. macOS accepted its Google LLC notarized Developer ID signature. Sign-in completed using the existing Google session. The Tethered package was copied to `~/.gemini/config/plugins/tethered`, the documented global plugin location; refreshing MCP servers showed the plugin-provided server and four enabled tools.
 
 The client returned the saved profile and inactive status through real MCP calls. A one-minute task then returned an active session, status confirmed that same ID, end returned `{"ended": true}`, and the final status returned `{"active": false}`. An independent bridge check also confirmed inactive state. This validates Antigravity’s plugin installation and session lifecycle; it does not resolve Gemini CLI account eligibility or establish charging-current behavior. Antigravity and the plugin remain installed.
+
+## Cursor follow-up — October 6, 2026
+
+Cursor 3.22 for Apple Silicon was installed from its official download source; macOS accepted the notarized Developer ID signature. The plugin was copied to `~/.cursor/plugins/local/tethered`. Cursor discovered the skill and four MCP tools. An initial account-policy refresh produced an unauthenticated error despite successful stdio connection; restarting Cursor resolved it.
+
+The client returned the saved Heavy Work profile and inactive status. Its subsequent one-minute lifecycle invoked all four start/status/end/status operations, using session `1265C8C0-AD3C-478D-A376-0820BDF7629B`, and reported successful end and inactive final status. Independent bridge status confirmed inactive state. Cursor and its plugin remain installed.
+
+External power is now connected and the battery reports charging. Charging-pause exception and restoration tests are still pending; this lifecycle does not establish supplemental current behavior.
