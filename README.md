@@ -16,6 +16,10 @@ brew install --cask Tumerit/tap/tethered
 
 <a href="https://github.com/Tumerit/Tethered/releases/download/v1.0.0/Tethered.alfredworkflow"><img src="Assets/alfred-icon.png" alt="Alfred icon" width="24" height="24"> Alfred Workflow</a> — Currently testing. Requires Alfred 5 with Powerpack and Tethered installed and running.
 
+## AI integrations preview
+
+[Install an AI integration](Integrations/README.md) to use saved temporary task profiles during local work. Preview packages are available for Codex, Claude Code, Cursor, and Gemini CLI. Task sessions require **Tethered 1.2.0 or later**; client installation verification is pending.
+
 ## What you can do
 
 <table>

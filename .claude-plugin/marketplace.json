@@ -1,0 +1,16 @@
+{
+  "name": "tumerit-tethered",
+  "owner": {
+    "name": "Tumerit"
+  },
+  "plugins": [
+    {
+      "name": "tethered",
+      "source": "./Integrations/claude-code",
+      "description": "Use approved temporary Tethered task profiles during local work on your Mac."
+    }
+  ],
+  "metadata": {
+    "description": "Tethered task-session integration for local work on macOS"
+  }
+}

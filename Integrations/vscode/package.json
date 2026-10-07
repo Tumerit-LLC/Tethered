@@ -1,0 +1,33 @@
+{
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "tethered",
+        "label": "Tethered Task Sessions"
+      }
+    ]
+  },
+  "description": "Temporary Tethered task profiles",
+  "displayName": "Tethered Task Sessions",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "main": "./extension.js",
+  "name": "tethered",
+  "publisher": "tumerit",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tumerit/Tethered.git"
+  },
+  "homepage": "https://github.com/Tumerit/Tethered/tree/main/Integrations",
+  "bugs": {
+    "url": "https://github.com/Tumerit/Tethered/issues"
+  }
+}

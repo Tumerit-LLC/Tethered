@@ -1,0 +1,7 @@
+{
+  "command": "/bin/sh",
+  "args": [
+    "-c",
+    "adapter=$(/usr/bin/osascript -l JavaScript -e 'ObjC.import(\"AppKit\"); var url = $.NSWorkspace.sharedWorkspace.URLForApplicationWithBundleIdentifier(\"com.Tumerit.Tethered\"); if (!url || url.isNil()) throw Error(\"Install Tethered before enabling this plugin.\"); ObjC.unwrap(url.path) + \"/Contents/MacOS/tethered-mcp\";') || exit 1\nif [ ! -x \"$adapter\" ]; then\n    printf '%s\\n' 'The installed Tethered app does not contain its MCP adapter. Update Tethered.' >&2\n    exit 1\nfi\nexec \"$adapter\""
+  ]
+}
