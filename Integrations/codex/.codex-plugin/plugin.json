@@ -1,6 +1,6 @@
 {
   "name": "tethered",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use saved temporary Tethered task profiles during local work on your Mac.",
   "author": {
     "name": "Tumerit"
@@ -8,5 +8,11 @@
   "homepage": "https://github.com/Tumerit/Tethered",
   "repository": "https://github.com/Tumerit/Tethered",
   "mcpServers": "./.mcp.json",
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tethered Task Sessions",
+    "shortDescription": "Saved power profiles for your AI tasks",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
 }
