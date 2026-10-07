@@ -23,3 +23,5 @@ From the repository root, run `python3 Integrations/package.py /absolute/path/to
 5. Submit Claude Code and Cursor through their directory review processes. For VS Code, use a publisher account you control; `tumerit` is a proposed package publisher and has not been verified or reserved here. For Gemini and Antigravity, confirm the available gallery listing route; direct installation does not imply gallery approval.
 
 Do not register duplicate manual and plugin servers. GitHub supports translated documentation, but English-only documentation is sufficient for this preview. App UI translations are maintained in the private app repository; no user must localize files on GitHub.
+
+[Reviewer listing copy and test cases](REVIEWER.md) are prepared as a draft. Publisher-owned policy URLs, listing assets, and reviewer access must be supplied before submission.
