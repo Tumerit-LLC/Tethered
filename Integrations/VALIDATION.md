@@ -26,3 +26,17 @@ Still required before advertising full client support: interactive plugin instal
 The globally installed Codex wrapper fails because its native executable is missing. The working CLI is `/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex`. No change to that global installation was made.
 
 Claude Code’s attempted end-to-end read-only tool test was blocked by “Credit balance is too low.” Its manifests still validate successfully. Use an authenticated account with available access before repeating that client test.
+
+## Live follow-up — October 6, 2026
+
+The running Tethered 1.2.0 build passed 24 consecutive authenticated status requests. An overlapping begin and an end with an unrelated session ID were rejected. A one-minute session expired automatically and its `Tethered Task Session` macOS sleep assertion disappeared. A separately ended session also released that assertion.
+
+Independent read-only SMC measurements found two fans. Before activation, both had zero RPM and zero targets in mode 3. During a High Power task session, both entered mode 1, targeted 2,317 RPM, and spun at approximately 2,059 and 2,157 RPM. After the session ended, both returned to mode 3 with zero targets and zero RPM. This verifies the proprietary fan fallback and restoration on the tested Mac; it does not establish native High Power support or behavior on other Macs.
+
+Charging-current validation remains blocked: the battery reports no external power source. Sailing and heat-induced charging pause restoration and supplemental current under load have not been measured.
+
+Codex installed the plugin successfully. In a plugin-only session, it discovered both read-only tools and correctly rejected calls when approval was required but the noninteractive client’s policy was never. Successful approval through the interactive client remains pending. The original manual configuration was restored and the test plugin removed to avoid duplicate registration.
+
+Gemini’s installer displayed the launcher and context permissions, accepted installation, and enabled the extension. Its model session was blocked by the account/provider error `UNSUPPORTED_CLIENT` for Gemini Code Assist for individuals. That test extension was removed afterward. Claude Code remains blocked by insufficient credit; Claude Desktop displayed a blank window. Cursor and Antigravity are not installed on this Mac. These are uncompleted client checks, not successful approvals.
+
+Keep the PR in draft until the required charging and successful client approval checks are completed, or explicitly change the release scope to merge a documented preview with those checks still pending.
