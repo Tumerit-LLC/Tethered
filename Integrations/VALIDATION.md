@@ -78,3 +78,11 @@ External power was connected. A controlled heat-protection test temporarily redu
 Physical charging validation did not pass: IOKit continued reporting `IsCharging = Yes` and positive current while pause requests were reported successful. This discrepancy requires investigation; command success alone does not establish that charging paused or resumed. Sailing restoration and supplemental current under load remain unverified. The original heat threshold was restored, with fan/alert settings preserved.
 
 The computer-use controller explicitly refused access to the Codex desktop app. Its desktop plugin installation/approval surface could not be automated. The separately verified interactive CLI approval and lifecycle results still stand. The PR remains a draft pending the outstanding hardware and desktop checks.
+
+## Final validation disposition — October 6, 2026
+
+The heat-protection pause was rechecked outside a task session. After allowing telemetry to refresh, IOKit reported `IsCharging = No`, zero battery current, and external power connected; `pmset -g batt` reported AC attached and not charging. The earlier immediate charging readback was premature, so that discrepancy is resolved for the normal heat-protection pause.
+
+The user installed the Codex desktop plugin. The redundant manual `[mcp_servers.tethered]` entry was removed from the user configuration, preserving all other settings and a backup. In a fresh chat the user reported successful profile discovery (Heavy Work, expected controls and 15-minute maximum) and inactive session status, with no task started. This validates the desktop plugin route independently of the manual MCP configuration.
+
+The user explicitly waived further charging-resumption/restoration, Sailing restoration, and expiry charging checks as merge prerequisites. Supplemental battery current under load remains unmeasured. Claude Code and Gemini CLI account-access blockers remain documented rather than counted as passes. Marketplace submission and approval remain separate from this integration preview. With the desktop check complete and remaining hardware checks waived, the user authorized merging PR #1. Earlier chronological draft/blocker notes above are superseded by this disposition.
