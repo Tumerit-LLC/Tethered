@@ -1,3 +1,5 @@
+![Tethered](assets/icon.png)
+
 # Tethered Task Sessions
 
 ## Choose behavior for a chat
