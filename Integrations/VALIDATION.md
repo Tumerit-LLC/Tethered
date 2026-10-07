@@ -21,7 +21,7 @@ The installed test build stopped accepting new bridge connections after its life
 
 The live bridge test used the installed Tethered app. The separate verification build was not installed over it. Starting and ending a session proves policy requests and session ownership, not physical charging current, fan response, or temperature behavior under load.
 
-Still required before advertising full client support: interactive plugin installation and tool approvals in Codex, Claude Code, Cursor, Gemini, Antigravity, and VS Code; Claude Desktop session activation and restoration; expiry and restoration under load; disabled bridge and permission-denied behavior; Companion delivery and account-change behavior; release signing and archive validation. Preview package archives preserve hidden manifests and contain no application source or bridge credentials.
+Still required before advertising full client support: interactive plugin installation and tool approvals in Codex, Claude Code, Cursor, Gemini, Antigravity, and VS Code; expiry and restoration under load; disabled bridge and permission-denied behavior; Companion delivery and account-change behavior; release signing and archive validation. Preview package archives preserve hidden manifests and contain no application source or bridge credentials.
 
 The globally installed Codex wrapper fails because its native executable is missing. The working CLI is `/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex`. No change to that global installation was made.
 
@@ -44,3 +44,5 @@ Keep the PR in draft until the required charging and successful client approval 
 ## Claude Desktop follow-up — October 6, 2026
 
 The user installed the app-generated MCPB. Claude Desktop showed Tethered enabled with all four tools and per-tool approval required. The first read-only attempt was denied. The user repeated the prompt and approved the calls; Claude displayed use of the Tethered integration and reported the saved Heavy Work profile and `{"active": false}`. No task was started or ended. This verifies import, tool discovery, and the read-only approval flow; session activation through Claude and physical charging validation remain pending.
+
+Claude Desktop subsequently began a one-minute Heavy Work session and ended the exact returned session ID before expiry. The live bridge independently confirmed the active session. During activation, read-only SMC measurements showed both fan targets at 2,317 RPM, actual speeds approximately 2,313 and 2,339 RPM, and the Tethered sleep assertion present. Claude reported `{"ended": true}` and inactive status. Independent follow-up confirmed inactive status, both fans restored to mode 3 with zero targets and RPM, and the task sleep assertion absent. External power was still disconnected, so this does not validate charging exceptions.
