@@ -6,7 +6,7 @@
 
 **Short description:** Temporarily apply a saved Tethered power profile while AI tools perform local work on your Mac.
 
-**Description:** Connect your AI app to Tethered 1.2.0 or later. Use saved task profiles to request a power mode, keep your Mac awake, or suspend user-configured charging pauses during local builds, rendering, testing, or model inference. Sessions are bounded, expire automatically, and can be ended in Tethered. Temperature monitoring, heat alerts, and configured fan protection remain active. Cloud inference alone does not require a performance session.
+**Description:** Connect your AI app to Tethered 1.2.0 or later. Use saved task profiles to request a power mode or keep your Mac awake during local builds, rendering, testing, or model inference. Sessions are bounded, expire automatically, and can be ended in Tethered. Temperature monitoring, heat alerts, and configured fan protection remain active. Cloud inference alone does not require a performance session.
 
 **Requirements:** macOS, Tethered installed and running under the same account, Task sessions enabled, Pro access, and permissions for the selected profile. The AI app’s tool process must run on this Mac.
 
@@ -22,11 +22,11 @@ Before submitting, provide verified privacy-policy and terms URLs, an approved i
 
 ## Reviewer setup
 
-Install a signed Tethered 1.2.0 build containing the connection-reuse fix. Enable Task sessions in General → AI. Create a test profile with a short duration; leave charging exceptions off for the first test. Install one integration, review its tool permissions, and open a fresh AI session. Disable any duplicate manually configured Tethered server first.
+Install a signed Tethered 1.2.0 build containing the connection-reuse fix. Enable Task sessions in General → AI. Create a test profile with a short duration. Install one integration, review its tool permissions, and open a fresh AI session. Disable any duplicate manually configured Tethered server first.
 
 ## Positive test prompts
 
-1. “List my saved Tethered task profiles and report the current session status. Do not start a session.” Expected: four tools are discoverable; status reports whether a session is active.
+1. “List my saved Tethered task profiles and report the current session status. Do not start a session.” Expected: five tools are discoverable; status reports whether a session is active.
 2. “Start this saved Tethered profile for one minute and report its session ID and phase.” Expected: a valid saved ID activates a bounded session if access and permissions allow it.
 3. “End the exact Tethered session you just started, then report its status.” Expected: that session ends; normal policy is requested; no active session remains.
 4. “Start a one-minute Tethered test session and let it expire without calling end_task.” Expected: Tethered ends it automatically. Confirm restoration in the app and hardware readback.
@@ -38,4 +38,4 @@ Install a signed Tethered 1.2.0 build containing the connection-reuse fix. Enabl
 2. With a session already active, attempt another begin or end using an unrelated ID. Expected: rejected; the existing session remains owned by its original caller until ended or expired.
 3. Disable Task sessions or deny the required access, then ask to begin a session. Expected: no activation; the AI app can continue its underlying task without Tethered. An unavailable bridge may return a connection error.
 
-Repeat profile discovery and status more than eight times to confirm connection reuse. Test charging exceptions separately under controlled load and verify physical behavior rather than relying solely on the reported requested policy. Confirm Companion notifications on the paired iPhone if that optional feature is enabled.
+Repeat profile discovery and status more than eight times to confirm connection reuse. Verify power-mode and keep-awake restoration separately from reported session state. Confirm Companion notifications on the paired iPhone if that optional feature is enabled.

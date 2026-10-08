@@ -1,5 +1,12 @@
 # Preview verification — October 6, 2026
 
+## Current scope — October 7, 2026
+
+Charging-pause suspensions have been removed from the Tethered app source, MCP profile/status responses, and current plugin instructions. Paused charging does not prevent the battery from supplementing adapter power, so resuming charging is not required for that purpose. Task profiles now configure power mode, keep-awake, and maximum duration; charging policy remains independent.
+
+The records below describe earlier builds and remain as historical evidence. Their references to charging exceptions and related validation prerequisites do not describe the current feature. A newly built Tethered app is required to use the updated adapter and controls. Older installed apps and plugin packages may still expose the previous descriptions.
+
+
 Requires Tethered 1.2.0 or later. These checks do not constitute marketplace approval.
 
 | Check | Result |

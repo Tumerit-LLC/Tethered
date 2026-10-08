@@ -4,7 +4,7 @@ These integrations are a preview for local macOS testing. Manifest validation ha
 
 Enable Task sessions in Tethered, create a task profile. All saved task profiles are available while Task sessions is enabled. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
 
-A profile can temporarily request a power mode, keep your Mac awake, and suspend user-configured charging pauses. Sessions expire automatically and can be ended in Tethered. Heat monitoring, alerts, and configured fan protection remain active. Charging exceptions may allow charging above your usual limit.
+A profile can temporarily request a power mode and keep your Mac awake. Sessions expire automatically and can be ended in Tethered. Heat monitoring, alerts, and configured fan protection remain active. Charging policy remains independent of task sessions.
 
 ## Install
 
