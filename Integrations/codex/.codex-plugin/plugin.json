@@ -15,7 +15,7 @@
     "shortDescription": "Temporary Mac power profiles",
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png",
-    "longDescription": "Use saved Tethered task profiles during work on your Mac. Choose a profile, an activation rule, and whether sessions end after each task or expire on their configured timer. List available profiles, check session status, start and end a task session, or clear all active task sessions. Profiles can temporarily request power modes and keep awake, and suspend Sailing or heat-protection charging pauses when configured in Tethered. Requires Tethered 1.2.0 or later running locally on macOS with its MCP bridge enabled. Uses a local stdio adapter; it does not provide a hosted MCP endpoint. Activation follows model instructions and is not guaranteed for every prompt.",
+    "longDescription": "Use saved Tethered task profiles during work on your Mac. Choose a profile, an activation rule, and whether sessions end after each task or expire on their configured timer. List available profiles, check session status, start and end a task session, or clear all active task sessions. Profiles can temporarily request power modes and keep your Mac awake. Charging policy remains independent of task sessions. Requires Tethered 1.2.0 or later running locally on macOS with its MCP bridge enabled. Uses a local stdio adapter; it does not provide a hosted MCP endpoint. Activation follows model instructions and is not guaranteed for every prompt.",
     "developerName": "Tumerit",
     "category": "Developer Tools",
     "capabilities": [
