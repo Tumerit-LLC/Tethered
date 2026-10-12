@@ -24,9 +24,13 @@ Connect a local AI assistant to Tethered while it runs builds, test suites, data
 - Keep your Mac awake with Caffeinate
 - Deprioritize or temporarily suspend eligible background apps.
   
-Process controls can apply throughout a session or activate at warning or critical memory pressure, with app exceptions, frontmost-app protection, and configurable memory thresholds. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. You configure the profiles in Tethered and can end sessions there at any time. The integration uses the app’s bundled local MCP adapter. [Integrations/VALIDATION.md](Integrations/VALIDATION.md).
+Process controls can apply throughout a session or activate at warning or critical memory pressure, with app exceptions, frontmost-app protection, and configurable memory thresholds. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. You configure the profiles in Tethered and can end sessions there at any time. The integration uses the app’s bundled local MCP adapter.
 
-For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered. For Codex, Claude Code, Cursor, Gemini CLI, VS Code/Copilot, and other supported local clients, see [plugin installation and manual setup](Integrations/README.md).
+For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered. 
+
+For Codex, Claude Code, Cursor, Gemini CLI, VS Code/Copilot, and other supported local clients, see [plugin installation and manual setup](Integrations/README.md).
+
+Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 
 ## What you can do
 
