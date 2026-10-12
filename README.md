@@ -16,22 +16,6 @@ brew install --cask Tumerit/tap/tethered
 
 <a href="https://github.com/Tumerit/Tethered/releases/download/v1.0.0/Tethered.alfredworkflow"><img src="Assets/alfred-icon.png" alt="Alfred icon" width="24" height="24"> Alfred Workflow</a> — Currently testing. Requires Alfred 5 with Powerpack and Tethered installed and running.
 
-## AI Integrations Preview
-**Requires Tethered 1.2.0+ installed and running on the same Mac and user account, Pro access, Task Sessions enabled, and a saved task profile.** 
-
-Connect a local AI assistant to Tethered while it runs builds, test suites, data-processing jobs, etc. A saved task profile can:
-- Request Automatic, Low Power, or High Power mode where supported
-- Keep your Mac awake with Caffeinate
-- Deprioritize or temporarily suspend eligible background apps.
-  
-Process controls can apply throughout a session or activate at warning or critical memory pressure, with app exceptions, frontmost-app protection, and configurable memory thresholds. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. You configure the profiles in Tethered and can end sessions there at any time. The integration uses the app’s bundled local MCP adapter.
-
-For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered. 
-
-For Codex, Claude Code, Cursor, Gemini CLI, VS Code/Copilot, and other supported local clients, see [plugin installation and manual setup](Integrations/README.md).
-
-Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
-
 ## What you can do
 
 <table>
@@ -60,6 +44,22 @@ Pro Access is **$9.99 per device**. Pay once, lifetime upgrades. It unlocks exte
 Tethered keeps your settings and battery history locally on your Mac. With Pro Access, you can enable iCloud sync for your settings and assets, or back up and restore them through your iCloud account. Battery history remains available locally in Tethered's Application Support folder.
 
 You can manage settings in the app, view battery health and charge history in **Stats**, and export battery health history as **CSV or JSON**. Tethered also lets you export its logs. Open **Account → iCloud** to find the local data location and iCloud backup controls.
+
+## AI Integrations Preview
+**Requires Tethered 1.2.0+ installed and running on the same Mac and user account, Pro access, Task Sessions enabled, and a saved task profile.** 
+
+Connect a local AI assistant to Tethered while it runs builds, test suites, data-processing jobs, etc. A saved task profile can:
+- Request Automatic, Low Power, or High Power mode where supported
+- Keep your Mac awake with Caffeinate
+- Deprioritize or temporarily suspend eligible background apps.
+  
+Process controls can apply throughout a session or activate at warning or critical memory pressure, with app exceptions, frontmost-app protection, and configurable memory thresholds. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. You configure the profiles in Tethered and can end sessions there at any time. The integration uses the app’s bundled local MCP adapter.
+
+For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered. 
+
+For Codex, Claude Code, Cursor, Gemini CLI, VS Code/Copilot, and other supported local clients, see [plugin installation and manual setup](Integrations/README.md).
+
+Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 
 ## Screenshots
 
