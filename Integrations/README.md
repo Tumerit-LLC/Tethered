@@ -4,9 +4,15 @@ These integrations are a preview for local macOS testing. Manifest validation ha
 
 Enable Task sessions in Tethered, create a task profile. All saved task profiles are available while Task sessions is enabled. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
 
-A profile can temporarily request a power mode and keep your Mac awake. Sessions expire automatically and can be ended in Tethered. Heat monitoring, alerts, and configured fan protection remain active. Charging policy remains independent of task sessions.
+Tethered lets an assistant apply a user-created profile during local builds, test suites, or data-processing jobs. Profiles can request Automatic, Low Power, or High Power mode where supported and keep the Mac awake using Caffeinate. Users can also deprioritize selected apps or other background apps, suspend eligible background apps, or suspend apps above a configured memory threshold. Process controls can apply throughout a session or activate when macOS reports warning or critical memory pressure. Configured app exceptions, frontmost-app protection, and protection for the AI client’s process tree limit which processes are affected.
+
+The assistant can list saved profiles, begin a session, inspect status, report progress and safeguard events, and end its session. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. Users choose the profile settings and can end sessions directly in Tethered. Configured safeguards can warn about repeated failures or output, inactivity, lack of reported progress, excessive runtime, and sustained memory pressure; pause/cancel requests require cooperation from the AI client. Heat monitoring, alerts, and configured fan protection remain active. Charging policy remains independent of task sessions.
+
+For example: “Use my Build profile while compiling, keep the Mac awake, and end the session when the build finishes.” Choose a finite duration if you want expiration to provide a fallback when the agent does not end its session.
 
 ## Install
+
+For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb) and import it in Claude Desktop. This public bundle finds and launches the adapter from the installed Tethered app; Tethered 1.2.0+ and Pro access are required.
 
 Download or clone this repository. Replace `/path/to/Tethered` below with its local directory. If you already configured a direct Tethered MCP server, disable that entry before installing a plugin to avoid duplicate tools.
 
