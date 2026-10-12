@@ -1,3 +1,147 @@
+# Integration verification
+
+Updated October 12, 2026. Requires Tethered 1.2.0+ installed and running on the same Mac and user account, Pro access, Task Sessions enabled, and profile-specific permissions. These results are dated observations, not a guarantee of every client/version or marketplace approval. [Client installation instructions](README.md#install).
+
+## Current scope
+
+Profiles control temporary power mode, keep-awake behavior, maximum duration, background-process priority or suspension, memory-pressure activation, and configured safeguards. Charging policy remains independent. The October 7 historical statement listing only power mode, keep-awake, and duration is superseded by this scope. Its removed charging-pause exception references remain historical.
+
+The October 6 client tests generally discovered four tools; October 7 clear-all checks discovered five. The later installed adapter and public MCPB initialization check discovered eight. Those shared adapter results do not automatically retest every client’s installation and approval surface.
+
+## Process-control verification — October 11, 2026
+
+These checks used the installed app/worker on the tested Mac and disposable fixture processes. They establish actual process-policy application and recovery rather than just successful MCP responses.
+
+| Check | Observed result |
+| --- | --- |
+| Installed-worker deprioritization | The fixture app and its child entered macOS background policy, independently confirmed through kernel state. |
+| Priority restoration | Normal priority returned after disconnect, expiry, client exit, termination, and crash recovery in the worker tests. |
+| Installed-worker memory-heavy suspension | A fixture using approximately 202 MiB met the configured threshold; both fixture processes stopped and subsequently resumed. |
+| Saved-profile deprioritization | The running app’s saved-profile/session path applied and restored the fixture’s background policy. |
+| Warning/critical transition handling | Critical-only priority policy ignored warning pressure. Warning and critical triggers activated background policy after approximately 4.1 seconds; pressure returned to normal around 10.3 seconds and normal priority returned around 25.9 seconds. |
+| Saved-profile pressure-triggered suspension | After macOS warning pressure began, both fixture processes entered kernel stopped state about three seconds later. Tethered independently reported two suspended processes and no errors. Both resumed after pressure returned to normal. |
+| Final cleanup | The session ended, the temporary profile was removed, and fixture apps/processes were closed. The original saved profile was preserved. |
+
+**Claim supported by testing:** on the tested Mac, a saved task profile can suspend the targeted fixture app and its child in response to warning memory pressure, and resume them when pressure recovers. The installed worker also applies and restores deprioritization.
+
+**Limits:** the pressure states were induced with macOS `memory_pressure -S` simulation and independently observed in kernel readings; this was not a naturally occurring memory-exhaustion workload. The warning-pressure suspension path passed through a saved profile. Warning and critical priority transitions passed separately; critical-pressure suspension was not separately verified through a saved profile. The observed priority timing was consistent with the three-second activation and fifteen-second recovery delays plus polling. Suspension recovery passed, but no more precise suspension recovery time is claimed here.
+
+Suspension stops execution; it does not free the suspended app’s allocated memory. These tests do not establish reduced memory footprint, faster builds, improved battery life, behavior of every third-party app, or suspension results in every MCP client.
+
+## Client verification
+
+Expand a client to see what passed and what remains unverified. Successful session requests alone do not establish physical charging behavior.
+
+<details>
+<summary>Claude Desktop</summary>
+
+**Recorded result:** October 6, 2026: the user imported the app-generated MCPB, approved read-only calls, then began and ended a one-minute session using its returned ID. Independent bridge status, sleep-assertion observation, and fan measurements confirmed activation and restoration on the tested Mac.
+
+**Scope and remaining checks:** That was a four-tool build. The public 0.2.5 MCPB passed shared initialization/eight-tool discovery; 0.2.6 changes only metadata/documentation and preserves its launcher. A complete lifecycle with the current public bundle in Claude Desktop has not been repeated.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Codex desktop</summary>
+
+**Recorded result:** October 6, 2026: the user installed the desktop plugin. A fresh chat discovered Heavy Work and inactive status after the redundant manual server entry was removed.
+
+**Scope and remaining checks:** The desktop plugin installation/discovery result is distinct from the interactive CLI lifecycle and the later shared process-policy tests. No claim of a repeated full current-version desktop lifecycle is made.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Codex CLI</summary>
+
+**Recorded result:** October 6, 2026: the isolated plugin-only interactive CLI approved profile listing, status, start, and end separately; a one-minute lifecycle passed. October 7: version 0.2.0 conversation selection, same-session reuse without extending expiry, clear-all, and no calls after clearing the conversation preference passed.
+
+**Scope and remaining checks:** The record does not establish identical prompt-by-prompt model behavior in every host or current-version lifecycle results in every client.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Claude Code</summary>
+
+**Recorded result:** October 6, 2026: native plugin/repository manifests passed validation.
+
+**Scope and remaining checks:** End-to-end model calls were blocked by insufficient account credit. Installation validation is not a successful task lifecycle.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Cursor</summary>
+
+**Recorded result:** October 6, 2026: Cursor 3.22 discovered the plugin skill and four tools. After restarting to resolve an account-policy error, a one-minute start/status/end/status lifecycle passed; independent bridge status confirmed inactivity afterward.
+
+**Scope and remaining checks:** Current eight-tool client discovery and pressure-triggered suspension from Cursor have not been separately retested.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>VS Code / Copilot</summary>
+
+**Recorded result:** October 6, 2026: isolated and normal-client VSIX installations passed. Copilot approved read-only calls and Allow Once for start/end; a one-minute lifecycle and independent bridge checks passed.
+
+**Scope and remaining checks:** The earlier client lifecycle used four tools. Current eight-tool discovery and pressure-triggered suspension from Copilot have not been separately retested.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Google Antigravity</summary>
+
+**Recorded result:** October 6, 2026: Antigravity 2.19.1 detected the plugin at the documented global path and four tools. Read-only calls and a one-minute lifecycle passed; independent bridge status confirmed inactive state.
+
+**Scope and remaining checks:** This does not resolve Gemini CLI eligibility. Current eight-tool discovery and pressure-triggered suspension from Antigravity have not been separately retested.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Gemini CLI</summary>
+
+**Recorded result:** October 6, 2026: manifest validation and native install/permission prompts passed, including an isolated CLI 0.63.0 attempt.
+
+**Scope and remaining checks:** The model session remained blocked by UNSUPPORTED_CLIENT for Gemini Code Assist for individuals. An incompatible preferred-editor setting was avoided with isolated settings, but account eligibility remained unresolved. No end-to-end lifecycle pass is claimed.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+<details>
+<summary>Other configuration-only clients</summary>
+
+**Recorded result:** The earlier export check generated all 16 app export formats, parsed JSON and Codex TOML, and checked MCPB/VSIX archive layouts.
+
+**Scope and remaining checks:** Those packaging checks do not establish interactive installation, tool approvals, or session lifecycle in LM Studio, Windsurf, Cline, Kiro, Zed, OpenCode, Kilo Code, Continue, or every other host.
+
+[Installation instructions](README.md#install). Exact earlier measurements and dispositions are preserved in the historical record below.
+
+</details>
+
+## Package and publication checks — October 12, 2026
+
+The public 0.2.5 MCPB launched the installed adapter, initialized MCP, and listed eight tools. Version 0.2.6 preserves that launcher and changes only metadata/documentation. Its public download was verified against SHA-256 `7f144aa20fd1ff6faa1e1765f2386d192dbc4749bc2457474c7cdeef618bd462`. The Official MCP Registry lists `io.github.Tumerit/tethered` version 0.2.6 as active/latest. Directory submissions and review remain separate from protocol and runtime verification.
+
+## Historical record
+
+The original October 6–7 record is retained below verbatim. It includes intermediate failures and draft/merge prerequisites later resolved or explicitly waived. Read the final disposition and the current scope above before treating an earlier blocker as current.
+
+<details>
+<summary>October 6–7, 2026: full chronological verification record</summary>
+
 # Preview verification — October 6, 2026
 
 ## Current scope — October 7, 2026
@@ -99,3 +243,6 @@ The user explicitly waived further charging-resumption/restoration, Sailing rest
 The installed Codex skill was verified at version 0.2.0. A fresh Codex CLI conversation loaded that skill, listed the live saved profile, and asked for profile, activation, ending, and duration choices without starting a session. Selecting Heavy Work, every prompt, let expire, and one minute began session `019232A4-84FB-4D42-8D16-71F8581256F2`. A subsequent short “hello” prompt called status and reused the same session ID and expiration without another begin or end call. “Clear all Tethered task sessions” called `clear_task_sessions`, returned cleared_count 1 and inactive status, and cleared the conversation's activation choice. A subsequent greeting made no MCP calls. Independent final status was inactive.
 
 Fresh direct adapter tests also verified five-tool discovery, unchanged session ID and expiration across repeated status checks, active and inactive clear-all calls (counts 1 and 0), and explicit end with inactive final status. These are model conversation and bridge checks, not proof of native profile-picker UI or consistent behavior in every host. Other clients' 0.2.0 conversation flows and expiry restart behavior have not yet been retested.
+
+
+</details>
