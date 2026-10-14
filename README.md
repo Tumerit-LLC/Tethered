@@ -18,16 +18,19 @@ brew install --cask Tumerit/tap/tethered
 
 ## What you can do
 
-- **Control power and sleep:** Configure High and Low Power behavior and thresholds, macOS system assertions, wake behavior, and Caffeinate presets. Standby settings include hibernation mode and delays.
-- **Automate by app:** Apply power, Caffeinate, brightness, and supported fan actions when selected apps launch, activate, deactivate, or quit. Use schedules and keyboard shortcuts for recurring routines.
-- **Schedule system actions:** Set one-time or repeating events for power modes, Top-up, Caffeinate, brightness, wake, sleep, power on, or shutdown.
-- **Manage charging:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.
-- **Save and share profiles:** Keep named settings profiles, export or share them, and import profiles from others. Profiles can include calibration and standby settings.
-- **Calibrate your battery:** Start a calibration cycle when you choose, or schedule one according to your calibration policy.
-- **Adjust the display:** Restore or set brightness when power modes change, and configure dimming behavior before display sleep.
-- **Track battery condition:** See battery health, cycle count, charge level, and temperature history. Export battery history as CSV or JSON, and export app logs.
-- **Manage alerts:** Customize battery alerts and manually or automatically dismiss the persistent macOS low-battery banner.
-- **Use Apple Shortcuts and Siri:** Trigger supported charging and power actions through Apple Shortcuts, Siri, and keyboard shortcuts.
+- **Control power modes:** Set persistent High or Low Power behavior, configure automatic power-mode thresholds, and switch modes from the menu bar.
+- **Manage sleep and wake:** Use Caffeinate presets to keep the Mac or display awake, configure macOS wake and restart assertions, and adjust standby, hibernation mode, and delays.
+- **Automate by app:** Set schedules and apply power, Caffeinate, brightness, and supported fan actions when selected apps launch, activate, deactivate, or quit.
+- **Schedule system actions:** Create one-time or repeating events for power modes, Top-up, Caffeinate, brightness, wake, sleep, power on, and shutdown.
+- **Protect charging and thermals:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, run Top-up when needed, and pause charging when the battery gets too warm. Supported Macs can boost fans while charging is paused.
+- **Run AI task sessions:** Apply saved task profiles to local AI work with temporary power and Caffeinate settings, background-process deprioritization or suspension, memory-pressure triggers, and task safeguards.
+- **Save, share, and sync profiles:** Keep named settings snapshots, export or import profiles, and sync or back up settings and assets through iCloud with Pro Access.
+- **Calibrate your battery:** Start a cycle manually or schedule one under a calibration policy.
+- **Adjust the display:** Restore or set brightness when power modes change, and configure dimming before display sleep.
+- **Customize the menu bar:** Change its background, control colors, slider appearance, and icons while previewing the result.
+- **Track battery condition:** Review battery health, cycle count, charge level, and temperature history; export battery history as CSV or JSON and export app logs.
+- **Manage alerts:** Customize battery notifications and sounds, and manually or automatically dismiss the persistent macOS low-battery banner.
+- **Use shortcuts and Siri:** Trigger supported charging and power actions through Apple Shortcuts, Siri, and keyboard shortcuts.
 
 ## Pro Access
 
@@ -83,6 +86,10 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 | Scheduled events | Menu appearance customization |
 | --- | --- |
 | ![Tethered one-time and repeating scheduled events](Screenshots/schedules.png) | ![Tethered menu appearance customization and preview](Screenshots/menu-customization.png) |
+
+| Calibration and standby | |
+| --- | --- |
+| ![Tethered battery calibration policy and standby settings](Screenshots/calibration-standby.png) | |
 
 ## Get Tethered
 
