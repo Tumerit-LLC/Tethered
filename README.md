@@ -72,6 +72,18 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 | --- | --- |
 | ![Tethered display brightness automation](Screenshots/display.png) | ![Tethered battery alert and appearance settings](Screenshots/appearance.png) |
 
+| AI task sessions | Wake and power assertions |
+| --- | --- |
+| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Tethered wake, power nap, and restart assertions](Screenshots/assertions.png) |
+
+| Caffeinate presets | Battery calibration |
+| --- | --- |
+| ![Tethered Caffeinate preset controls for sleep prevention](Screenshots/caffeinate.png) | ![Tethered battery calibration settings](Screenshots/calibration.png) |
+
+| Standby and hibernation | |
+| --- | --- |
+| ![Tethered standby and hibernation settings](Screenshots/standby.png) | |
+
 ## Get Tethered
 
 Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). The `.pkg` file is for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
