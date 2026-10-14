@@ -66,7 +66,7 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 
 | Per-app automation | Battery history |
 | --- | --- |
-| ![Tethered per-app power, Caffeinate, brightness, and fan rules](Screenshots/apps.png) | ![Tethered battery health and charge history](Screenshots/stats.png) |
+| ![Tethered app schedule and its automated power actions](Screenshots/apps.png) | ![Tethered battery health and charge history](Screenshots/stats.png) |
 
 | Display brightness | Alerts and appearance |
 | --- | --- |
