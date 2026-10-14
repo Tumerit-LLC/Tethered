@@ -18,10 +18,10 @@ brew install --cask Tumerit/tap/tethered
 
 ## What you can do
 
-- **Manage charging:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.
 - **Control power and sleep:** Configure High and Low Power behavior and thresholds, macOS system assertions, wake behavior, and Caffeinate presets. Standby settings include hibernation mode and delays.
 - **Automate by app:** Apply power, Caffeinate, brightness, and supported fan actions when selected apps launch, activate, deactivate, or quit. Use schedules and keyboard shortcuts for recurring routines.
 - **Schedule system actions:** Set one-time or repeating events for power modes, Top-up, Caffeinate, brightness, wake, sleep, power on, or shutdown.
+- **Manage charging:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.
 - **Save and share profiles:** Keep named settings profiles, export or share them, and import profiles from others. Profiles can include calibration and standby settings.
 - **Calibrate your battery:** Start a calibration cycle when you choose, or schedule one according to your calibration policy.
 - **Adjust the display:** Restore or set brightness when power modes change, and configure dimming behavior before display sleep.
