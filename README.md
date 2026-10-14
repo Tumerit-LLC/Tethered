@@ -72,21 +72,18 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 | --- | --- |
 | ![Tethered display brightness automation](Screenshots/display.png) | ![Tethered battery alert and appearance settings](Screenshots/appearance.png) |
 
-| AI task sessions | System assertions |
+| AI task sessions | Task profile editor |
 | --- | --- |
-| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Complete Tethered system assertions and Caffeinate controls](Screenshots/assertions.png) |
+| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Tethered task profile editor for power, brightness, fans, and background activity](Screenshots/task-profile.png) |
 
-| Task profile editor | Per-app automation |
+| System assertions | Caffeinate presets |
 | --- | --- |
-| ![Tethered task profile editor for power, brightness, fans, and background activity](Screenshots/task-profile.png) | ![Tethered app automation schedule and launch actions](Screenshots/app-automation.png) |
+| ![Complete Tethered system assertions and Caffeinate controls](Screenshots/assertions.png) | ![Tethered Caffeinate preset controls for sleep prevention](Screenshots/caffeinate.png) |
 
-| Scheduled events | Caffeinate presets |
+| Scheduled events | Menu appearance customization |
 | --- | --- |
-| ![Tethered one-time and repeating scheduled events](Screenshots/schedules.png) | ![Tethered Caffeinate preset controls for sleep prevention](Screenshots/caffeinate.png) |
+| ![Tethered one-time and repeating scheduled events](Screenshots/schedules.png) | ![Tethered menu appearance customization and preview](Screenshots/menu-customization.png) |
 
-| Menu appearance customization | |
-| --- | --- |
-| ![Tethered menu appearance customization and preview](Screenshots/menu-customization.png) | |
 ## Get Tethered
 
 Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). The `.pkg` file is for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
