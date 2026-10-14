@@ -77,7 +77,7 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 
 | AI task sessions | Task profile editor |
 | --- | --- |
-| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Tethered task profile editor for power, brightness, fans, and background activity](Screenshots/task-profile.png) |
+| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Tethered task profile editor for power, brightness, fans, and background activity](Screenshots/task-profile-2026-10-14.png) |
 
 | System assertions | Caffeinate presets |
 | --- | --- |
@@ -85,7 +85,7 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 
 | Scheduled events | Menu appearance customization |
 | --- | --- |
-| ![Tethered one-time and repeating scheduled events](Screenshots/schedules.png) | ![Tethered menu appearance customization and preview](Screenshots/menu-customization.png) |
+| ![Tethered one-time and repeating scheduled events](Screenshots/schedules.png) | ![Tethered menu appearance customization and preview](Screenshots/menu-customization-2026-10-14.png) |
 
 | Calibration and standby | |
 | --- | --- |
