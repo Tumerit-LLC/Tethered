@@ -6,7 +6,7 @@
 
 # Tethered
 
-Tethered is a macOS app for managing your Mac's battery, power modes, and sleep behavior. It brings charging controls, power settings, and battery history into one place, with quick access from the menu bar.
+Tethered is a macOS app for managing battery charging, power behavior, and automation. It brings charging controls, battery history, scheduled routines, and task-aware power management into one place, with quick access from the menu bar.
 
 <a href="https://github.com/Tumerit/homebrew-tap"><img src="https://brew.sh/assets/img/homebrew.svg" alt="Homebrew logo" width="24" height="24"> Install with Homebrew</a>
 
@@ -18,22 +18,16 @@ brew install --cask Tumerit/tap/tethered
 
 ## What you can do
 
-<table>
-  <tr>
-    <td width="60%"><img src="Screenshots/menu-bar.png" alt="Tethered menu bar panel with charging limit, power mode, and low battery controls" width="100%"></td>
-    <td valign="top">
-      <ul>
-        <li><strong>Manage charging:</strong> Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.</li>
-        <li><strong>Control power and sleep:</strong> Choose High or Low Power behavior, configure wake and sleep settings, and use Caffeinate when you need your Mac to stay awake.</li>
-        <li><strong>Automate routines:</strong> Apply power mode and Caffeinate actions when selected apps launch, activate, deactivate, or quit. Use keyboard shortcuts and Apple Shortcuts for frequent actions.</li>
-        <li><strong>Save your setup:</strong> Create profiles for different settings and configure battery calibration schedules.</li>
-        <li><strong>Calibrate your battery:</strong> Start a calibration cycle when you choose, or let Tethered schedule one according to your calibration policy.</li>
-        <li><strong>See battery history:</strong> Check battery health and cycle count, and explore charge level and temperature over time.</li>
-        <li><strong>Make it yours:</strong> Adjust display brightness behavior across power modes, customize battery alerts, and manually or automatically dismiss the persistent macOS low battery banner.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+- **Manage charging:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, and pause charging when the battery gets too warm.
+- **Control power and sleep:** Configure High and Low Power behavior and thresholds, macOS system assertions, wake behavior, and Caffeinate presets. Standby settings include hibernation mode and delays.
+- **Automate by app:** Apply power, Caffeinate, brightness, and supported fan actions when selected apps launch, activate, deactivate, or quit. Use schedules and keyboard shortcuts for recurring routines.
+- **Schedule system actions:** Set one-time or repeating events for power modes, Top-up, Caffeinate, brightness, wake, sleep, power on, or shutdown.
+- **Save and share profiles:** Keep named settings profiles, export or share them, and import profiles from others. Profiles can include calibration and standby settings.
+- **Calibrate your battery:** Start a calibration cycle when you choose, or schedule one according to your calibration policy.
+- **Adjust the display:** Restore or set brightness when power modes change, and configure dimming behavior before display sleep.
+- **Track battery condition:** See battery health, cycle count, charge level, and temperature history. Export battery history as CSV or JSON, and export app logs.
+- **Manage alerts:** Customize battery alerts and manually or automatically dismiss the persistent macOS low-battery banner.
+- **Use Apple Shortcuts and Siri:** Trigger supported charging and power actions through Apple Shortcuts, Siri, and keyboard shortcuts.
 
 ## Pro Access
 
@@ -46,16 +40,19 @@ Tethered keeps your settings and battery history locally on your Mac. With Pro A
 You can manage settings in the app, view battery health and charge history in **Stats**, and export battery health history as **CSV or JSON**. Tethered also lets you export its logs. Open **Account → iCloud** to find the local data location and iCloud backup controls.
 
 ## AI Integrations Preview
-**Requires Tethered 1.2.0+ installed and running on the same Mac and user account, Pro access, Task Sessions enabled, and a saved task profile.** 
 
-Connect a local AI assistant to Tethered while it runs builds, test suites, data-processing jobs, etc. A saved task profile can:
+**Requires Tethered 1.2.0+ installed and running on the same Mac and user account, Pro access, Task Sessions enabled, and a saved task profile.**
+
+Connect a local AI assistant to Tethered while it runs builds, test suites, data-processing jobs, and other work on your Mac. A saved task profile can:
+
 - Request Automatic, Low Power, or High Power mode where supported
 - Keep your Mac awake with Caffeinate
-- Deprioritize or temporarily suspend eligible background apps.
-  
-Process controls can apply throughout a session or activate at warning or critical memory pressure, with app exceptions, frontmost-app protection, and configurable memory thresholds. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. You configure the profiles in Tethered and can end sessions there at any time. The integration uses the app’s bundled local MCP adapter.
+- Deprioritize or temporarily suspend eligible background apps
+- Suspend eligible apps at configured memory-pressure levels, with exceptions and frontmost-app protection
 
-For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered. 
+Task safeguards can flag repeated failures, calls, or output; matching output; inactivity; missing progress reports; task runtime; and sustained memory pressure. A safeguard can notify you or request that the AI client pause or cancel work. Those requests depend on the client cooperating; Tethered does not directly pause or cancel the AI task. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. Heat monitoring, alerts, and configured fan protection remain active.
+
+For Claude Desktop, download [tethered-0.2.6.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.0/tethered-0.2.6.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered.
 
 For Codex, Claude Code, Cursor, Gemini CLI, VS Code/Copilot, and other supported local clients, see [plugin installation and manual setup](Integrations/README.md).
 
@@ -63,17 +60,17 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 
 ## Screenshots
 
-| Battery and charging | Battery history |
+| Charging and heat protection | Power modes and system assertions |
 | --- | --- |
-| ![Tethered battery charging and heat protection settings](Screenshots/battery.png) | ![Tethered battery statistics and charge history](Screenshots/stats.png) |
+| ![Tethered charging limit and heat protection settings](Screenshots/battery.png) | ![Tethered power mode thresholds and system assertions](Screenshots/controls.png) |
 
-| Power controls | App automation |
+| Per-app automation | Battery history |
 | --- | --- |
-| ![Tethered power mode and wake controls](Screenshots/controls.png) | ![Tethered per-app power mode and Caffeinate actions](Screenshots/apps.png) |
+| ![Tethered per-app power, Caffeinate, brightness, and fan rules](Screenshots/apps.png) | ![Tethered battery health and charge history](Screenshots/stats.png) |
 
-| Display settings | Alerts and appearance |
+| Display brightness | Alerts and appearance |
 | --- | --- |
-| ![Tethered display brightness settings](Screenshots/display.png) | ![Tethered battery alert appearance settings](Screenshots/appearance.png) |
+| ![Tethered display brightness automation](Screenshots/display.png) | ![Tethered battery alert and appearance settings](Screenshots/appearance.png) |
 
 ## Get Tethered
 
