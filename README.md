@@ -72,18 +72,21 @@ Current State: [Integrations/VALIDATION.md](Integrations/VALIDATION.md)
 | --- | --- |
 | ![Tethered display brightness automation](Screenshots/display.png) | ![Tethered battery alert and appearance settings](Screenshots/appearance.png) |
 
-| AI task sessions | Wake and power assertions |
+| AI task sessions | System assertions |
 | --- | --- |
-| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Tethered wake, power nap, and restart assertions](Screenshots/assertions.png) |
+| ![Tethered local AI task session setup and saved task profiles](Screenshots/task-sessions.png) | ![Complete Tethered system assertions and Caffeinate controls](Screenshots/assertions.png) |
 
-| Caffeinate presets | Battery calibration |
+| Task profile editor | Per-app automation |
 | --- | --- |
-| ![Tethered Caffeinate preset controls for sleep prevention](Screenshots/caffeinate.png) | ![Tethered battery calibration settings](Screenshots/calibration.png) |
+| ![Tethered task profile editor for power, brightness, fans, and background activity](Screenshots/task-profile.png) | ![Tethered app automation schedule and launch actions](Screenshots/app-automation.png) |
 
-| Standby and hibernation | |
+| Scheduled events | Caffeinate presets |
 | --- | --- |
-| ![Tethered standby and hibernation settings](Screenshots/standby.png) | |
+| ![Tethered one-time and repeating scheduled events](Screenshots/schedules.png) | ![Tethered Caffeinate preset controls for sleep prevention](Screenshots/caffeinate.png) |
 
+| Menu appearance customization | |
+| --- | --- |
+| ![Tethered menu appearance customization and preview](Screenshots/menu-customization.png) | |
 ## Get Tethered
 
 Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). The `.pkg` file is for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
