@@ -29,7 +29,7 @@ Install a signed Tethered 1.2.0 build containing the connection-reuse fix. Enabl
 1. “List my saved Tethered task profiles and report the current session status. Do not start a session.” Expected: five tools are discoverable; status reports whether a session is active.
 2. “Start this saved Tethered profile for one minute and report its session ID and phase.” Expected: a valid saved ID activates a bounded session if access and permissions allow it.
 3. “End the exact Tethered session you just started, then report its status.” Expected: that session ends; normal policy is requested; no active session remains.
-4. “Start a one-minute Tethered test session and let it expire without calling end_task.” Expected: Tethered ends it automatically. Confirm restoration in the app and hardware readback.
+4. “Start a one-minute Tethered test session and let it expire without calling tasks.end.” Expected: Tethered ends it automatically. Confirm restoration in the app and hardware readback.
 5. “Use this saved task profile for a local build and end your session when the build finishes or fails.” Expected: begin precedes local work; end targets the returned ID. Confirm later manual power selections are preserved.
 
 ## Negative test cases
