@@ -45,10 +45,15 @@
         "additionalProperties": false,
         "type": "object",
         "properties": {}
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
       }
     },
     {
-      "description": "Start one temporary task session using a saved profile for power mode, display brightness, fan control, keep-awake, and optional process priority or suspension policies. The user configures policies and exceptions in Tethered. Automatic modes protect the detected AI client and its descendants; separate model services need exceptions. Suspension does not purge memory. End it when local work finishes; it also expires automatically.",
+      "description": "Start one temporary task session using a saved profile for power mode, display brightness, fan control, keep-awake, and optional process priority or suspension policies. The user configures policies and exceptions in Tethered. Automatic modes protect the detected AI client and its descendants; separate model services need exceptions. Suspension does not purge memory. End it according to the user's ending preference. Finite sessions expire automatically; unlimited sessions require an explicit end.",
       "inputSchema": {
         "additionalProperties": false,
         "type": "object",
@@ -58,19 +63,27 @@
         "properties": {
           "reason": {
             "type": "string",
-            "maxLength": 200
+            "maxLength": 200,
+            "description": "Short user-visible reason for this task session; do not include sensitive prompt content."
           },
           "minutes": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 60
+            "maximum": 60,
+            "description": "Requested session duration in minutes, capped by the saved profile. Zero requests an unlimited session only when the profile allows it; an unlimited session requires an explicit end."
           },
           "profile_id": {
-            "type": "string"
+            "type": "string",
+            "description": "ID of the user-selected saved profile returned by list_task_profiles."
           }
         }
       },
-      "name": "begin_task"
+      "name": "begin_task",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false
+      }
     },
     {
       "inputSchema": {
@@ -80,13 +93,19 @@
         ],
         "properties": {
           "session_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Exact ID of the session owned by this chat; do not adopt another chat's session."
           }
         },
         "additionalProperties": false
       },
       "description": "Release the specified task session and request normal power policy. Manual changes are preserved.",
-      "name": "end_task"
+      "name": "end_task",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false
+      }
     },
     {
       "description": "Only on an explicit user request to clear all task sessions: end the active session regardless of which chat started it and request normal policy. Takes no arguments. Idempotent when inactive.",
@@ -95,6 +114,11 @@
         "additionalProperties": false,
         "type": "object",
         "properties": {}
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true
       }
     },
     {
@@ -104,6 +128,11 @@
         "additionalProperties": false,
         "type": "object",
         "properties": {}
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false
       }
     },
     {
@@ -117,10 +146,12 @@
         "properties": {
           "input": {
             "maxLength": 8192,
-            "type": "string"
+            "type": "string",
+            "description": "Stable tool input or activity text for repetition matching, bounded to 8192 UTF-8 bytes."
           },
           "event_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Unique UUID for this event. Reuse the same UUID when retrying this event."
           },
           "kind": {
             "enum": [
@@ -132,31 +163,41 @@
               "files_changed",
               "heartbeat"
             ],
-            "type": "string"
+            "type": "string",
+            "description": "Type of observed activity being reported for the owned session."
           },
           "output": {
             "type": "string",
-            "maxLength": 8192
+            "maxLength": 8192,
+            "description": "Observed tool output or activity result, bounded to 8192 UTF-8 bytes."
           },
           "tool": {
             "type": "string",
-            "maxLength": 256
+            "maxLength": 256,
+            "description": "Name of the tool associated with this event, when applicable."
           },
           "session_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Exact ID of the session owned by this chat; do not adopt another chat's session."
           }
         },
         "additionalProperties": false,
         "type": "object"
       },
-      "name": "report_task_event"
+      "name": "report_task_event",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false
+      }
     },
     {
       "name": "acknowledge_task_safeguards",
       "inputSchema": {
         "properties": {
           "session_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Exact ID of the session owned by this chat; do not adopt another chat's session."
           }
         },
         "additionalProperties": false,
@@ -165,7 +206,12 @@
           "session_id"
         ]
       },
-      "description": "Only after the user explicitly chooses to continue or dismiss safeguards for this chat's owned active session: clear warnings and repetition history, reset event/progress timers, and clear pending client pause/cancellation requests. Does not extend the session, change rules, or restart cancelled work."
+      "description": "Only after the user explicitly chooses to continue or dismiss safeguards for this chat's owned active session: clear warnings and repetition history, reset event/progress timers, and clear pending client pause/cancellation requests. Does not extend the session, change rules, or restart cancelled work.",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false
+      }
     },
     {
       "description": "Get the active task session, expiration, requested controls, and local memory pressure, physical RAM, swap usage, and task safeguard warnings and requested client disposition. Resources are reported even without an active session. Power controls describe requests, not measured hardware state. This tool does not modify processes or reclaim memory.",
@@ -174,7 +220,12 @@
         "type": "object",
         "properties": {}
       },
-      "name": "get_session_status"
+      "name": "get_session_status",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true
+      }
     }
   ]
 }
