@@ -12,4 +12,6 @@ Publish through Smithery's local stdio route:
 smithery mcp publish ./tethered.mcpb -n tumerit/tethered
 ```
 
-Version 0.2.6 was compiled for arm64 and signed with Tumerit LLC’s Developer ID on October 15, 2026. All eight output schemas, structured/text response parity, and tool errors passed isolated verification. Read-only profile discovery and status passed against the running app. Another Mac has not been verified.
+Version 0.2.8 was compiled for arm64 and signed with Tumerit LLC’s Developer ID on October 15, 2026. All eight output schemas, structured/text response parity, and tool errors passed isolated verification. Read-only profile discovery and status passed against the running app. Another Mac has not been verified.
+
+Version 0.2.8 advertises list_profiles, start_task, end_task, clear_tasks, purge_cache, report_event, dismiss_warnings, and get_status. Legacy tool names remain accepted for existing clients. New names and legacy aliases passed isolated schema verification; live profile discovery and status passed against the existing app bridge.
