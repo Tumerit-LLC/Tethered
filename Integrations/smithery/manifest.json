@@ -36,5 +36,145 @@
     "power-management",
     "local",
     "task-sessions"
+  ],
+  "tools": [
+    {
+      "description": "List saved temporary task profiles and duration limits.",
+      "name": "list_task_profiles",
+      "inputSchema": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "description": "Start one temporary task session using a saved profile for power mode, display brightness, fan control, keep-awake, and optional process priority or suspension policies. The user configures policies and exceptions in Tethered. Automatic modes protect the detected AI client and its descendants; separate model services need exceptions. Suspension does not purge memory. End it when local work finishes; it also expires automatically.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "profile_id"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "minutes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 60
+          },
+          "profile_id": {
+            "type": "string"
+          }
+        }
+      },
+      "name": "begin_task"
+    },
+    {
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "session_id"
+        ],
+        "properties": {
+          "session_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Release the specified task session and request normal power policy. Manual changes are preserved.",
+      "name": "end_task"
+    },
+    {
+      "description": "Only on an explicit user request to clear all task sessions: end the active session regardless of which chat started it and request normal policy. Takes no arguments. Idempotent when inactive.",
+      "name": "clear_task_sessions",
+      "inputSchema": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "purge_disk_cache",
+      "description": "Manual-only global disk-cache purge, solely on an explicit user request. Never automate per prompt or on memory pressure. Includes the AI workload\u2019s disk cache; cannot purge private RAM selectively or save and restore model caches. Returns a pending operation for native confirmation and administrator authorization. Inspect disk_cache_purge in get_session_status before retrying.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "description": "Report intermediate activity for this chat's owned active task. Send tool_started before a call and tool_succeeded or tool_failed afterward; provide stable input text for repetition matching. Send assistant_output, explicit progress, files_changed, or heartbeat as appropriate. Each event needs a new UUID; retry with the same event UUID. Input/output are bounded to 8192 UTF-8 bytes each. Reports are unverified client observations and never automatically captured. Inspect the returned disposition; pause/cancellation are client requests, not process actions. Do not fabricate progress or report another chat's events.",
+      "inputSchema": {
+        "required": [
+          "session_id",
+          "event_id",
+          "kind"
+        ],
+        "properties": {
+          "input": {
+            "maxLength": 8192,
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "tool_started",
+              "tool_succeeded",
+              "tool_failed",
+              "assistant_output",
+              "progress",
+              "files_changed",
+              "heartbeat"
+            ],
+            "type": "string"
+          },
+          "output": {
+            "type": "string",
+            "maxLength": 8192
+          },
+          "tool": {
+            "type": "string",
+            "maxLength": 256
+          },
+          "session_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object"
+      },
+      "name": "report_task_event"
+    },
+    {
+      "name": "acknowledge_task_safeguards",
+      "inputSchema": {
+        "properties": {
+          "session_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "session_id"
+        ]
+      },
+      "description": "Only after the user explicitly chooses to continue or dismiss safeguards for this chat's owned active session: clear warnings and repetition history, reset event/progress timers, and clear pending client pause/cancellation requests. Does not extend the session, change rules, or restart cancelled work."
+    },
+    {
+      "description": "Get the active task session, expiration, requested controls, and local memory pressure, physical RAM, swap usage, and task safeguard warnings and requested client disposition. Resources are reported even without an active session. Power controls describe requests, not measured hardware state. This tool does not modify processes or reclaim memory.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {}
+      },
+      "name": "get_session_status"
+    }
   ]
 }
