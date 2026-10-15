@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "tethered",
   "display_name": "Tethered Task Sessions",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Use saved Tethered profiles for local AI work on Apple Silicon Macs.",
   "long_description": "Requires an Apple Silicon Mac running macOS 15 or later, Tethered 1.2.0 or later installed and running under the same macOS account, Pro access, and AI task sessions enabled. Discover saved task profiles, request power modes and keep-awake behavior, and inspect or end owned sessions. Profile-controlled background app policies and task safeguards remain subject to user settings. Unlimited profiles require an explicit end. This adapter runs locally over stdio; cloud-only clients and Intel Macs are unsupported. The bundle contains no connection credentials or saved profiles.",
   "author": {
@@ -50,6 +50,50 @@
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": true
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "profiles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "power_mode": {
+                  "type": "string"
+                },
+                "caffeinate_preset_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "maximum_minutes": {
+                  "type": "integer"
+                },
+                "keep_awake": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "maximum_minutes"
+              ],
+              "additionalProperties": true
+            }
+          }
+        },
+        "required": [
+          "profiles"
+        ],
+        "additionalProperties": true
       }
     },
     {
@@ -83,6 +127,79 @@
         "readOnlyHint": false,
         "destructiveHint": true,
         "idempotentHint": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "active"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string"
+          },
+          "profile_name": {
+            "type": "string"
+          },
+          "brightness": {
+            "type": "string"
+          },
+          "power_override_owned": {
+            "type": "boolean"
+          },
+          "expires_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "session_id": {
+            "type": "string"
+          },
+          "phase": {
+            "type": "string"
+          },
+          "profile_id": {
+            "type": "string"
+          },
+          "fans": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "keep_awake": {
+            "type": "boolean"
+          },
+          "resources": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "power_mode": {
+            "type": "string"
+          },
+          "safeguards": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "caffeinate_preset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "disk_cache_purge": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "process_management": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "power_status": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
       }
     },
     {
@@ -105,6 +222,22 @@
         "readOnlyHint": false,
         "destructiveHint": true,
         "idempotentHint": false
+      },
+      "outputSchema": {
+        "properties": {
+          "ended": {
+            "type": "boolean"
+          },
+          "restoration": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ended",
+          "restoration"
+        ],
+        "type": "object",
+        "additionalProperties": true
       }
     },
     {
@@ -119,6 +252,27 @@
         "readOnlyHint": false,
         "destructiveHint": true,
         "idempotentHint": true
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "cleared_count",
+          "active",
+          "restoration"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "restoration": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "cleared_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
       }
     },
     {
@@ -133,6 +287,33 @@
         "readOnlyHint": false,
         "destructiveHint": true,
         "idempotentHint": false
+      },
+      "outputSchema": {
+        "properties": {
+          "phase": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "operation_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "phase",
+          "operation_id",
+          "message",
+          "scope"
+        ],
+        "type": "object"
       }
     },
     {
@@ -189,6 +370,61 @@
         "readOnlyHint": false,
         "destructiveHint": true,
         "idempotentHint": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "monitoring": {
+            "type": "boolean"
+          },
+          "intervention": {
+            "type": "string"
+          },
+          "configuration": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "progress_ages_seconds": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number"
+            }
+          },
+          "seconds_since_event": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "event_delivery": {
+            "type": "string"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            }
+          },
+          "disposition": {
+            "type": "string",
+            "enum": [
+              "continue",
+              "pause_requested",
+              "cancel_requested"
+            ]
+          },
+          "received_events": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "monitoring",
+          "disposition",
+          "warnings"
+        ],
+        "additionalProperties": true
       }
     },
     {
@@ -211,6 +447,61 @@
         "readOnlyHint": false,
         "destructiveHint": true,
         "idempotentHint": false
+      },
+      "outputSchema": {
+        "properties": {
+          "received_events": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "event_delivery": {
+            "type": "string"
+          },
+          "disposition": {
+            "enum": [
+              "continue",
+              "pause_requested",
+              "cancel_requested"
+            ],
+            "type": "string"
+          },
+          "progress_ages_seconds": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object"
+          },
+          "configuration": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "seconds_since_event": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "intervention": {
+            "type": "string"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          },
+          "monitoring": {
+            "type": "boolean"
+          }
+        },
+        "type": "object",
+        "required": [
+          "monitoring",
+          "disposition",
+          "warnings"
+        ],
+        "additionalProperties": true
       }
     },
     {
@@ -225,6 +516,79 @@
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": true
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "active"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "resources": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "profile_name": {
+            "type": "string"
+          },
+          "power_status": {
+            "type": "string"
+          },
+          "keep_awake": {
+            "type": "boolean"
+          },
+          "expires_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "disk_cache_purge": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "profile_id": {
+            "type": "string"
+          },
+          "brightness": {
+            "type": "string"
+          },
+          "caffeinate_preset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "fans": {
+            "type": "string"
+          },
+          "phase": {
+            "type": "string"
+          },
+          "power_override_owned": {
+            "type": "boolean"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "power_mode": {
+            "type": "string"
+          },
+          "session_id": {
+            "type": "string"
+          },
+          "process_management": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "safeguards": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
       }
     }
   ]

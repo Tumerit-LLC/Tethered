@@ -12,4 +12,4 @@ Publish through Smithery's local stdio route:
 smithery mcp publish ./tethered.mcpb -n tumerit/tethered
 ```
 
-The adapter was extracted from the signed Tethered app installed on October 15, 2026. Local protocol discovery was inspected on Apple Silicon. Another Mac has not been verified.
+Version 0.2.6 was compiled for arm64 and signed with Tumerit LLC’s Developer ID on October 15, 2026. All eight output schemas, structured/text response parity, and tool errors passed isolated verification. Read-only profile discovery and status passed against the running app. Another Mac has not been verified.
