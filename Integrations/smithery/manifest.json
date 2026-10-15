@@ -2,9 +2,9 @@
   "manifest_version": "0.3",
   "name": "tethered",
   "display_name": "Tethered",
-  "version": "0.2.10",
-  "description": "Use saved Tethered profiles for local AI work on Apple Silicon Macs.",
-  "long_description": "Requires an Apple Silicon Mac running macOS 15 or later, Tethered 1.2.0 or later installed and running under the same macOS account, Pro access, and AI task sessions enabled. Discover saved task profiles, request power modes and keep-awake behavior, and inspect or end owned sessions. Profile-controlled background app policies and task safeguards remain subject to user settings. Unlimited profiles require an explicit end. This adapter runs locally over stdio; cloud-only clients and Intel Macs are unsupported. The bundle contains no connection credentials or saved profiles.",
+  "version": "0.2.11",
+  "description": "Mac power management: prevent sleep, keep awake, and control background apps during AI work.",
+  "long_description": "Control Mac power modes, prevent sleep, keep your Mac awake, and manage background apps during AI coding, builds, rendering, and local model inference.\n\nTethered lets your AI assistant discover and apply saved profiles for Low Power, Automatic, or High Power mode where supported; display brightness; fan settings; and keep-awake behavior. Profile settings can deprioritize or suspend selected background apps, including policies triggered by memory pressure. Inspect memory pressure, RAM and swap usage, session status, and task safeguard warnings. Finite sessions expire automatically; unlimited sessions require an explicit end. Power settings describe requested controls, not independently measured hardware state.\n\nRequires an Apple Silicon Mac running macOS 15 or later, Tethered 1.2.0+ installed and running under the same macOS account, Pro access, AI task sessions enabled, and permissions required by the selected profile. Runs locally over stdio. Intel Macs and cloud-only clients are unsupported. No connection credentials or saved profiles are included.",
   "author": {
     "name": "Tumerit",
     "url": "https://tumerit.com"
@@ -34,8 +34,13 @@
     "macos",
     "apple-silicon",
     "power-management",
-    "local",
-    "task-sessions"
+    "prevent-sleep",
+    "keep-awake",
+    "background-apps",
+    "memory-pressure",
+    "ai-coding",
+    "local-models",
+    "task-profiles"
   ],
   "tools": [
     {
