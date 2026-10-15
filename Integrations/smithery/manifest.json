@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "tethered",
   "display_name": "Tethered Task Sessions",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Use saved Tethered profiles for local AI work on Apple Silicon Macs.",
   "long_description": "Requires an Apple Silicon Mac running macOS 15 or later, Tethered 1.2.0 or later installed and running under the same macOS account, Pro access, and AI task sessions enabled. Discover saved task profiles, request power modes and keep-awake behavior, and inspect or end owned sessions. Profile-controlled background app policies and task safeguards remain subject to user settings. Unlimited profiles require an explicit end. This adapter runs locally over stdio; cloud-only clients and Intel Macs are unsupported. The bundle contains no connection credentials or saved profiles.",
   "author": {
