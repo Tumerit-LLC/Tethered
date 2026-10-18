@@ -13,7 +13,14 @@ var AlfredEventUI = (function () {
         const deadline = Date.now() + (values.operation === "list" || path === "/companion-sync/toggle" ? 12000 : 120000);
         while (Date.now() < deadline) {
             let response;
-            try { response = stored(key); } catch (_) {}
+            try {
+                if (key === "raycastEventResult") {
+                    const responses = stored("raycastEventResponses");
+                    response = responses && responses[id];
+                } else {
+                    response = stored(key);
+                }
+            } catch (_) {}
             if (response && response.request === id && typeof response.success === "boolean" && typeof response.message === "string") {
                 if (!response.success) throw new Error(response.message);
                 return response;
