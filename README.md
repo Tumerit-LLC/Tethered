@@ -14,7 +14,7 @@ Tethered is a macOS app for managing battery charging, power behavior, and autom
 brew install --cask Tumerit/tap/tethered
 ```
 
-<a href="https://github.com/Tumerit/Tethered/releases/download/v1.0.0/Tethered.alfredworkflow"><img src="Assets/alfred-icon.png" alt="Alfred icon" width="24" height="24"> Alfred Workflow</a> — Currently testing. Requires Alfred 5 with Powerpack and Tethered installed and running.
+<a href="https://github.com/Tumerit/Tethered/raw/refs/heads/main/Alfred/Tethered.alfredworkflow"><img src="Assets/alfred-icon.png" alt="Alfred icon" width="24" height="24"> Alfred Workflow</a> — Version 1.1.0 adds scheduled and repeating event management, live Quick Event previews, and MCP/Companion bridge commands. Requires Alfred 5 with Powerpack and an updated Tethered app installed and running. See the [workflow guide](Alfred/README.md) for compatibility and current validation limits.
 
 ## What you can do
 
