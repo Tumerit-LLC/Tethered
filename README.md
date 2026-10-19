@@ -57,7 +57,7 @@ Connect a local AI assistant to Tethered while it runs builds, test suites, data
 - Deprioritize or temporarily suspend eligible background apps
 - Suspend eligible apps at configured memory-pressure levels, with exceptions and frontmost-app protection
 
-Open **Tasks → Sessions** to create a profile. In **Rules**, assign matching agent calls and choose power-source and battery-level conditions. For example, use a Low Power profile on battery at or below 40%, and a Heavy Work profile on external power above 80%. **History** lists unassigned calls that you can add to a rule. Only one profile session can run at a time.
+Open **Tasks → Sessions** to create a profile. Set power-source and battery-level conditions in the profile editor, then assign matching agent calls in **Rules**. For example, use a Low Power profile on battery at or below 40%, and a Heavy Work profile on external power above 80%. **History** lists unassigned calls that you can add to a rule. Only one profile session can run at a time.
 
 Task safeguards can flag repeated failures, calls, or output; matching output; inactivity; missing progress reports; task runtime; and sustained memory pressure. A safeguard can notify you or request that the AI client pause or cancel work. Those requests depend on the client cooperating; Tethered does not directly pause or cancel the AI task. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. Heat monitoring, alerts, and configured fan protection remain active.
 
@@ -69,34 +69,37 @@ See the dated [integration validation record](Integrations/VALIDATION.md) for te
 
 ## Screenshots
 
-Captured October 18, 2026. Click an image to view it at full size.
+Full-height settings captures from October 19, 2026. Scrollable views are assembled from overlapping native screenshots, with the sidebar omitted so the complete settings remain readable. Click an image to view it at full size.
 
-| Heat protection | Battery history |
+| Battery: charging, heat protection, and menu controls | Control Center: power modes, assertions, and Caffeinate |
 | --- | --- |
-| ![Heat protection thresholds, fan boost, and MagSafe indicator](Screenshots/2026-10-18/heat.webp) | ![Battery charge and temperature history with selectable time ranges](Screenshots/2026-10-18/stats.webp) |
+| ![Complete Battery settings, including Sailing, heat protection, fan boost, and menu controls](Screenshots/2026-10-19/battery.png) | ![Complete Control Center with persistent power modes, thresholds, wake assertions, and Caffeinate presets](Screenshots/2026-10-19/controls.png) |
 
-| Task activation rules | Task resource profile |
+| General: Siri, extensions, and keyboard shortcuts | Profile: saved settings, calibration, standby, and events |
 | --- | --- |
-| ![MCP Bridge and task rules matching calls by power source and battery level](Screenshots/2026-10-18/task-rules.webp) | ![Task profile with power mode, brightness, fans, Caffeinate, background priority, CPU limits, and app protection](Screenshots/2026-10-18/task-session.webp) |
+| ![Complete General settings with Siri integration, extensions, companion preview, and keyboard shortcuts](Screenshots/2026-10-19/general.png) | ![Complete Profile settings with saved profiles, calibration, standby, scheduled events, and repeated events](Screenshots/2026-10-19/profile.png) |
 
-| Per-app automation | System assertions |
+| Display: all brightness controls | Appearance: alerts, sounds, and dismissal behavior |
 | --- | --- |
-| ![Tethered app schedule with launch and activation actions](Screenshots/2026-10-18/application-rules.webp) | ![Wake, Power Nap, proximity wake, lid wake, AC wake, and restart controls](Screenshots/2026-10-18/assertions.webp) |
+| ![Complete Display settings with device preview and all six brightness controls](Screenshots/2026-10-19/display.png) | ![Complete Appearance settings with battery alerts, icons, sounds, critical alerts, and dismissal controls](Screenshots/2026-10-19/appearance.png) |
 
-| Display brightness | Battery alerts |
+| Tasks: sessions and saved profiles | Tasks: matching-call rules |
 | --- | --- |
-| ![Power-mode brightness controls, Half Dim, and Less Bright](Screenshots/2026-10-18/display-controls.webp) | ![Battery alert appearance, icons, dismissal styles, and delay](Screenshots/2026-10-18/alerts.webp) |
+| ![Complete Tasks Sessions view with MCP Bridge setup and saved task profiles](Screenshots/2026-10-19/tasks-sessions.png) | ![Complete Tasks Rules view with matching calls and assigned session profiles](Screenshots/2026-10-19/tasks-rules.png) |
 
 <details>
-<summary>Calibration, standby, and scheduled events</summary>
+<summary>Complete task profile editor</summary>
 
-| Calibration | Standby |
-| --- | --- |
-| ![Battery calibration controls and default policy](Screenshots/2026-10-18/calibration.webp) | ![Hibernation mode, standby delays, and low-battery threshold](Screenshots/2026-10-18/standby-table.webp) |
+![Complete task profile editor with power-source and battery-level conditions, duration, power mode, brightness, fans, Caffeinate, background priority, CPU limits, app suspension, process protection, and safeguards](Screenshots/2026-10-19/task-editor.png)
 
-| Scheduled events | Repeating events |
+</details>
+
+<details>
+<summary>Battery history and per-app automation (October 18, 2026)</summary>
+
+| Battery history | Per-app automation |
 | --- | --- |
-| ![Scheduled power events](Screenshots/2026-10-18/scheduled-table.webp) | ![Repeating power events](Screenshots/2026-10-18/repeated-table.webp) |
+| ![Battery charge and temperature history with selectable time ranges](Screenshots/2026-10-18/stats.webp) | ![Tethered app schedule with launch and activation actions](Screenshots/2026-10-18/application-rules.webp) |
 
 </details>
 

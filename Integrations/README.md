@@ -85,7 +85,7 @@ These tools run on your Mac. Browser-only chats and tool processes on a remote m
 
 ## Activation rules
 
-In current Tethered releases, **Tasks → Rules** assigns matching agent calls to saved session profiles. Rules can check the power source and a battery-level threshold. **History** lists unassigned calls that you can edit and assign to a rule. Only one profile session can run at a time; a matching call can start a session when none is active.
+In current Tethered releases, **Tasks → Rules** assigns matching agent calls to saved session profiles. Set power-source and battery-level conditions in the session profile editor. **History** lists unassigned calls that you can edit and assign to a rule. Only one profile session can run at a time; a matching call can start a session when none is active.
 
 ## First connection
 
