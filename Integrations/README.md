@@ -1,8 +1,8 @@
 # AI task sessions
 
-These integrations connect local AI clients to **Tethered 1.2.0 or later**, which includes General → AI → Task sessions and the bundled MCP adapter. Client installation and lifecycle results vary; see each client below and the dated [validation record](VALIDATION.md).
+These integrations connect local AI clients to **Tethered 1.2.0 or later**, which includes the bundled MCP adapter. In current releases, open **Tasks** to configure **MCP Bridge**, **Sessions**, **Rules**, and **History**. Use the latest release for the current controls. Client installation and lifecycle results vary; see each client below and the dated [validation record](VALIDATION.md).
 
-Enable Task sessions in Tethered, create a task profile. All saved task profiles are available while Task sessions is enabled. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
+Enable **MCP Bridge** in **Tasks** and create a profile under **Sessions**. All saved task profiles are available while the bridge is enabled. Keep Tethered running on the same Mac and macOS account as your AI app. Task sessions require Pro access and the permissions needed by the selected profile.
 
 Tethered lets an assistant apply a user-created profile during local builds, test suites, or data-processing jobs. Profiles can request Automatic, Low Power, or High Power mode where supported and keep the Mac awake using Caffeinate. Users can also deprioritize selected apps or other background apps, suspend eligible background apps, or suspend apps above a configured memory threshold. Process controls can apply throughout a session or activate when macOS reports warning or critical memory pressure. Configured app exceptions, frontmost-app protection, and protection for the AI client’s process tree limit which processes are affected.
 
@@ -82,6 +82,10 @@ Run `gemini extensions install /path/to/Tethered/Integrations/gemini-cli`, then 
 No token entry, adapter compilation, or language runtime installation is required. Each repository package finds the installed Tethered app through macOS and launches its bundled adapter. Moving or updating Tethered does not require regenerating these launcher packages.
 
 These tools run on your Mac. Browser-only chats and tool processes on a remote machine, cloud VM, or container cannot use this local connection.
+
+## Activation rules
+
+In current Tethered releases, **Tasks → Rules** assigns matching agent calls to saved session profiles. Rules can check the power source and a battery-level threshold. **History** lists unassigned calls that you can edit and assign to a rule. Only one profile session can run at a time; a matching call can start a session when none is active.
 
 ## First connection
 
