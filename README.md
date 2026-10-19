@@ -23,15 +23,17 @@ brew install --cask Tumerit/tap/tethered
 - **Control power modes:** Set persistent High or Low Power behavior, configure automatic power-mode thresholds, and switch modes from the menu bar.
 - **Manage sleep and wake:** Use Caffeinate presets to keep the Mac or display awake, configure macOS wake and restart assertions, and adjust standby, hibernation mode, and delays.
 - **Automate by app:** Set schedules and apply power, Caffeinate, brightness, and supported fan actions when selected apps launch, activate, deactivate, or quit.
-- **Schedule system actions:** Create one-time or repeating events for power modes, Top-up, Caffeinate, brightness, wake, sleep, power on, and shutdown.
+- **Schedule system actions:** Create one-time or repeating events for power modes, Top-up, Caffeinate, brightness, supported fan actions, wake, sleep, power on, and shutdown. Edit dates, weekdays, times, action durations, and expiration settings directly in the event tables.
+- **Make automation battery-aware:** Add power-source and battery-level conditions to task profiles, app rules, and scheduled events. Threshold handling helps prevent repeated switching near a boundary.
 - **Protect charging and thermals:** Set a charging limit, use Sailing to let the battery discharge before charging resumes, run Top-up when needed, and pause charging when the battery gets too warm. Supported Macs can boost fans while charging is paused.
-- **Run AI task sessions:** Apply saved task profiles to local AI work with temporary power and Caffeinate settings, background-process priority, per-app CPU limits, suspension, memory-pressure triggers, and task safeguards. Match agent calls to profiles using power-source and battery-level rules.
-- **Save, share, and sync profiles:** Keep named settings snapshots, export or import profiles, and sync or back up settings and assets through iCloud with Pro Access.
+- **Run AI task sessions:** Apply saved task profiles to local AI work with temporary power and Caffeinate settings, background-process priority, per-app CPU limits, suspension, app quitting, memory-pressure triggers, and task safeguards. Configure each resource policy’s targets and triggers separately, with app exceptions and optional protection for the frontmost app and AI processes.
+- **Save, share, and sync profiles:** Keep named settings snapshots and export them as `.tetheredprofile` files. Review an imported profile before choosing Add or Add & Apply. Transfers and backups include task profiles, activation rules, bridge settings, shortcuts, and menu appearance; iCloud sync and backup are available with Pro Access.
 - **Calibrate your battery:** Start a cycle manually or schedule one under a calibration policy.
 - **Adjust the display:** Restore or set brightness when power modes change, and configure dimming before display sleep.
-- **Customize the menu bar:** Change its background, control colors, slider appearance, and icons while previewing the result.
+- **Customize the menu bar:** Change its background, control colors, slider appearance, and icons while previewing the result. Import transparent PNG backgrounds and custom control artwork, adjust their opacity, and save the appearance in a settings profile.
 - **Track battery condition:** Review battery health, cycle count, charge level, and temperature history; export battery history as CSV or JSON and export app logs.
 - **Manage alerts:** Customize battery notifications and sounds, and manually or automatically dismiss the persistent macOS low-battery banner.
+- **Control Tethered from launchers:** Use Alfred or Raycast to manage scheduled and repeating events, including editing, deletion, and repeat toggles. Create Quick Events from typed phrases and review their previews. Raycast also exposes MCP Bridge controls and the next upcoming event.
 - **Use shortcuts and Siri:** Trigger supported charging and power actions through Apple Shortcuts, Siri, and keyboard shortcuts.
 
 ## Pro Access
@@ -54,10 +56,12 @@ Connect a local AI assistant to Tethered while it runs builds, test suites, data
 - Set brightness and supported fan behavior
 - Keep your Mac awake with Caffeinate
 - Limit CPU usage for eligible background apps
-- Deprioritize or temporarily suspend eligible background apps
+- Independently deprioritize, temporarily suspend, or quit selected eligible apps
 - Suspend eligible apps at configured memory-pressure levels, with exceptions and frontmost-app protection
 
-Open **Tasks → Sessions** to create a profile. Set power-source and battery-level conditions in the profile editor, then assign matching agent calls in **Rules**. For example, use a Low Power profile on battery at or below 40%, and a Heavy Work profile on external power above 80%. **History** lists unassigned calls that you can add to a rule. Only one profile session can run at a time.
+Open **Tasks → Sessions** to create a profile. Set power-source and battery-level conditions in the profile editor, then assign matching agent calls in **Rules**. For example, use a Low Power profile on battery at or below 40%, and a Heavy Work profile on external power above 80%. **Rules** supports Exact and Starts With matching for tool calls and shell commands. **History** lists unassigned calls that you can add to a rule. Only one profile session can run at a time.
+
+Native lifecycle hooks for Codex, Claude Code, Cursor, and Gemini CLI can activate and release task profiles as local work starts and ends. Install the integration for your client and configure matching calls in Tasks; other supported clients use the MCP setup described below.
 
 Task safeguards can flag repeated failures, calls, or output; matching output; inactivity; missing progress reports; task runtime; and sustained memory pressure. A safeguard can notify you or request that the AI client pause or cancel work. Those requests depend on the client cooperating; Tethered does not directly pause or cancel the AI task. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. Heat monitoring, alerts, and configured fan protection remain active.
 
@@ -97,4 +101,4 @@ Full-height settings captures from October 19, 2026. Scrollable views are assemb
 
 ## Get Tethered
 
-Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). The `.pkg` file is for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
+Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). For the latest release, open the `.dmg` installer for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
