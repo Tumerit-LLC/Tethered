@@ -75,6 +75,10 @@ Full-height settings captures from October 19, 2026. Scrollable views are assemb
 | --- | --- |
 | ![Complete Battery settings, including Sailing, heat protection, fan boost, and menu controls](Screenshots/2026-10-19/battery.png) | ![Complete Control Center with persistent power modes, thresholds, wake assertions, and Caffeinate presets](Screenshots/2026-10-19/controls.png) |
 
+| Battery history | Per-app automation |
+| --- | --- |
+| ![Battery charge and temperature history with selectable time ranges](Screenshots/2026-10-18/stats.webp) | ![Tethered app schedule with launch and activation actions](Screenshots/2026-10-18/application-rules.webp) |
+
 | General: Siri, extensions, and keyboard shortcuts | Profile: saved settings, calibration, standby, and events |
 | --- | --- |
 | ![Complete General settings with Siri integration, extensions, companion preview, and keyboard shortcuts](Screenshots/2026-10-19/general.png) | ![Complete Profile settings with saved profiles, calibration, standby, scheduled events, and repeated events](Screenshots/2026-10-19/profile.png) |
@@ -83,34 +87,13 @@ Full-height settings captures from October 19, 2026. Scrollable views are assemb
 | --- | --- |
 | ![Complete Display settings with device preview and all six brightness controls](Screenshots/2026-10-19/display.png) | ![Complete Appearance settings with battery alerts, icons, sounds, critical alerts, and dismissal controls](Screenshots/2026-10-19/appearance.png) |
 
-| Tasks: sessions and saved profiles | Tasks: matching-call rules |
+| Tasks: sessions and saved profiles | Complete task profile editor |
 | --- | --- |
-| ![Complete Tasks Sessions view with MCP Bridge setup and saved task profiles](Screenshots/2026-10-19/tasks-sessions.png) | ![Complete Tasks Rules view with matching calls and assigned session profiles](Screenshots/2026-10-19/tasks-rules.png) |
+| ![Complete Tasks Sessions view with MCP Bridge setup and saved task profiles](Screenshots/2026-10-19/tasks-sessions.png) | ![Complete task profile editor with power-source and battery-level conditions, duration, power mode, brightness, fans, Caffeinate, background priority, CPU limits, app suspension, process protection, and safeguards](Screenshots/2026-10-19/task-editor.png) |
 
-<details>
-<summary>Complete task profile editor</summary>
+### Menu appearance customization
 
-![Complete task profile editor with power-source and battery-level conditions, duration, power mode, brightness, fans, Caffeinate, background priority, CPU limits, app suspension, process protection, and safeguards](Screenshots/2026-10-19/task-editor.png)
-
-</details>
-
-<details>
-<summary>Battery history and per-app automation (October 18, 2026)</summary>
-
-| Battery history | Per-app automation |
-| --- | --- |
-| ![Battery charge and temperature history with selectable time ranges](Screenshots/2026-10-18/stats.webp) | ![Tethered app schedule with launch and activation actions](Screenshots/2026-10-18/application-rules.webp) |
-
-</details>
-
-<details>
-<summary>Menu customization and Caffeinate presets (October 14, 2026)</summary>
-
-| Menu appearance customization | Caffeinate presets |
-| --- | --- |
-| ![Menu appearance customization and preview](Screenshots/menu-customization-2026-10-14.png) | ![Caffeinate preset controls for sleep prevention](Screenshots/caffeinate.png) |
-
-</details>
+![Menu appearance customization and preview](Screenshots/menu-customization-2026-10-14.png)
 
 ## Get Tethered
 
