@@ -53,7 +53,7 @@
       <description xml:lang="zh-Hans"><![CDATA[
         <h3 dir="auto">发布变更日志：</h3><h3 dir="auto"> 1.2.6</h3><ul dir="auto"><li><strong>显示睡眠定时器：为电池和电源适配器分别设置显示屏不活动时间，包括自定义时间。</strong></li><li> <strong>UPS 关机控制：为支持的台式 Mac 配置剩余电量、经过时间或预计剩余时间的关机阈值。</strong></li><li><strong>扩展的自动重启控制：选择恢复供电时支持的重启行为，并明确标记不可用的选项。</strong></li><li><strong>社区个人资料浏览：直接从“设置”中发现共享的个人资料，并在提交自己的个人资料后打开个人资料库。</strong></li></ul><p dir="auto">下载 Tethered-1.2.6.dmg 安装 Tethered。</p>
       ]]></description>
-      <enclosure url="https://github.com/Tumerit-LLC/Tethered/releases/download/v1.2.6/Tethered-1.2.6.Sparkle.zip" length="30064065" type="application/octet-stream" sparkle:edSignature="Earf3p58KgapxkI4YMkHceamSgATiAkepUlVB869WNdE86PWxeGrk50tTDB5LPizWBJytNuVqMk0tGEXDjQRBw==" />
+      <enclosure url="https://github.com/Tumerit-LLC/Tethered/releases/download/v1.2.6/Tethered-1.2.6.Sparkle.zip" length="30064267" type="application/octet-stream" sparkle:edSignature="HykBbUUZ9J1tejoJD42rvfqaPbJ1McVnRpe9drdV5t/kNYVvXg0OdZznrPhMUX+Y9F8UObee85QwYoJwUXR8Cg==" />
     </item>
     <item>
       <title>Tethered 1.2.5</title>
