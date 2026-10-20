@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Tumerit/tethered",
+  "description": "Control Mac power modes, keep-awake, app priority and suspension; requires Tethered 1.2.0+ and Pro.",
+  "title": "Tethered Task Sessions",
+  "repository": {
+    "url": "https://github.com/Tumerit-LLC/Tethered",
+    "source": "github"
+  },
+  "version": "0.2.7",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Tumerit-LLC/Tethered/releases/download/v1.2.3/tethered-0.2.7.mcpb",
+      "fileSha256": "f95d69c270709c4b82e5ad7a90d6119ec24a352bbd28c97bfd8c51639c126b84",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
