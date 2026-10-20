@@ -20,10 +20,14 @@ From the repository root, run `python3 Integrations/package.py /absolute/path/to
 2. Merge the reviewed integration branch into the support repository’s default branch. Direct marketplace installation can then use `Tumerit-LLC/Tethered` rather than a local path.
 3. Prepare listing assets: app icon, screenshots or a walkthrough, support and privacy URLs, release notes, and test instructions. Reviewers need a Mac with Tethered and access to the required Pro features.
 4. For OpenAI, obtain confirmation of the submission route for local stdio MCP before submitting. The standard public flow expects remote HTTPS MCP. Direct Codex marketplace installation is already a separate distribution route.
-5. Submit Claude Code and Cursor through their directory review processes. For VS Code, use a publisher account you control; `tumerit` is a proposed package publisher and has not been verified or reserved here. For Gemini and Antigravity, confirm the available gallery listing route; direct installation does not imply gallery approval.
+5. Submit Claude Code and Cursor through their directory review processes. VS Code is published as `tumerit.tethered` under the existing Tumerit publisher account. Keep that extension identity when updating its repository links. For Gemini and Antigravity, confirm the available gallery listing route; direct installation does not imply gallery approval.
 
 Do not register duplicate manual and plugin servers. GitHub supports translated documentation, but English-only documentation is sufficient for this preview. App UI translations are maintained in the private app repository; no user must localize files on GitHub.
 
 [Reviewer listing copy and test cases](REVIEWER.md) are prepared as a draft. Publisher-owned policy URLs, listing assets, and reviewer access must be supplied before submission.
 
 Cursor: the user submitted the initial application on October 7, 2026. Version 0.2.0 adds conversation-scoped profile, activation, and ending preferences. Review the existing application before updating it; do not submit a duplicate. The preferred publisher logo is https://www.tumerit.com/favicon.svg. The plugin manifest now references that logo. Changes to the publisher application require confirmation in the portal.
+
+## Organization migration
+
+See [the October 20 migration record](../.github/MIGRATION.md) for verified listing status, prepared upload packages, and directory corrections that require operator assistance. The official MCP Registry now lists `io.github.Tumerit/tethered` version 0.2.7 with canonical `Tumerit-LLC` repository and package URLs. Service publisher IDs remain unchanged.

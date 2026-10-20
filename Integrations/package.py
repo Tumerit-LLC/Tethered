@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import zipfile
+from xml.sax.saxutils import quoteattr
 
 parser = argparse.ArgumentParser(description="Package Tethered integration previews without app source or credentials")
 parser.add_argument("destination", type=Path)
@@ -23,8 +24,17 @@ for platform in ("codex", "claude-code", "cursor", "gemini-cli", "antigravity"):
 package = json.loads((root / "vscode/package.json").read_text())
 version = package["version"]
 output = args.destination / f"tethered-vscode-{version}.vsix"
+properties = {
+    "Microsoft.VisualStudio.Code.Engine": package["engines"]["vscode"],
+    "Microsoft.VisualStudio.Services.Links.Source": package["repository"]["url"],
+    "Microsoft.VisualStudio.Services.Links.Getstarted": package["repository"]["url"],
+    "Microsoft.VisualStudio.Services.Links.GitHub": package["repository"]["url"],
+    "Microsoft.VisualStudio.Services.Links.Support": package["bugs"]["url"],
+    "Microsoft.VisualStudio.Services.Links.Learn": package["homepage"],
+}
+property_xml = "".join(f"<Property Id={quoteattr(key)} Value={quoteattr(value)}/>" for key, value in properties.items())
 manifest = f'''<?xml version="1.0" encoding="utf-8"?>
-<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"><Metadata><Identity Language="en-US" Id="tethered" Version="{version}" Publisher="{package['publisher']}"/><DisplayName>Tethered Task Sessions</DisplayName><Icon>extension/assets/icon.png</Icon><Description xml:space="preserve">Temporary Tethered task profiles</Description><Properties><Property Id="Microsoft.VisualStudio.Code.Engine" Value="{package['engines']['vscode']}"/></Properties></Metadata><Installation><InstallationTarget Id="Microsoft.VisualStudio.Code"/></Installation><Dependencies/><Assets><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/assets/icon.png" Addressable="true"/><Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true"/></Assets></PackageManifest>'''
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"><Metadata><Identity Language="en-US" Id="tethered" Version="{version}" Publisher="{package['publisher']}"/><DisplayName>Tethered Task Sessions</DisplayName><Icon>extension/assets/icon.png</Icon><Description xml:space="preserve">Temporary Tethered task profiles</Description><Properties>{property_xml}</Properties></Metadata><Installation><InstallationTarget Id="Microsoft.VisualStudio.Code"/></Installation><Dependencies/><Assets><Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/readme.md" Addressable="true"/><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/assets/icon.png" Addressable="true"/><Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true"/></Assets></PackageManifest>'''
 content_types = '''<?xml version="1.0" encoding="utf-8"?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="png" ContentType="image/png"/><Default Extension="json" ContentType="application/json"/><Default Extension="js" ContentType="application/javascript"/><Default Extension="md" ContentType="text/markdown"/><Default Extension="vsixmanifest" ContentType="text/xml"/></Types>'''
 with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
@@ -32,7 +42,8 @@ with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
     archive.writestr("[Content_Types].xml", content_types)
     for path in sorted((root / "vscode").rglob("*")):
         if path.is_file():
-            archive.write(path, f"extension/{path.relative_to(root / 'vscode').as_posix()}")
+            relative = path.relative_to(root / "vscode").as_posix()
+            archive.write(path, "extension/" + ("readme.md" if relative == "README.md" else relative))
 outputs.append(output)
 for output in outputs:
     with zipfile.ZipFile(output) as archive:
