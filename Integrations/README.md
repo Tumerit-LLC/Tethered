@@ -19,7 +19,7 @@ For repository-based packages, download or clone this repository and replace `/p
 <details>
 <summary>Claude Desktop</summary>
 
-Download [tethered-0.2.7.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.3/tethered-0.2.7.mcpb) and import it in Claude Desktop. This public bundle launches the adapter from the installed app. An app-generated export is another option; follow its included README.
+Download [tethered-0.2.7.mcpb](https://github.com/Tumerit-LLC/Tethered/releases/download/v1.2.3/tethered-0.2.7.mcpb) and import it in Claude Desktop. This public bundle launches the adapter from the installed app. An app-generated export is another option; follow its included README.
 
 **Recorded verification:** Import, tool approval, and a one-minute start/status/end lifecycle passed with an earlier four-tool build. The current eight-tool package has shared adapter verification; its full Claude lifecycle has not been repeated. See [validation results and dates](VALIDATION.md).
 

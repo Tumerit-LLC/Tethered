@@ -17,7 +17,7 @@ From the repository root, run `python3 Integrations/package.py /absolute/path/to
 ## Submission handoff
 
 1. Publish Tethered 1.2.0 with its signed, bundled adapter and complete the remaining checks in `VALIDATION.md`.
-2. Merge the reviewed integration branch into the support repository’s default branch. Direct marketplace installation can then use `Tumerit/Tethered` rather than a local path.
+2. Merge the reviewed integration branch into the support repository’s default branch. Direct marketplace installation can then use `Tumerit-LLC/Tethered` rather than a local path.
 3. Prepare listing assets: app icon, screenshots or a walkthrough, support and privacy URLs, release notes, and test instructions. Reviewers need a Mac with Tethered and access to the required Pro features.
 4. For OpenAI, obtain confirmation of the submission route for local stdio MCP before submitting. The standard public flow expects remote HTTPS MCP. Direct Codex marketplace installation is already a separate distribution route.
 5. Submit Claude Code and Cursor through their directory review processes. For VS Code, use a publisher account you control; `tumerit` is a proposed package publisher and has not been verified or reserved here. For Gemini and Antigravity, confirm the available gallery listing route; direct installation does not imply gallery approval.

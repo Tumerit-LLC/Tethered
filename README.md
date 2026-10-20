@@ -12,13 +12,13 @@ Tethered is a macOS app for managing battery charging, power behavior, and autom
 
 **All New Accounts Get a 7-Day Free Trial.**
 
-<a href="https://github.com/Tumerit/homebrew-tap"><img src="https://brew.sh/assets/img/homebrew.svg" alt="Homebrew logo" width="24" height="24"> Install with Homebrew</a>
+<a href="https://github.com/Tumerit-LLC/homebrew-tap"><img src="https://brew.sh/assets/img/homebrew.svg" alt="Homebrew logo" width="24" height="24"> Install with Homebrew</a>
 
 ```sh
-brew install --cask Tumerit/tap/tethered
+brew install --cask Tumerit-LLC/tap/tethered
 ```
 
-<a href="https://github.com/Tumerit/Tethered/raw/refs/heads/main/Alfred/Tethered.alfredworkflow"><img src="Assets/alfred-icon.png" alt="Alfred icon" width="24" height="24"> Alfred Workflow</a> — Version 1.1.2 includes event-response and daylight-saving fixes, plus scheduled and repeating event management, live Quick Event previews, and MCP/Companion bridge commands. Requires Alfred 5 with Powerpack and an updated Tethered app installed and running. See the [workflow guide](Alfred/README.md) for compatibility and current validation limits.
+<a href="https://github.com/Tumerit-LLC/Tethered/raw/refs/heads/main/Alfred/Tethered.alfredworkflow"><img src="Assets/alfred-icon.png" alt="Alfred icon" width="24" height="24"> Alfred Workflow</a> — Version 1.1.2 includes event-response and daylight-saving fixes, plus scheduled and repeating event management, live Quick Event previews, and MCP/Companion bridge commands. Requires Alfred 5 with Powerpack and an updated Tethered app installed and running. See the [workflow guide](Alfred/README.md) for compatibility and current validation limits.
 
 ## What you can do
 
@@ -67,7 +67,7 @@ Native lifecycle hooks for Codex, Claude Code, Cursor, and Gemini CLI can activa
 
 Task safeguards can flag repeated failures, calls, or output; matching output; inactivity; missing progress reports; task runtime; and sustained memory pressure. A safeguard can notify you or request that the AI client pause or cancel work. Those requests depend on the client cooperating; Tethered does not directly pause or cancel the AI task. Ending or expiring a session releases temporary controls and resumes apps Tethered suspended. Heat monitoring, alerts, and configured fan protection remain active.
 
-For Claude Desktop, download [tethered-0.2.7.mcpb](https://github.com/Tumerit/Tethered/releases/download/v1.2.3/tethered-0.2.7.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered.
+For Claude Desktop, download [tethered-0.2.7.mcpb](https://github.com/Tumerit-LLC/Tethered/releases/download/v1.2.3/tethered-0.2.7.mcpb). The MCPB launches the adapter from the installed app; it does not install Tethered.
 
 For Codex, Claude Code, Cursor, Gemini CLI, VS Code/Copilot, and other supported local clients, see [plugin installation and manual setup](Integrations/README.md).
 
@@ -103,7 +103,7 @@ Full-height settings captures from October 19, 2026. Scrollable views are assemb
 
 ## Get Tethered
 
-Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). For the latest release, open the `.dmg` installer for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
+Download the macOS installer from [GitHub Releases](https://github.com/Tumerit-LLC/Tethered/releases). For the latest release, open the `.dmg` installer for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
 
 ## License and security
 

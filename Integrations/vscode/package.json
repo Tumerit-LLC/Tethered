@@ -24,11 +24,11 @@
   "version": "0.2.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tumerit/Tethered.git"
+    "url": "https://github.com/Tumerit-LLC/Tethered.git"
   },
-  "homepage": "https://github.com/Tumerit/Tethered/tree/main/Integrations",
+  "homepage": "https://github.com/Tumerit-LLC/Tethered/tree/main/Integrations",
   "bugs": {
-    "url": "https://github.com/Tumerit/Tethered/issues"
+    "url": "https://github.com/Tumerit-LLC/Tethered/issues"
   },
   "icon": "assets/icon.png"
 }

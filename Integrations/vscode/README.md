@@ -8,7 +8,7 @@ This extension discovers the installed Tethered app and uses its bundled adapter
 
 Model instructions do not guarantee start or end calls. Tethered expires sessions automatically. Use MCP: Open User Configuration as a manual fallback. Avoid registering the same server through both routes.
 
-Report issues at https://github.com/Tumerit/Tethered/issues.
+Report issues at https://github.com/Tumerit-LLC/Tethered/issues.
 
 ## Choose behavior for a chat
 

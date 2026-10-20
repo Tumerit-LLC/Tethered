@@ -19,7 +19,7 @@ from xml.sax.saxutils import escape
 
 APPCAST = Path("appcast.xml")
 PUBLIC_KEY = "+JshUjjBctdtO8PDO+nL5riaJv17K9E3LaKcRV+NSKU="
-FEED_URL = "https://raw.githubusercontent.com/Tumerit/Tethered/main/appcast.xml"
+FEED_URLS = ("https://raw.githubusercontent.com/Tumerit-LLC/Tethered/main/appcast.xml", "https://raw.githubusercontent.com/Tumerit/Tethered/main/appcast.xml")
 BUNDLE_ID = "com.Tumerit.Tethered"
 SPARKLE = "{http://www.andymatuschak.org/xml-namespaces/sparkle}"
 
@@ -85,10 +85,12 @@ def prepare(tag, repository, token):
         if len(base64.b64decode(signature, validate=True)) != 64:
             raise ValueError("The Sparkle signature asset is not a valid Ed25519 signature")
         info = bundle_info(archive)
-        expected = {"CFBundleShortVersionString": version, "CFBundleIdentifier": BUNDLE_ID, "SUPublicEDKey": PUBLIC_KEY, "SUFeedURL": FEED_URL}
+        expected = {"CFBundleShortVersionString": version, "CFBundleIdentifier": BUNDLE_ID, "SUPublicEDKey": PUBLIC_KEY}
         for key, value in expected.items():
             if info.get(key) != value:
                 raise ValueError(f"Unexpected {key} in Sparkle ZIP")
+        if info.get("SUFeedURL") not in FEED_URLS:
+            raise ValueError("Unexpected SUFeedURL in Sparkle ZIP")
         build = str(info.get("CFBundleVersion", ""))
         if not build.isdecimal():
             raise ValueError("Expected a numeric CFBundleVersion")

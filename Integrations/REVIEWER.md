@@ -10,9 +10,9 @@
 
 **Requirements:** macOS, Tethered installed and running under the same account, Task sessions enabled, Pro access, and permissions for the selected profile. The AI app’s tool process must run on this Mac.
 
-**Support:** https://github.com/Tumerit/Tethered/issues
+**Support:** https://github.com/Tumerit-LLC/Tethered/issues
 
-**Repository:** https://github.com/Tumerit/Tethered
+**Repository:** https://github.com/Tumerit-LLC/Tethered
 
 **Privacy summary:** Integration packages contain no bridge credentials or saved profiles. Tools receive profile names, configured task controls, and session state. The session reason is supplied by the caller. Optional Companion event uploads include the profile name and Tethered session events, but exclude AI prompt text and the task reason. AI platform data handling remains governed by that platform.
 

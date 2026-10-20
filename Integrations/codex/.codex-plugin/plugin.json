@@ -6,8 +6,8 @@
     "name": "Tumerit",
     "email": "support@tumerit.com"
   },
-  "homepage": "https://github.com/Tumerit/Tethered",
-  "repository": "https://github.com/Tumerit/Tethered",
+  "homepage": "https://github.com/Tumerit-LLC/Tethered",
+  "repository": "https://github.com/Tumerit-LLC/Tethered",
   "mcpServers": "./.mcp.json",
   "skills": "./skills/",
   "interface": {

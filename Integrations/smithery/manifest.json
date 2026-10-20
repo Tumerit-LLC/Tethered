@@ -10,11 +10,11 @@
     "url": "https://tumerit.com"
   },
   "homepage": "https://tetheredmac.com",
-  "documentation": "https://github.com/Tumerit/Tethered/tree/main/Integrations",
-  "support": "https://github.com/Tumerit/Tethered/issues",
+  "documentation": "https://github.com/Tumerit-LLC/Tethered/tree/main/Integrations",
+  "support": "https://github.com/Tumerit-LLC/Tethered/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tumerit/Tethered"
+    "url": "https://github.com/Tumerit-LLC/Tethered"
   },
   "icon": "icon.png",
   "compatibility": {
