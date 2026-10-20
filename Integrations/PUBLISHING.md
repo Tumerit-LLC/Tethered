@@ -30,4 +30,4 @@ Cursor: the user submitted the initial application on October 7, 2026. Version 0
 
 ## Organization migration
 
-See [the October 20 migration record](../.github/MIGRATION.md) for verified listing status, prepared upload packages, and directory corrections that require operator assistance. The official MCP Registry now lists `io.github.Tumerit/tethered` version 0.2.7 with canonical `Tumerit-LLC` repository and package URLs. Service publisher IDs remain unchanged.
+See [the October 20 migration record](../.github/MIGRATION.md) for verified listing status, published packages, deployment details, and optional directory metadata cleanup. The official MCP Registry now lists `io.github.Tumerit/tethered` version 0.2.7 with canonical `Tumerit-LLC` repository and package URLs. VS Code Marketplace now publishes `tumerit.tethered` version 0.2.5. Service publisher IDs remain unchanged.

@@ -78,7 +78,7 @@ part of this transfer. The app checkout has no configured Git remote. Bundle IDs
 Apple signing identities, Sparkle public keys, domains, and support email addresses
 remain unchanged.
 
-## Prepared packages
+## Published and prepared packages
 
 - VS Code: `/tmp/tethered-vscode-0.2.5.vsix`, SHA-256
   `ebd0b685cc6d278e25a79e9e3411d504d7c938b49e6fbdecc3ec32b9143eb95f`.
@@ -87,7 +87,7 @@ remain unchanged.
 - OpenAI: `/tmp/tethered-codex-0.2.7.zip`, SHA-256
   `ed0d62c2b696f0255c0e7cf087d86de73f27822ef715867f5192c05f8b34e027`.
 - Screenshots: `/tmp/tethered-migration-evidence/openai-draft-0.2.7.png` and
-  `/tmp/tethered-migration-evidence/vscode-upload-blocked.png`.
+  `/tmp/tethered-migration-evidence/vscode-verifying-0.2.5.png`.
 
 The VSIX packager now writes the repository, support, homepage, and README assets
 into the VSIX manifest so future uploads preserve Marketplace links.
