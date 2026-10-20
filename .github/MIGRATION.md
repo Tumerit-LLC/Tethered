@@ -40,14 +40,14 @@ not require this manual step while GitHub redirects remain available.
 | Smithery `tumerit/tethered` | Repository updated to `https://github.com/Tumerit-LLC/Tethered`; verified in public listing. Existing Smithery identity retained. |
 | Official MCP Registry | Published and retrieved version `0.2.7` of `io.github.Tumerit/tethered`, with the new repository URL and the existing 0.2.7 MCPB at its canonical release URL. SHA-256 verified before publication. Metadata is tracked in `Integrations/registry/server.json`. |
 | Awesome MCP Servers | Updated existing PR #16262 description and its `patch-1` README entry. Commit `c8908b07616fa38555e50a3918b5a211627b201c` changes only the Tethered listing line. PR still awaits upstream review. |
-| MCPRush | Saved and publicly verified the canonical setup link in listing copy. The separate GitHub source field still points to the old repository; no source-field editor was exposed in the claimed listing's management panels. Operator correction remains. |
-| VS Code Marketplace | Public `tumerit.tethered` remains 0.2.3 with old links. Prepared 0.2.5, attached it in the existing publisher's update dialog, and attempted publication. The portal logs `reCAPTCHA Timeout` and reports exceeded reCAPTCHA Enterprise quota. Publication is not confirmed. |
+| MCPRush | Canonical setup link saved and publicly verified. Compact badge added to the root README in `f66a4b9`. The separate old GitHub source URL redirects correctly; changing the stored value is optional cleanup, not a migration blocker. |
+| VS Code Marketplace | User completed upload of 0.2.5. Public Marketplace API now reports 0.2.5 as the latest version, with canonical repository metadata. |
 | OpenAI Plugins | Reuploaded the existing Tethered draft as 0.2.7. Portal shows `0.2.7 · Draft`. It remains unpublished with the existing command-line MCP review blocker; no duplicate plugin or review submission was created. |
-| Cursor | Existing local submission record is dated October 7. Current publisher portal shows a new-application form, with no existing-application editor exposed. No duplicate application or new terms acceptance submitted. Operator correction remains. |
+| Cursor | Public profile GitHub link changed to `https://github.com/Tumerit-LLC`; portal confirmed Saved. Existing submission repository metadata could not be inspected, so no claim is made that it is outdated. No duplicate application submitted. |
 | Claude directory | Previous submission is recorded as pending in the earlier launch handoff. No current published listing or editable publisher record was located in this audit; current approval status is unverified. Repository-based manifest links are updated. |
 | Raycast | Inspected upstream `extensions/tethered-controls` README and package metadata. They use the unchanged product domain and Raycast author `Tumerit`, with no old GitHub repository URL requiring a change. |
-| mcpservers.org | Public mirror still stores the old repository address. Requested its README refresh; the stored repository link remained old when checked. Operator correction remains. |
-| Socket.dev | Mirrors the published VS Code package; its old links need the VS Code publication and downstream indexing, rather than a duplicate directory submission. |
+| mcpservers.org | Existing stored repository URL redirects to the canonical integration README. Requested documentation refresh. Replacing the stored URL is optional cleanup, not a blocker. |
+| Socket.dev | Downstream mirror of the VS Code package; may lag the now-published 0.2.5 release until indexing refreshes. |
 
 ## Websites and app source
 
@@ -60,12 +60,18 @@ production Worker module. Wrangler ran with `--no-bundle --keep-vars`; no build 
 test commands were run. Live privacy, releases, and release-script URLs were
 retrieved afterward and contain canonical links with no old owner references.
 
+The direct-download resolver was subsequently corrected in source commit
+`4bbc76e` and deployed as version `d3c4b3b0-c780-461b-919f-74b5b175a625`.
+Two URL patterns now match the new owner. Live `/download` returned a direct
+`Tethered-1.2.6.dmg` release asset URL after deployment.
+
 Tumerit.com also serves the updated canonical GitHub API URL in `i18n.js`.
 
 App source changes are committed locally and take effect in the next app release.
-The Tethered API email-template source correction is committed locally, but that
-API was not deployed by this migration. Historical SQL migrations and existing
-signed app archives were not rewritten.
+The Tethered API email-template link correction was deployed as version
+`c5d6fd57-09d1-46db-8723-48978e69536e`. The deployment patched exactly one URL
+in the downloaded production module with `--no-bundle --keep-vars`. Historical SQL
+migrations and existing signed app archives were not rewritten.
 
 Private website/API repositories remain under `Merit-Inc`; their remotes are not
 part of this transfer. The app checkout has no configured Git remote. Bundle IDs,
@@ -86,46 +92,12 @@ remain unchanged.
 The VSIX packager now writes the repository, support, homepage, and README assets
 into the VSIX manifest so future uploads preserve Marketplace links.
 
-## Operator correction drafts
+## Optional directory cleanup
 
-These messages are prepared only; none has been sent. Sending them requires the
-user's explicit instruction.
-
-### Cursor
-
-Recipient: marketplace-publishing@cursor.com
-
-Subject: Update existing Tethered publisher submission after GitHub migration
-
-Please update our existing Tethered publisher submission, originally submitted on
-October 7, 2026, to use `https://github.com/Tumerit-LLC/Tethered` in place of
-`https://github.com/Tumerit/Tethered`. The support URL is
-`https://github.com/Tumerit-LLC/Tethered/issues`. Please preserve the existing
-application and review history rather than creating a duplicate. Our product and
-contact domains remain unchanged.
-
-### MCPRush
-
-Destination: existing MCPRush publisher-support/contact route
-
-Please update the stored GitHub source URL for our claimed listing
-`https://mcprush.com/tumerit/tethered-task-sessions-mcp` from
-`https://github.com/Tumerit/Tethered` to
-`https://github.com/Tumerit-LLC/Tethered`. We updated the setup link in the listing
-copy, but could not find an editor for the separate GitHub source field. Please
-preserve the existing listing ID, publisher, reviews, and install history.
-
-### mcpservers.org
-
-Recipient: contact@mcpservers.org
-
-Please update the stored repository URL for
-`https://mcpservers.org/servers/github-com-tumerit-tethered-blob-main-integrations-readme-md`
-to `https://github.com/Tumerit-LLC/Tethered/blob/main/Integrations/README.md`, then
-refresh its documentation. The repository moved to our organization; please
-preserve the existing listing rather than creating a duplicate. A README refresh
-was requested through the listing page, but its stored repository address remains
-old.
+No operator messages were sent. Old GitHub URLs redirect correctly. Replacing
+stored source URLs on MCPRush and mcpservers.org is optional metadata cleanup;
+it is not required to complete the migration. Cursor's existing application
+metadata was not observable and must not be described as confirmed outdated.
 
 ## Identity and redirect compatibility
 
