@@ -104,3 +104,8 @@ Full-height settings captures from October 19, 2026. Scrollable views are assemb
 ## Get Tethered
 
 Download the macOS installer from [GitHub Releases](https://github.com/Tumerit/Tethered/releases). For the latest release, open the `.dmg` installer for manual installation; the `.Sparkle.zip` file is used by the app's built-in updater.
+
+## License and security
+
+This repository is proprietary. See the [license](LICENSE) for terms and the
+[security policy](SECURITY.md) for private vulnerability reporting.
