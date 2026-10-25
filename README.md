@@ -10,6 +10,8 @@
 
 Tethered is a macOS app for managing battery charging, power behavior, and automation. It brings charging controls, battery history, scheduled routines, and task-aware power management into one place, with quick access from the menu bar. Configure everyday routines or apply temporary resource profiles while local AI tools work.
 
+**Supports macOS 27.**
+
 [View screenshots](#screenshots)
 
 **All New Accounts Get a 7-Day Free Trial.**
