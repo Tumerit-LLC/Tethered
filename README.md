@@ -6,7 +6,7 @@
 
 # Tethered
 
-![macOS 27 supported](https://img.shields.io/badge/macOS_27-Supported-007AFF?style=for-the-badge&logo=apple&logoColor=white)
+![macOS 27 supported](Assets/macos-27-supported.svg)
 
 [![Tethered Task Sessions MCP on mcprush](https://mcprush.com/badge/tethered-task-sessions-mcp/score.svg)](https://mcprush.com/to/tethered-task-sessions-mcp?ref=badge)
 
