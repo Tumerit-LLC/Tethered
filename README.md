@@ -6,11 +6,11 @@
 
 # Tethered
 
+![macOS 27 supported](https://img.shields.io/badge/macOS_27-Supported-007AFF?style=for-the-badge&logo=apple&logoColor=white)
+
 [![Tethered Task Sessions MCP on mcprush](https://mcprush.com/badge/tethered-task-sessions-mcp/score.svg)](https://mcprush.com/to/tethered-task-sessions-mcp?ref=badge)
 
 Tethered is a macOS app for managing battery charging, power behavior, and automation. It brings charging controls, battery history, scheduled routines, and task-aware power management into one place, with quick access from the menu bar. Configure everyday routines or apply temporary resource profiles while local AI tools work.
-
-**Supports macOS 27.**
 
 [View screenshots](#screenshots)
 
