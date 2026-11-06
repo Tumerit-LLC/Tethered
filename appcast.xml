@@ -57,7 +57,7 @@
       <description xml:lang="zh-Hans"><![CDATA[
         <h3 dir="auto">发布变更日志：</h3><h3 dir="auto"> 1.3.2</h3><ul dir="auto"><li><strong>扩展快捷键控制：设置显示亮度、启动定时保持唤醒状态、运行已保存的任务配置文件、管理电池校准以及检查电池、温度和控制状态。</strong></li><li> <strong>MCP 应用控制：允许兼容的助手检查状态、切换电源模式、启动或停止定时唤醒功能，以及应用已保存的设置配置文件。应用控制和任务会话可以独立启用，Raycast 还提供仅启用控制的设置选项。</strong></li><li><strong>显示亮度可靠性：改进了 Tethered 在切换电源模式时保留和恢复内置显示亮度的方式，并修复了亮度更改处理中的崩溃问题。</strong></li><li> <strong>Apple 登录：简化了帐户设置中的登录流程，并改进了应用程序和社区个人资料登录的浏览器切换。</strong></li><li><strong>设置响应速度提升：减少了许可证检查和配置文件表更新期间的后台工作。现在，拖动滑块时即可预览更改，松开鼠标即可保存。</strong></li><li><strong>充值控制：直接在设置中输入自定义取消延迟时间。</strong></li><li><strong>辅助程序可靠性：避免在辅助程序仍有响应或 Mac 从睡眠状态唤醒时进行不必要的辅助程序恢复。</strong></li></ul><p dir="auto">下载 Tethered-1.3.2.zip、Tethered-1.3.2.pkg 或 Tethered-1.3.2.dmg 来安装 Tethered。</p><p dir="auto"> Sparkle.zip 文件由 Tethered 的内置更新程序使用；手动安装不需要这些文件。</p>
       ]]></description>
-      <enclosure url="https://github.com/Tumerit-LLC/Tethered/releases/download/v1.3.2/Tethered-1.3.2.Sparkle.zip" length="19807963" type="application/octet-stream" sparkle:edSignature="B1Vt1gn0BPI0iyGDPtK5QvNxBDlzdywFjb5kWsNicPYo7HtOI/x3lS1sriy9+AhpIs2Y/ZC1JcLlA6RJI1VMAQ==" />
+      <enclosure url="https://github.com/Tumerit-LLC/Tethered/releases/download/v1.3.2/Tethered-1.3.2.Sparkle.zip" length="19973445" type="application/octet-stream" sparkle:edSignature="FcjJIcrOfPyeFgGDwuCVYNq5wGC8ZzYJ21xsWsgZVy0ynZm2qVG4A9dH6unbF4YSsFKsME3EaE8MglMONkfZAA==" />
     </item>
     <item>
       <title>Tethered 1.3.1</title>
